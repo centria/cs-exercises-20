@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace exercise_01
+namespace exercise_02
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            // Add your code here:
-            
+            // Your code here:
         }
     }
 }

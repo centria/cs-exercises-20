@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using Exercise_01;
+using exercise_01;
 using NUnit.Framework;
 
 namespace ProgramTests
