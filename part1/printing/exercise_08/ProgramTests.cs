@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_07;
+using exercise_08;
 using NUnit.Framework;
 
 namespace ProgramTests
@@ -19,7 +19,7 @@ namespace ProgramTests
                 // Redirect standard output to variable.
                 Console.SetOut(sw);
 
-                var input = new StringReader("Are you printing the string?");
+                var input = new StringReader("Ada");
                 Console.SetIn(input);
 
                 // Call student's code
@@ -29,7 +29,7 @@ namespace ProgramTests
                 Console.SetOut(stdout);
 
                 // Assert
-                Assert.AreEqual("Give input!\nAre you printing the string?\nAre you printing the string?\nAre you printing the string?\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for input and print it!");
+                Assert.AreEqual("What is your name?\nHello Ada!\n", sw.ToString().Replace("\r\n", "\n"), "Remember to tell hello!");
             }
         }
     }

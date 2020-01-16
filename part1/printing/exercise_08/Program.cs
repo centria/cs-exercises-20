@@ -1,14 +1,13 @@
 ﻿using System;
 
-namespace exercise_07
+namespace exercise_08
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Give input!");
             // Write your code here:
-            
+
         }
     }
 }
