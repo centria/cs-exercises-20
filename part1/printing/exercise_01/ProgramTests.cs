@@ -26,7 +26,7 @@ namespace ProgramTests
                 Console.SetOut(stdout);
 
                 // Assert
-                Assert.AreEqual(sw.ToString(), "Hello World!\n", "Maybe you should try Console.WriteLine...");
+                Assert.AreEqual( "Hello World!\n", sw.ToString().Replace("\r\n","\n"), "Check your code! The test requires exact match!");
             }
         }
     }
