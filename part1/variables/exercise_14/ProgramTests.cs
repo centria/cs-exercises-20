@@ -36,7 +36,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("Give me anything!\nTrue\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for a number and print it with \"You gave...\" ");
+        Assert.AreEqual("Give me the truth!\nTrue\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for a boolean and answer true or false");
       }
     }
   }
