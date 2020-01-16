@@ -10,7 +10,7 @@ namespace ProgramTests
     public class TestProgram
     {
         [Test]
-        public void TestExercise05()
+        public void TestExercise10()
         {
             using (StringWriter sw = new StringWriter())
             {
