@@ -20,8 +20,15 @@ namespace ProgramTests
                 // Redirect standard output to variable.
                 Console.SetOut(sw);
 
-                var input = new StringReader("Ada");
-                Console.SetIn(input);
+                Console.SetOut(sw);
+
+                var data = String.Join(Environment.NewLine, new[]
+                {
+                "Fine, thanks",
+                "Not now"
+                });
+
+                Console.SetIn(new System.IO.StringReader(data));
 
                 // Call student's code
                 Program.Main(null);
@@ -33,7 +40,8 @@ namespace ProgramTests
                 Assert.AreEqual("Hello, how are you?\nThat's interesting, tell me more\nThank you for sharing!\n", sw.ToString().Replace("\r\n", "\n"), "Remember to tell hello!");
             }
         }
-                [Test]
+
+        [Test]
         public void TestCountReadLines()
         {
             string code = File.ReadAllText("../../../Program.cs");
