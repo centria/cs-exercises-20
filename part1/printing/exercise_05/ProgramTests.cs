@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_04;
+using exercise_05;
 using NUnit.Framework;
 
 namespace ProgramTests
@@ -9,7 +9,7 @@ namespace ProgramTests
     public class TestProgram
     {
         [Test]
-        public void TestExercise04()
+        public void TestExercise05()
         {
             using (StringWriter sw = new StringWriter())
             {
@@ -26,7 +26,7 @@ namespace ProgramTests
                 Console.SetOut(stdout);
 
                 // Assert
-                Assert.AreEqual("Passport and a toothbrush!\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match!");
+                Assert.AreEqual("Hello Ada LoveLace!\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match!");
             }
         }
     }
