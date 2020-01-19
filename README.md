@@ -163,7 +163,7 @@ Change the values of the variables, so the program will print
 
 ```console
 Days to summer:
-300
+200
 Hours to lunch:
 3.5
 Coding is fun:
