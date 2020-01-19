@@ -231,3 +231,46 @@ Your string: This is a masterpiece!
 Your integer: 42
 Your double: 3.1415
 Your boolean: True
+```
+
+## Calculations
+
+#### Exercise_16
+
+Create a program, which asks user for amount of days, and prints the total amount of seconds for that amount of days, gives the answer and quits.
+
+Example print:
+```console
+How many days?
+> 2
+172800
+```
+```console
+How many days?
+> 7
+604800
+```
+
+#### Exercise_17
+
+Create a program, which asks the user for two integers, and calculates their sum.  
+
+Remember, that the input is a string, so you have to convert it to integer!
+
+Example output:
+
+```console
+Give the first number!
+> 8
+Give the second number!
+> 3
+The sum is 11
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> -1
+The sum is 2
+```
