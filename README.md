@@ -60,7 +60,7 @@ namespace exercise_04
 }
 ```
 
-Change it, so that it prints **Passport and toothbrush!**
+Change it, so that it prints **Passport and a toothbrush!**
 Do not change the line containing Console.WriteLine, only change the content of the variable!
 
 
@@ -274,3 +274,84 @@ Give the second number!
 > -1
 The sum is 2
 ```
+
+#### Exercise_18
+
+Expand a little on the previous exercise. Now create a program, which asks for three integers, and calculates their sum.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> -1
+Give the third number!
+> 2
+The sum is 4
+```
+
+#### Exercise_19
+
+Create a program, which asks the user for two integers and counts their sum. This time, also print the equation to the user, too.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 1
+3 + 1 = 4
+```
+
+```console
+Give the first number!
+> 5
+Give the second number!
+> -1
+3 + -1 = 2
+```
+
+#### Exercise_20
+
+Create a program, which asks the user for two integers and multiplies them with each other.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+3 * 2 = 6
+```
+
+```console
+Give the first number!
+> 50
+Give the second number!
+> -2
+50  * -2 = -100
+```
+
+#### Exercise_21
+
+Create a program, which asks the user for two **integers** and calculates their **average** as a **double**.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+The average is 2.5
+```
+
+#### Exercise_22
+
+Create a program, which asks the user for three **integers** and calculates their **average** as a **double**.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+Give the third number!
+> 1
+The average is 2.0
+```
+

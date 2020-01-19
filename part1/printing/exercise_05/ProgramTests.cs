@@ -26,7 +26,7 @@ namespace ProgramTests
                 Console.SetOut(stdout);
 
                 // Assert
-                Assert.AreEqual("Hello Ada LoveLace!\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match!");
+                Assert.AreEqual("Hello Ada Lovelace!\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match!");
             }
         }
     }
