@@ -388,3 +388,49 @@ Your speed:
 125
 Speeding!
 ```
+
+#### Exercise_25
+
+Create a program which asks for an integer. If the integer is 1984, output "Orwell".
+
+```console
+Give a number:
+>1985
+```
+
+```console
+Give a number:
+> 1984
+Orwell
+```
+
+#### Exercise_26
+
+Create a program which asks for an integer. If the integer is less than 1900, output "You're old".
+
+```console
+Give your age:
+>1985
+```
+
+```console
+Give your age:
+> 1899
+You're old
+```
+
+#### Exercise_27
+
+Create a program which tells if the given number is positive (greater than zero), or not.
+
+```console
+Give a number:
+> 5
+It is positive
+```
+
+```console
+Give a number:
+-2
+It is not positive
+```
