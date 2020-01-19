@@ -355,3 +355,18 @@ Give the third number!
 The average is 2.0
 ```
 
+#### Exercise_23
+
+Let's create a program, that does all the basic calculations from user input! Ask for two integers and do the calculations with them.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+3 + 2 = 5
+3 - 2 = 1
+3 * 2 = 6
+3 / 2 = 1.5
+```
+
