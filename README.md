@@ -525,3 +525,38 @@ Give your percent [0 - 100]:
 > 9001
 Grade: Outstanding!
 ```
+
+#### Exercise_31
+
+Create a program which asks for an integer and tells the user if it is even or not.
+
+```console
+Give a number:
+> 2
+It is even
+```
+
+````console
+Give a number
+> 5
+It is odd
+````
+
+Hint: You might want to use the **%** operator to get the remainder after a division with 2.
+
+#### Exercise_32
+
+Create a program which asks for a string. If the string is "Mellon", print "Welcome, friend", otherwise print "They've got a cave troll!"
+
+```console
+Speak, friend, and enter!
+> Let meeeee in!
+They've got a cave troll!
+```
+
+```console
+Speak, friend, and enter!
+> Mellon
+Welcome, friend
+```
+

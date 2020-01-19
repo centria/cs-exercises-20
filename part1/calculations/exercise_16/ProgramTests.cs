@@ -50,7 +50,7 @@ namespace ProgramTests
 
         var data = String.Join(Environment.NewLine, new[]
         {
-                "2"
+                "11"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));

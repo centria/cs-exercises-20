@@ -39,7 +39,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("Give a string:\nGive an integer:\nGive a double:\nGive a boolean:\nYour string: word\nYour integer: 12\nYour double: "+ (3.2).ToString() +"\nYour boolean: True\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for all the variables");
+        Assert.AreEqual("Give a string:\nGive an integer:\nGive a double:\nGive a boolean:\nYour string: word\nYour integer: 12\nYour double: "+ (3.2).ToString().Replace(",",".") +"\nYour boolean: True\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for all the variables");
       }
     }
   }
