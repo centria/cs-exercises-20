@@ -560,3 +560,22 @@ Speak, friend, and enter!
 Welcome, friend
 ```
 
+#### Exercise_33
+
+Create a program which asks for two string. If the strings are equal, print "Echo", otherwise print "Nope".
+
+```console
+Give the first string:
+> Potato
+Give the second string:
+> Potato
+Echo!
+```
+
+```console
+Give the first string:
+> Potato
+Give the second string:
+> Tomato
+Nope!
+```
