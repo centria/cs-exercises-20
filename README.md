@@ -434,3 +434,94 @@ Give a number:
 -2
 It is not positive
 ```
+
+### Exercise_28
+
+Create a program which tell if the given person is legally adult (in Finland, over 18), or not.
+
+```console
+How old are you?
+> 5
+You're under age!
+```
+
+```console
+How old are you?
+> 18
+You're an adult!
+```
+
+### Exercise_29
+
+Create a program which asks for two integers. The program should tell which of them is greater. If they are equal, that should be noted, too.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+The larger number is 3!
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 4
+The larger number is 4!
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+They are equal!
+```
+
+#### Exercise_30
+
+Here is the grading for this course:
+
+| Percent | Grade|
+|---|---|
+| < 0 | Impossible |
+| 0 - 49  | Fail |
+| 50 - 59 | 1 |
+| 60 - 69 | 2 |
+| 70 - 79 | 3 |
+| 80 - 89 | 4 |
+| 90 - 100 | 5 |
+| > 100 | Outstanding! |
+
+Create a program, which asks the user for their percent, and gives them their score. For example:
+
+```console
+Give your percent [0 - 100]:
+> -2
+Impossible
+```
+
+```console
+Give your percent [0 - 100]:
+> 49
+Fail
+```
+
+```console
+Give your percent [0 - 100]:
+> 75
+Grade: 3
+```
+
+```console
+Give your percent [0 - 100]:
+> 99
+Grade: 5
+```
+
+```console
+Give your percent [0 - 100]:
+> 9001
+Grade: Outstanding!
+```
