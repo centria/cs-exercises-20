@@ -370,3 +370,4 @@ Give the second number!
 3 / 2 = 1.5
 ```
 
+## Conditionals and comparison
