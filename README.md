@@ -371,3 +371,20 @@ Give the second number!
 ```
 
 ## Conditionals and comparison
+
+#### Exercise_24
+
+Create a program, which asks the user for an integer.
+
+If the given integer is larger than 120, output "Speeding!".
+
+```console
+Your speed:
+> 5
+````
+
+```console
+Your speed:
+125
+Speeding!
+```
