@@ -63,7 +63,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("Give your age:\nIt is not positive\n", sw.ToString().Replace("\r\n", "\n"), "Check your if-clause is correct!");
+        Assert.AreEqual("Give a number:\nIt is not positive\n", sw.ToString().Replace("\r\n", "\n"), "Check your if-clause is correct!");
       }
     }
 
