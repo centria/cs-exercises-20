@@ -174,13 +174,13 @@ It sure is!
 * Create a program, that asks the user for an integer. After user input, the program will print the integer. Example prints:
 
 ```console
-Give a number
+Give a number!
 > 11
 You gave 11
 ```
 
 ```console
-Give a number
+Give a number!
 > 42
 You gave 42
 ```
