@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_13;
+using exercise_23;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
 
@@ -10,7 +10,7 @@ namespace ProgramTests
   public class TestProgram
   {
     [Test]
-    public void TestExercise13()
+    public void TestExercise23Test1()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -20,11 +20,10 @@ namespace ProgramTests
         // Redirect standard output to variable.
         Console.SetOut(sw);
 
-        Console.SetOut(sw);
-
         var data = String.Join(Environment.NewLine, new[]
         {
-                12.4
+                "3",
+                "4"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
@@ -36,8 +35,9 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("Give a number!\nYou gave "+12.4+"\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for a number and print it with \"You gave...\" ");
+        Assert.AreEqual("Give the first number!\nGive the second number!\n3 + 4 = 7\n3 - 4 = -1\n3 * 4 = 12\n3 / 4 = "+((double)3/4)+"\n", sw.ToString().Replace("\r\n", "\n"), "Did you get the average correctly?");
       }
     }
+
   }
 }

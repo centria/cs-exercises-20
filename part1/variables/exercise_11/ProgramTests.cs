@@ -27,7 +27,7 @@ namespace ProgramTests
                 Console.SetOut(stdout);
 
                 // Assert
-                Assert.AreEqual("Days to summer:\n200\nHours to lunch:\n3.5\nCoding is fun:\nIt sure is!\n", sw.ToString().Replace("\r\n", "\n"), "Change the variable values!");
+                Assert.AreEqual("Days to summer:\n200\nHours to lunch:\n"+3.5+"\nCoding is fun:\nIt sure is!\n", sw.ToString().Replace("\r\n", "\n"), "Change the variable values!");
             }
         }
 

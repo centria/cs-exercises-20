@@ -1,0 +1,88 @@
+using System;
+using System.IO;
+using exercise_34;
+using NUnit.Framework;
+using System.Text.RegularExpressions;
+
+namespace ProgramTests
+{
+  [TestFixture]
+  public class TestProgram
+  {
+    [Test]
+    public void TestExercise34Test1()
+    {
+      using (StringWriter sw = new StringWriter())
+      {
+        // Save a reference to the standard output.
+        TextWriter stdout = Console.Out;
+
+        // Redirect standard output to variable.
+        Console.SetOut(sw);
+
+        var data = String.Join(Environment.NewLine, new[]
+        {
+                "word",
+                "another",
+                "hot potato",
+                "kittens",
+                "this is weird",
+                "no"
+                });
+
+        Console.SetIn(new System.IO.StringReader(data));
+
+        // Call student's code
+        Program.Main(null);
+
+        // Restore the original standard output.
+        Console.SetOut(stdout);
+        string comparison = "";
+        for (int i = 0; i < 6; i++) {
+          comparison = comparison + "Do you want to continue?\n";
+        }
+        // Assert
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Check your if-clause is correct!");
+      }
+    }
+
+    [Test]
+    public void TestExercise34Test4()
+    {
+      using (StringWriter sw = new StringWriter())
+      {
+        // Save a reference to the standard output.
+        TextWriter stdout = Console.Out;
+
+        // Redirect standard output to variable.
+        Console.SetOut(sw);
+
+        var data = String.Join(Environment.NewLine, new[]
+        {
+                "word", "another", "mistery man",
+                "another", "for king and country",
+                "hot potato",
+                "kittens",
+                "this is weird",
+                "no"
+                });
+
+        Console.SetIn(new System.IO.StringReader(data));
+
+        // Call student's code
+        Program.Main(null);
+
+        // Restore the original standard output.
+        Console.SetOut(stdout);
+        string comparison = "";
+        for (int i = 0; i <= 8; i++) {
+          comparison = comparison + "Do you want to continue?\n";
+        }
+        // Assert
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Check your if-clause is correct!");
+      }
+    }
+
+
+  }
+}
