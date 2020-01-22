@@ -1,4 +1,27 @@
+## How to return your exercises
+
+You return your exercises by pushing your answers to your personal repository.
+
+The deadlines are every Sunday. From part 2 onwards, **they might still change**:
+
+|Part| Deadline           |
+|:--:|:------------------:|
+| 1  | 26.01.2020 at 23:59|
+| 2  | 02.02.2020 at 23:59|
+| 3  | 09.02.2020 at 23:59|
+| 4  | 16.02.2020 at 23:59|
+| 5  | 23.02.2020 at 23:59|
+| 6  | 01.03.2020 at 23:59|
+
+## How to get more exercises
+
+You can get more exercises to your local computer by **pulling this repository** with the command **git pull**.  
+
+You can also update tests with this, if there are some problems.
+
 # Exercises
+
+The following instructions are also in the subfolders of each part.
 
 ## Part 1
 
