@@ -23,7 +23,7 @@ You can also update tests with this, if there are some problems.
 
 The following instructions are also in the subfolders of each part.
 
-## Part 1
+# Part 1
 
 ## Printing and reading
 
@@ -719,3 +719,25 @@ Total amount of numbers: 3
 ```
 
 Hint: You will need two variables to store the data, one for the sum, one for the amount.
+
+
+# Part 2
+
+#### Exercise_41
+
+Write a program that reads an integer from the user input, and then prints the second power of the given integer, i.e. the integer multiplied by itself.
+
+```console
+> 4
+16
+```
+
+```console
+> 5
+25
+```
+
+```console
+> -3
+9
+```
