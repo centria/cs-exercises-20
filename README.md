@@ -723,6 +723,8 @@ Hint: You will need two variables to store the data, one for the sum, one for th
 
 # Part 2
 
+## Subproblems
+
 #### Exercise_41
 
 Write a program that reads an integer from the user input, and then prints the second power of the given integer, i.e. the integer multiplied by itself.
@@ -814,3 +816,25 @@ A few examples of the expected behaviour:
 > 1 
 1 is equal to 1.
 ```
+
+## More loops
+
+#### Exercise_45
+
+Write a program that reads an integer from the user. Then the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below is some examples of the wanted functionality. **You can use either a while-loop with a condition, or a for-loop.**
+
+```console
+> 4
+0
+1
+2
+3
+4
+```
+
+```console
+> 1
+0
+1
+```
+
