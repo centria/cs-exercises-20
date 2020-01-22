@@ -772,3 +772,21 @@ Console.WriteLine(squareRoot);
 6
 ```
 
+#### Exercise_43
+
+Write a program, that reads an integer from the user. If the number is less than 0, it prints the number multiplied by -1. Otherwise the program prints the number itself. A few examples of the expected function below:
+
+```console
+> -3
+3
+```
+
+```console
+> 1
+1
+```
+
+```console
+> 0
+0
+```
