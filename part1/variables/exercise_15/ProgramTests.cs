@@ -26,7 +26,7 @@ namespace ProgramTests
         {
                 "word",
                 "12",
-                "3.2",
+                Convert.ToDouble("3.2", System.Globalization.CultureInfo.InvariantCulture).ToString(),
                 "true"
                 });
 
