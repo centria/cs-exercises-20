@@ -790,3 +790,27 @@ Write a program, that reads an integer from the user. If the number is less than
 > 0
 0
 ```
+
+#### Exercise_44
+
+Write a program that reads two integers from the user input. If the first number is greater than the second, the program prints "(first) is greater than (second)." If the first number is less than the second, the program prints "(first) is less than (second)." Otherwise the program prints "(first) is equal to (second)." The (first) and (second) should always be replaced with the actual numbers given by the user.
+
+A few examples of the expected behaviour:
+
+```console
+> 8 
+> 4 
+8 is greater than 4.
+```
+
+```console
+> -3 
+> 5 
+-3 is less than 5.
+```
+
+```console
+> 1 
+> 1 
+1 is equal to 1.
+```
