@@ -838,3 +838,82 @@ Write a program that reads an integer from the user. Then the program prints num
 1
 ```
 
+#### Exercise_46
+
+Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the wanted functionality.
+
+```console
+> 99
+99
+100
+```
+
+```console
+> -4
+-4
+-3
+-2
+-1
+0
+1
+... (lots of numbers in between) ...
+98
+99
+100
+```
+
+### NOTICE!
+From now on, the exercises might be in multiple parts **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise**.
+
+#### Exercise_47
+
+#### Part 1
+Write a program, which prints integers from 1 to a number given by the user.
+
+```console
+Where to? 
+>3 
+1 
+2 
+3
+```
+
+```console
+Where to? 
+>5 
+1 
+2 
+3 
+4 
+5
+```
+
+Hint: the number read from the user is now the upper limit of the condition. Remember that **a <= b** means a is smaller or equal to b.
+
+#### Part 2
+
+Ask the user for the starting point as well.
+
+```console
+Where to? 
+>8 
+Where from? 
+>5
+5 
+6 
+7 
+8
+```
+
+If the upper limit is larger than the starting point, nothing is printed:
+
+```
+Where to? 
+> 12 
+Where from? 
+> 16
+```
+
+Hint: Remember that the lower and the upper limits can be negative!
+
+Hint 2: You can do the whole exercise as a whole, if you feel comfortable. The last part always shows what the program should do in total. When all the tests pass, you have done all the parts.
