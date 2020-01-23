@@ -1000,3 +1000,10 @@ When you are writing a program, whether it's an exercise or a personal project, 
 Never try solving the whole problem at once, because that makes running and testing the program in the middle of the problem-solving process difficult. Start with something easy that you know you can do. When one part works, you can move on to the next.
 
 Some of the exercises are already split into parts. However, it's often the case in programming that these parts need to be split into even smaller parts. You should almost always run the program after every new line of code. This ensures that the solution is moving in the right direction.
+
+## Methods
+
+##### Exercise_49
+
+Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline.
+
