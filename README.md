@@ -1005,5 +1005,53 @@ Some of the exercises are already split into parts. However, it's often the case
 
 ##### Exercise_49
 
+##### Section 1
+
 Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline.
 
+```cs
+public static void Main(string[] args)
+{
+  // Call your method here:
+  PrintPhrase();
+
+}
+
+// Write your method here:
+public static void PrintPhrase() {
+
+}
+```
+
+```console
+In a hole in the ground there lived a method
+```
+
+##### Section 2
+
+Expand the previous program so that the main program asks the user for the number of times the phrase will be printed (i.e. how many times the method will be called).
+
+```cs
+public static void Main(string[] args)
+{
+  // ask the user for the number of times that the phrase will be printed
+  // use the while command to call the method a suitable number of times
+
+}
+
+// Write your method here:
+public static void PrintPhrase() {
+
+}
+```
+
+```console
+How many times?
+> 3
+In a hole in the ground there lived a method
+In a hole in the ground there lived a method
+In a hole in the ground there lived a method
+```
+
+## Notice!
+From here on out, when introducing methods, we will not explicitly mention they must be located in the correct place. Methods cannot be defined e.g. inside other methods.
