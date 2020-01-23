@@ -546,7 +546,7 @@ Grade: 5
 ```console
 Give your percent [0 - 100]:
 > 9001
-Grade: Outstanding!
+Outstanding!
 ```
 
 #### Exercise_31
