@@ -2,7 +2,7 @@
 
 You return your exercises by pushing your answers to your personal repository.
 
-The deadlines are every Sunday. From part 2 onwards, **they might still change**:
+The deadlines are every Sunday. From part 3 onwards, **they might still change**:
 
 |Part| Deadline           |
 |:--:|:------------------:|
