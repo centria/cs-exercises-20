@@ -24,10 +24,10 @@ namespace ProgramTests
       string code = File.ReadAllText("../../../Program.cs");
       int count = Regex.Matches(code, "Console.WriteLine").Count;
 
-      Assert.AreEqual(1, count, "You were supposed to use WriteLine inside the method!");
+      Assert.AreEqual(2, count, "You were supposed to use WriteLine inside the method!");
     }
 
-        [Test]
+    [Test]
     public void TestFindMethodCall()
     {
       string code = File.ReadAllText("../../../Program.cs");
@@ -36,9 +36,19 @@ namespace ProgramTests
       Assert.AreEqual(2, count, "You were supposed to call PrintPhrase(); from your Main!");
     }
 
+        [Test]
+    public void TestExercise49Section1()
+    {
+      string code = File.ReadAllText("../../../Program.cs");
+      int count = Regex.Matches(code, "In a hole in the ground there lived a method").Count;
+
+      Assert.AreEqual(1, count, "Check your printing!");
+    }
+
+
 
     [Test]
-    public void TestExercise49()
+    public void TestExercise49Section2()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -48,16 +58,24 @@ namespace ProgramTests
         // Redirect standard output to variable.
         Console.SetOut(sw);
 
+        var data = String.Join(Environment.NewLine, new[]
+        {
+                "3"
+                });
+
+        Console.SetIn(new System.IO.StringReader(data));
+
         // Call student's code
         Program.Main(null);
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-
+        string comparison = "How many times?\nIn a hole in the ground there lived a method\nIn a hole in the ground there lived a method\nIn a hole in the ground there lived a method\n";
+        
         // Assert
-        Assert.AreEqual("In a hole in the ground there lived a method\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match for printing!");
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print as many times as asked!");
       }
-
     }
+
   }
 }
