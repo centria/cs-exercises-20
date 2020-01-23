@@ -4,14 +4,14 @@ You return your exercises by pushing your answers to your personal repository.
 
 The deadlines are every Sunday. From part 3 onwards, **they might still change**:
 
-|Part| Deadline           |
-|:--:|:------------------:|
-| 1  | 26.01.2020 at 23:59|
-| 2  | 02.02.2020 at 23:59|
-| 3  | 09.02.2020 at 23:59|
-| 4  | 16.02.2020 at 23:59|
-| 5  | 23.02.2020 at 23:59|
-| 6  | 01.03.2020 at 23:59|
+|Part| Deadline           | Exercises |
+|:--:|:------------------:|:----------|
+| 1  | 26.01.2020 at 23:59| 40        |
+| 2  | 02.02.2020 at 23:59| XX        |
+| 3  | 09.02.2020 at 23:59| XX        |
+| 4  | 16.02.2020 at 23:59| XX        |
+| 5  | 23.02.2020 at 23:59| XX        |
+| 6  | 01.03.2020 at 23:59| XX        |
 
 ## How to get more exercises
 
