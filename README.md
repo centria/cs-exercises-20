@@ -1083,7 +1083,7 @@ Output of the example:
 14
 ```
 
-##### Exercise_51
+#### Exercise_51
 
 * Create the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
 
@@ -1112,3 +1112,33 @@ public static void Main(String[] args) {
 2
 3
 ```
+
+#### Exercise_52
+
+* Create the following method in the exercise template: **public static void PrintFromNumberToOne(int number)**. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
+
+```cs
+public static void Main(String[] args) {
+    PrintFromNumberToOne(5);
+}
+```
+
+```console
+5
+4
+3
+2
+1
+```
+
+```cs
+public static void Main(String[] args) {
+    PrintFromNumberToOne(2);
+}
+```
+
+```console
+2
+1
+```
+
