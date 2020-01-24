@@ -2,7 +2,7 @@
 
 #### Exercise_45
 
-Write a program that reads an integer from the user. Then the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below is some examples of the wanted functionality. **You can use either a while-loop with a condition, or a for-loop.**
+* Write a program that reads an integer from the user. Then the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below is some examples of the wanted functionality. **You can use either a while-loop with a condition, or a for-loop.**
 
 ```console
 > 4
@@ -21,7 +21,7 @@ Write a program that reads an integer from the user. Then the program prints num
 
 #### Exercise_46
 
-Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the wanted functionality.
+* Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the wanted functionality.
 
 ```console
 > 99
@@ -51,7 +51,7 @@ Hint: The last section always shows what the program should do in total. When al
 #### Exercise_47
 
 ##### Section 1
-Write a program, which prints integers from 1 to a number given by the user.
+* Write a program, which prints integers from 1 to a number given by the user.
 
 ```console
 Where to? 
@@ -75,7 +75,7 @@ Hint: the number read from the user is now the upper limit of the condition. Rem
 
 ##### Section 2
 
-Ask the user for the starting point as well.
+* Ask the user for the starting point as well.
 
 ```console
 Where to? 
@@ -101,9 +101,9 @@ Hint: Remember that the lower and the upper limits can be negative!
 
 #### Exercise_48
 
-Implement a program that asks the user for numbers(the program first prints "Write numbers: ") until the user gives the number -1, When the user writes -1, the program prints "Thx! Bye!" and ends.
-
 ##### Section 1
+* Implement a program that asks the user for numbers(the program first prints "Write numbers: ") until the user gives the number -1, When the user writes -1, the program prints "Thx! Bye!" and ends.
+
 ```console
 Give numbers: 
 > 5 
@@ -115,7 +115,7 @@ Thx! Bye!
 
 ##### Section 2
 
-Extend the program so, that it prints the sum of the numbers (not including the -1) the user has written.
+* Extend the program so, that it prints the sum of the numbers (not including the -1) the user has written.
 
 ```console
 Give numbers: 
@@ -128,7 +128,7 @@ Sum: 11
 ```
 
 ##### Section 3 
-Extend the program so, that it also prints the number of numbers (not including the -1) the user has written.
+* Extend the program so, that it also prints the number of numbers (not including the -1) the user has written.
 
 ```console
 Give numbers: 
@@ -143,7 +143,7 @@ Numbers: 3
 
 ##### Section 4
 
-Extend the program so, that it prints the mean of the numbers (not including the -1) the user has written.
+* Extend the program so, that it prints the mean of the numbers (not including the -1) the user has written.
 
 ```console
 Give numbers: 
@@ -159,7 +159,7 @@ Average: 3.666666666666
 
 ##### Section 5
 
-Extend the program so that it prints the number of even and odd numbers (excluding the -1).
+* Extend the program so that it prints the number of even and odd numbers (excluding the -1).
 
 ```console
 Give numbers: 

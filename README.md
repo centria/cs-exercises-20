@@ -2,16 +2,20 @@
 
 You return your exercises by pushing your answers to your personal repository.
 
-The deadlines are every Sunday. From part 3 onwards, **they might still change**:
+The deadlines are every Sunday.
 
-|Part| Deadline           | Exercises |
+|Part| Deadline           | Exercises and sections total|
 |:--:|:------------------:|:----------|
 | 1  | 26.01.2020 at 23:59| 40        |
-| 2  | 02.02.2020 at 23:59| XX        |
+| 2  | 02.02.2020 at 23:59| 31        |
 | 3  | 09.02.2020 at 23:59| XX        |
 | 4  | 16.02.2020 at 23:59| XX        |
 | 5  | 23.02.2020 at 23:59| XX        |
 | 6  | 01.03.2020 at 23:59| XX        |
+
+The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.  
+
+Each section is counted separately, when calculating the total amount of exercises done. That is why they are calculated in the total of the table above.
 
 ## How to get more exercises
 
@@ -1248,7 +1252,7 @@ Greatest: 7
 
 ##### Section 1
 
-Define a method called **PrintStars** that prints the given number of stars and a line break.
+* Define a method called **PrintStars** that prints the given number of stars and a line break.
 
 Write the method in the following template:
 
@@ -1279,7 +1283,7 @@ The output of the program:
 
 ##### Section 2
 
-Define a method called **PrintSquare(int size)** that prints a suitable square with the help of the printStars method. So the method call **PrintSquare(4)** results in the following output:
+* Define a method called **PrintSquare(int size)** that prints a suitable square with the help of the printStars method. So the method call **PrintSquare(4)** results in the following output:
 
 ```console
 ****
@@ -1290,7 +1294,7 @@ Define a method called **PrintSquare(int size)** that prints a suitable square w
 
 ##### Section 3
 
-Write a method called PrintRectangle(int width, int height) that prints the correct rectangle by using the PrintStars method. So the method call PrintRectangle(17, 3) should produce the following output:
+* Write a method called PrintRectangle(int width, int height) that prints the correct rectangle by using the PrintStars method. So the method call PrintRectangle(17, 3) should produce the following output:
 
 ```console
 ***************** 
@@ -1300,7 +1304,7 @@ Write a method called PrintRectangle(int width, int height) that prints the corr
 
 ##### Section 4
 
-Create a method called PrintTriangle(int size) that prints a triangle by using the PrintStars method. So the call PrintTriangle(4) should print the following:
+* Create a method called PrintTriangle(int size) that prints a triangle by using the PrintStars method. So the call PrintTriangle(4) should print the following:
 
 ```console
 *
@@ -1313,13 +1317,13 @@ Create a method called PrintTriangle(int size) that prints a triangle by using t
 #### Exercise_61
 
 ##### Section 1
-Define a method called PrintSpaces(int number) that produces the number of spaces specified by number. The method **does not print the line break**.
+* Define a method called PrintSpaces(int number) that produces the number of spaces specified by number. The method **does not print the line break**.
 
 You will also have to either copy the **PrintStars** method from your previous answer or reimplement it in this exercise template.
 
 ##### Section 2
 
-Create a method called **PrintRightTriangle(int size)** that uses PrintSpaces and PrintStars to print the correct triangle. So the method call **PrintRightTriangle(4)** should print the following:
+* Create a method called **PrintRightTriangle(int size)** that uses PrintSpaces and PrintStars to print the correct triangle. So the method call **PrintRightTriangle(4)** should print the following:
 
 ```console
    *
@@ -1330,7 +1334,7 @@ Create a method called **PrintRightTriangle(int size)** that uses PrintSpaces an
 
 ##### Section 3
 
-Define a method called **ChristmasTree(int height)** that prints the correct Christmas tree. The Christmas tree consists of a triangle with the specified height and the base. The base is two stars high and three stars wide, and is placed at the center of the triangle's bottom. The tree is to be constructed by using the methods PrintSpaces and PrintStars.
+* Define a method called **ChristmasTree(int height)** that prints the correct Christmas tree. The Christmas tree consists of a triangle with the specified height and the base. The base is two stars high and three stars wide, and is placed at the center of the triangle's bottom. The tree is to be constructed by using the methods PrintSpaces and PrintStars.
 
 For example, the call **ChristmasTree(4)** should print the following:
 

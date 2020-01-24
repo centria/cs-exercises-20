@@ -36,16 +36,6 @@ namespace ProgramTests
       Assert.AreEqual(2, count, "You were supposed to call PrintPhrase(); from your Main!");
     }
 
-        [Test]
-    public void TestExercise50()
-    {
-      string code = File.ReadAllText("../../../Program.cs");
-      int count = Regex.Matches(code, "In a hole in the ground there lived a method").Count;
-
-      Assert.AreEqual(1, count, "Check your printing!");
-    }
-
-
 
     [Test]
     public void TestExercise50More()
