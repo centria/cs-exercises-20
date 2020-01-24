@@ -1011,8 +1011,6 @@ In these exercises we practice making and calling our own methods.
 
 #### Exercise_49
 
-##### Section 1
-
 * Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline.
 
 ```cs
@@ -1034,7 +1032,7 @@ public static void PrintPhrase()
 In a hole in the ground there lived a method
 ```
 
-##### Section 2
+#### Exercise_50
 
 * Expand the previous program so that the main program asks the user for the number of times the phrase will be printed (i.e. how many times the method will be called).
 
@@ -1062,33 +1060,7 @@ In a hole in the ground there lived a method
 ```
 
 ## Notice!
-From here on out, when introducing methods, we will not explicitly mention they must be located in the correct place. Methods cannot be defined e.g. inside other methods.
-
-#### Exercise_50
-
-* Expand the method **Sum** in the exercise template so that it calculates and returns the sum of the numbers that are given as the parameters.
-
-Create the method using the following structure:
-
-```cs
-public static int Sum(int number1, int number2, int number3, int number4) 
-{
-  // write your code here
-  // remember to include return (at the end)!
-}
-
-public static void Main(String[] args) 
-{
-  int answer = Sum(4, 3, 6, 1);
-  Console.WriteLine("Sum: " + answer);
-}
-```
-
-Output of the example:
-
-```console
-14
-```
+From here on out, when introducing methods, we might not explicitly mention they must be located in the correct place. Methods cannot be defined e.g. inside other methods.
 
 #### Exercise_51
 
@@ -1194,3 +1166,4 @@ public static void Main(String[] args)
 
 * Write a method **public static String Word()**. The method must return a string of your choice.
 
+#### Exercise_57

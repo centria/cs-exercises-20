@@ -45,37 +45,5 @@ namespace ProgramTests
       Assert.AreEqual(1, count, "Check your printing!");
     }
 
-
-
-    [Test]
-    public void TestExercise49Section2()
-    {
-      using (StringWriter sw = new StringWriter())
-      {
-        // Save a reference to the standard output.
-        TextWriter stdout = Console.Out;
-
-        // Redirect standard output to variable.
-        Console.SetOut(sw);
-
-        var data = String.Join(Environment.NewLine, new[]
-        {
-                "3"
-                });
-
-        Console.SetIn(new System.IO.StringReader(data));
-
-        // Call student's code
-        Program.Main(null);
-
-        // Restore the original standard output.
-        Console.SetOut(stdout);
-        string comparison = "How many times?\nIn a hole in the ground there lived a method\nIn a hole in the ground there lived a method\nIn a hole in the ground there lived a method\n";
-        
-        // Assert
-        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print as many times as asked!");
-      }
-    }
-
   }
 }
