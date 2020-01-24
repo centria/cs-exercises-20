@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_52;
+using exercise_54;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
 
@@ -13,7 +13,7 @@ namespace ProgramTests
     public void TestFindMethodName()
     {
       string code = File.ReadAllText("../../../Program.cs");
-      int count = Regex.Matches(code, "public static void PrintFromNumberToOne").Count;
+      int count = Regex.Matches(code, "public static void DivisibleByThreeInRange").Count;
 
       Assert.AreEqual(1, count, "Check the instructions on what the method should be called!");
     }
@@ -27,18 +27,18 @@ namespace ProgramTests
       Assert.AreEqual(1, count, "You were NOT supposed to use WriteLine in main, only in the method!");
     }
 
-        [Test]
+    [Test]
     public void TestFindMethodCall()
     {
       string code = File.ReadAllText("../../../Program.cs");
-      int count = Regex.Matches(code, "PrintFromNumberToOne").Count;
+      int count = Regex.Matches(code, "DivisibleByThreeInRange").Count;
 
-      Assert.AreEqual(2, count, "You were supposed to call PrintFromNumberToOne from your Main!");
+      Assert.AreEqual(2, count, "You were supposed to call DivisibleByThreeInRange from your Main!");
     }
 
 
     [Test]
-    public void TestExercise52Method4()
+    public void TestExercise53Method34()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -49,23 +49,21 @@ namespace ProgramTests
         Console.SetOut(sw);
 
         // Call student's code
-        Program.PrintFromNumberToOne(4);
+        Program.DivisibleByThreeInRange(3, 4);
 
         // Restore the original standard output.
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("4\n3\n2\n1\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match for printing!");
+        Assert.AreEqual("3\n", sw.ToString().Replace("\r\n", "\n"), "Check your calculations!");
       }
-
     }
 
     [Test]
-    public void TestExercise52Method37()
+    public void TestExercise53Method12()
     {
       using (StringWriter sw = new StringWriter())
       {
-        int upp = 37;
         // Save a reference to the standard output.
         TextWriter stdout = Console.Out;
 
@@ -73,19 +71,36 @@ namespace ProgramTests
         Console.SetOut(sw);
 
         // Call student's code
-        Program.PrintFromNumberToOne(37);
+        Program.DivisibleByThreeInRange(1, 2);
 
         // Restore the original standard output.
         Console.SetOut(stdout);
 
-        string compare = "";
-        for (int i = upp; i >= 1; i--) {
-          compare += i+"\n";
-        }
         // Assert
-        Assert.AreEqual(compare, sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match for printing!");
+        Assert.AreEqual("", sw.ToString().Replace("\r\n", "\n"), "Check your code! Did you calculate divisable correctly?");
       }
+    }
 
+        [Test]
+    public void TestExercise53Method115()
+    {
+      using (StringWriter sw = new StringWriter())
+      {
+        // Save a reference to the standard output.
+        TextWriter stdout = Console.Out;
+
+        // Redirect standard output to variable.
+        Console.SetOut(sw);
+
+        // Call student's code
+        Program.DivisibleByThreeInRange(1, 15);
+
+        // Restore the original standard output.
+        Console.SetOut(stdout);
+
+        // Assert
+        Assert.AreEqual("3\n6\n9\n12\n15\n", sw.ToString().Replace("\r\n", "\n"), "Check your code! Did you calculate divisable correctly?");
+      }
     }
 
   }

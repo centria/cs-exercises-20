@@ -1006,6 +1006,9 @@ Some of the exercises are already split into parts. However, it's often the case
 
 ## Methods
 
+In these exercises we practice making and calling our own methods.  
+**If the exercise template says "// Call your method here:", call it once. Usually this is in the Main class**.
+
 #### Exercise_49
 
 ##### Section 1
@@ -1021,7 +1024,8 @@ public static void Main(string[] args)
 }
 
 // Write your method here:
-public static void PrintPhrase() {
+public static void PrintPhrase() 
+{
 
 }
 ```
@@ -1043,7 +1047,8 @@ public static void Main(string[] args)
 }
 
 // Write your method here:
-public static void PrintPhrase() {
+public static void PrintPhrase() 
+{
 
 }
 ```
@@ -1066,14 +1071,16 @@ From here on out, when introducing methods, we will not explicitly mention they 
 Create the method using the following structure:
 
 ```cs
-public static int Sum(int number1, int number2, int number3, int number4) {
+public static int Sum(int number1, int number2, int number3, int number4) 
+{
   // write your code here
   // remember to include return (at the end)!
 }
 
-public static void Main(String[] args) {
-    int answer = Sum(4, 3, 6, 1);
-    Console.WriteLine("Sum: " + answer);
+public static void Main(String[] args) 
+{
+  int answer = Sum(4, 3, 6, 1);
+  Console.WriteLine("Sum: " + answer);
 }
 ```
 
@@ -1088,8 +1095,9 @@ Output of the example:
 * Create the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
 
 ```cs
-public static void Main(String[] args) {
-    PrintUntilNumber(5);
+public static void Main(String[] args) 
+{
+  PrintUntilNumber(5);
 }
 ```
 
@@ -1102,8 +1110,9 @@ public static void Main(String[] args) {
 ```
 
 ```cs
-public static void Main(String[] args) {
-    PrintUntilNumber(3);
+public static void Main(String[] args) 
+{
+  PrintUntilNumber(3);
 }
 ```
 
@@ -1118,8 +1127,9 @@ public static void Main(String[] args) {
 * Create the following method in the exercise template: **public static void PrintFromNumberToOne(int number)**. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
 
 ```cs
-public static void Main(String[] args) {
-    PrintFromNumberToOne(5);
+public static void Main(String[] args) 
+{
+  PrintFromNumberToOne(5);
 }
 ```
 
@@ -1132,8 +1142,9 @@ public static void Main(String[] args) {
 ```
 
 ```cs
-public static void Main(String[] args) {
-    PrintFromNumberToOne(2);
+public static void Main(String[] args) 
+{
+  PrintFromNumberToOne(2);
 }
 ```
 
@@ -1142,3 +1153,35 @@ public static void Main(String[] args) {
 1
 ```
 
+#### Exercise_53
+
+Write a method **public static void Division(int numerator, int denominator)** that prints the result of the division of the numerator by the denominator. Keep in mind that the result of the division of the integers is an integer -- in this case we want the result to be a floating point number (double).
+
+#### Exercise_54
+
+Write a method **public static void DivisibleByThreeInRange(int beginning, int end)** that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest.
+
+```cs
+public static void Main(String[] args) 
+{
+  DivisibleByThreeInRange(3, 6);
+}
+```
+
+```console
+3
+6
+```
+
+```cs
+public static void Main(String[] args) 
+{
+  DivisibleByThreeInRange(2, 10);
+}
+```
+
+```console
+3
+6
+9
+```
