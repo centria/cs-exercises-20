@@ -1155,11 +1155,11 @@ public static void Main(String[] args)
 
 #### Exercise_53
 
-Write a method **public static void Division(int numerator, int denominator)** that prints the result of the division of the numerator by the denominator. Keep in mind that the result of the division of the integers is an integer -- in this case we want the result to be a floating point number (double).
+* Write a method **public static void Division(int numerator, int denominator)** that prints the result of the division of the numerator by the denominator. Keep in mind that the result of the division of the integers is an integer -- in this case we want the result to be a floating point number (double).
 
 #### Exercise_54
 
-Write a method **public static void DivisibleByThreeInRange(int beginning, int end)** that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest.
+* Write a method **public static void DivisibleByThreeInRange(int beginning, int end)** that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest.
 
 ```cs
 public static void Main(String[] args) 
@@ -1185,3 +1185,12 @@ public static void Main(String[] args)
 6
 9
 ```
+
+#### Exercise_55
+
+* Write a method **public static int NumberUno()** that returns the value 1.
+
+#### Exercise_56
+
+* Write a method **public static String Word()**. The method must return a string of your choice.
+

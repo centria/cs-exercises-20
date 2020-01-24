@@ -38,7 +38,7 @@ namespace ProgramTests
 
 
     [Test]
-    public void TestExercise53Method34()
+    public void TestExercise54Method34()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -60,7 +60,7 @@ namespace ProgramTests
     }
 
     [Test]
-    public void TestExercise53Method12()
+    public void TestExercise54Method12()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -82,7 +82,7 @@ namespace ProgramTests
     }
 
         [Test]
-    public void TestExercise53Method115()
+    public void TestExercise54Method115()
     {
       using (StringWriter sw = new StringWriter())
       {
