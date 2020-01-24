@@ -67,7 +67,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("Give a number!\nYou gave "+ (3.4).ToString().Replace(",",".") +"\n", sw.ToString().Replace("\r\n", "\n"), "Remember to ask for a number and print it with \"You gave...\" ");
+        Assert.AreEqual("Give a number!\nYou gave "+ (3.4).ToString().Replace(",",".") +"\n", sw.ToString().Replace("\r\n", "\n").Replace(",","."), "Remember to ask for a number and print it with \"You gave...\" ");
       }
     }
 
