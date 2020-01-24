@@ -1307,4 +1307,57 @@ Create a method called PrintTriangle(int size) that prints a triangle by using t
 **
 ***
 ****
-````
+```
+
+
+#### Exercise_61
+
+##### Section 1
+Define a method called PrintSpaces(int number) that produces the number of spaces specified by number. The method **does not print the line break**.
+
+You will also have to either copy the **PrintStars** method from your previous answer or reimplement it in this exercise template.
+
+##### Section 2
+
+Create a method called **PrintRightTriangle(int size)** that uses PrintSpaces and PrintStars to print the correct triangle. So the method call **PrintRightTriangle(4)** should print the following:
+
+```console
+   *
+  **
+ ***
+****
+```
+
+##### Section 3
+
+Define a method called **ChristmasTree(int height)** that prints the correct Christmas tree. The Christmas tree consists of a triangle with the specified height and the base. The base is two stars high and three stars wide, and is placed at the center of the triangle's bottom. The tree is to be constructed by using the methods PrintSpaces and PrintStars.
+
+For example, the call **ChristmasTree(4)** should print the following:
+
+```console
+   * 
+  *** 
+ *****
+******* 
+  *** 
+  ***
+```
+The call **christmasTree(10)** should print:
+
+```console
+         * 
+        *** 
+       ***** 
+      ******* 
+     ********* 
+    *********** 
+   ************* 
+  *************** 
+ ***************** 
+******************* 
+        *** 
+        ***
+```
+NOTICE! Heights shorter that 3 don't have work correctly!
+
+
