@@ -865,7 +865,9 @@ A few examples of the expected behaviour:
 ```
 
 ### NOTICE!
-From now on, the exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise**. Each section is counted separately, when calculating the total amount of exercises done. For example, an exercise with 2 sections, counts as 2 exercises in the total sum you have done.
+From now on, the exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return.  
+
+Each section is counted separately, when calculating the total amount of exercises done. For example, the next exercise with 2 sections, counts as 2 exercises in the total sum you have done. 
 
 Hint: The last section always shows what the program should do in total. When all the tests pass, you have done all the sections.
 
@@ -1241,3 +1243,68 @@ The output of the program:
 ```console
 Greatest: 7
 ```
+
+#### Exercise_60
+
+##### Section 1
+
+Define a method called **PrintStars** that prints the given number of stars and a line break.
+
+Write the method in the following template:
+
+```cs
+public static void PrintStars(int number)
+{
+  // you can print one star with the command
+  // Console.Write("*");
+  // call the print command n times
+  // in the end print a line break with the comand
+  // Console.WriteLine("");
+}
+
+public static void Main(String[] args) 
+{
+  PrintStars(5);
+  PrintStars(3);
+  PrintStars(9);
+}
+```
+
+The output of the program:
+```console
+***** 
+*** 
+*********
+```
+
+##### Section 2
+
+Define a method called **PrintSquare(int size)** that prints a suitable square with the help of the printStars method. So the method call **PrintSquare(4)** results in the following output:
+
+```console
+****
+****
+****
+****
+```
+
+##### Section 3
+
+Write a method called PrintRectangle(int width, int height) that prints the correct rectangle by using the PrintStars method. So the method call PrintRectangle(17, 3) should produce the following output:
+
+```console
+***************** 
+***************** 
+*****************
+```
+
+##### Section 4
+
+Create a method called PrintTriangle(int size) that prints a triangle by using the PrintStars method. So the call PrintTriangle(4) should print the following:
+
+```console
+*
+**
+***
+****
+````
