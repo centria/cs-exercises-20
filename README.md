@@ -1082,3 +1082,33 @@ Output of the example:
 ```console
 14
 ```
+
+##### Exercise_51
+
+* Create the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
+
+```cs
+public static void Main(String[] args) {
+    PrintUntilNumber(5);
+}
+```
+
+```console
+1
+2
+3
+4
+5
+```
+
+```cs
+public static void Main(String[] args) {
+    PrintUntilNumber(3);
+}
+```
+
+```console
+1
+2
+3
+```
