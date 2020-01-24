@@ -1167,3 +1167,77 @@ public static void Main(String[] args)
 * Write a method **public static String Word()**. The method must return a string of your choice.
 
 #### Exercise_57
+
+* Expand the method **Sum**  in the exercise template so that it calculates and returns the sum of the numbers that are given as the parameters.
+Create the method using the following structure:
+
+```cs
+public static int Sum(int number1, int number2, int number3, int number4) 
+{
+  // write your code here
+  // remember to include return (at the end)!
+}
+
+public static void Main(String[] args) 
+{
+    int answer = Sum(4, 3, 6, 1);
+    Console.WriteLine("Sum: " + answer);
+}
+```
+Output of the example:
+
+```console
+Sum: 14
+```
+
+#### Exercise_58
+
+* Define a two-parameter method **Smallest** that returns the smaller of the two numbers passed to it as parameters.
+
+```cs
+public static int Smallest(int number1, int number2) 
+{
+  // write your code here
+  // do not print anything inside the method
+
+  // there must be a return command at the end
+}
+
+public static void Main(String[] args) 
+{
+  int answer =  Smallest(2, 7);
+  Console.WriteLine("Smallest: " + answer);
+}
+```
+
+The output of the program:
+
+```console
+Smallest: 2
+```
+
+#### Exercise_59
+
+* Define a three-parameter method **Greatest** that returns the smaller of the two numbers passed to it as parameters.
+
+```cs
+public static int Greatest(int number1, int number2) 
+{
+  // write your code here
+  // do not print anything inside the method
+
+  // there must be a return command at the end
+}
+
+public static void Main(String[] args) 
+{
+  int answer =  Greatest(2, 7, 3);
+  Console.WriteLine("Greatest: " + answer);
+}
+```
+
+The output of the program:
+
+```console
+Greatest: 7
+```
