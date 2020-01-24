@@ -161,13 +161,13 @@ Create a program which asks for an integer and tells the user if it is even or n
 ```console
 Give a number:
 > 2
-It is even
+It is even.
 ```
 
 ````console
 Give a number
 > 5
-It is odd
+It is odd.
 ````
 
 Hint: You might want to use the **%** operator to get the remainder after a division with 2.
