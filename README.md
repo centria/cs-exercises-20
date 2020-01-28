@@ -504,7 +504,7 @@ The larger number is 4!
 Give the first number!
 > 3
 Give the second number!
-> 2
+> 3
 They are equal!
 ```
 
