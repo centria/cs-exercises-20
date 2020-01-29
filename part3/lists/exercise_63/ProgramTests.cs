@@ -38,7 +38,7 @@ namespace ProgramTests
     }
 
     [Test]
-    public void TestExercise62Twice()
+    public void TestExercise63Twice()
     {
       using (StringWriter sw = new StringWriter())
       {

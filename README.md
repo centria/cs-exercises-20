@@ -1415,3 +1415,7 @@ Modify the program so that instead of the first value, the program prints the su
 > 0 
 7
 ```
+
+#### Exercise_64
+
+There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error ArgumentOutRangeException. The user should not have to give any inputs to the program (e.g. write something on the keyboard)
