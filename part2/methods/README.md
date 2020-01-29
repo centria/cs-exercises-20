@@ -158,7 +158,7 @@ public static void Main(String[] args)
 
 #### Exercise_56
 
-* Write a method **public static String Word()**. The method must return a string of your choice.
+* Write a method **public static string Word()**. The method must return a string of your choice.
 
 #### Exercise_57
 
