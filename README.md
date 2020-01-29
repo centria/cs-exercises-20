@@ -1374,3 +1374,44 @@ NOTICE! Heights shorter that 3 don't have work correctly!
 The exercise contains a base that asks the user for strings and adds them to a list. The program stops reading when the user enters an empty string. The program then prints the first element of the list.
 
 Your assignment is to modify the program so that instead of the first value, the third value on the list is printed. Remember that programmers start counting from zero! The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+Alex
+```
+
+```console
+> Emma 
+> Alex 
+> Mary
+>
+
+Mary
+```
+
+#### Exercise_63
+
+In the exercise template there is a program that reads integers from the user and adds them to a list. This ends when the user enters 0. The program then prints the first value on the list.
+
+Modify the program so that instead of the first value, the program prints the sum of the second and third numbers. The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all.
+
+```console
+> 1 
+> 3 
+> 5 
+> 7 
+> 0 
+8
+```
+
+```console
+> 2 
+> 3 
+> 4 
+> 0 
+7
+```
