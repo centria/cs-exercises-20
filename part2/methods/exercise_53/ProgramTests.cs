@@ -55,7 +55,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("0.75\n".Replace(",", "."), sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match for printing!");
+        Assert.AreEqual((Convert.ToDouble("0.75", System.Globalization.CultureInfo.InvariantCulture).ToString()+"\n").Replace(",", "."), sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires exact match for printing!");
       }
     }
 
@@ -77,7 +77,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("0.5\n".Replace(",", "."), sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires double for printing!");
+        Assert.AreEqual((Convert.ToDouble("0.5", System.Globalization.CultureInfo.InvariantCulture).ToString()+"\n").Replace(",", "."), sw.ToString().Replace("\r\n", "\n"), "Check your code! The test requires double for printing!");
       }
     }
 
