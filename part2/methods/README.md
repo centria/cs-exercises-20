@@ -212,10 +212,10 @@ Smallest: 2
 
 #### Exercise_59
 
-* Define a three-parameter method **Greatest** that returns the smaller of the two numbers passed to it as parameters.
+* Define a three-parameter method **Greatest** that returns the greatest of the three numbers passed to it as parameters.
 
 ```cs
-public static int Greatest(int number1, int number2) 
+public static int Greatest(int number1, int number2, int number3) 
 {
   // write your code here
   // do not print anything inside the method
