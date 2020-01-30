@@ -24,7 +24,7 @@ namespace ProgramTests
       string code = File.ReadAllText("../../../Program.cs");
       int count = Regex.Matches(code, "Console.WriteLine").Count;
 
-      Assert.AreEqual(2, count, "You were supposed to use WriteLine inside the method!");
+      Assert.AreEqual(1, count, "You were supposed to use WriteLine inside the method!");
     }
 
     [Test]
