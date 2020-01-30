@@ -236,6 +236,10 @@ The output of the program:
 Greatest: 7
 ```
 
+**NOTICE!** There has been an update to the template for exercises 60 and 61.  
+The template should include empty methods for the exercise.  
+IF YOU DO NOT GET THEM BY **GIT PULL**, JUST COPY THEM BY HAND!
+
 #### Exercise_60
 
 ##### Section 1
