@@ -132,7 +132,7 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison = "Give numbers:\nThx! Bye!\nSum: 22\nNumbers: 5\nAverage: 4.4\n";
+        string comparison = "Give numbers:\nThx! Bye!\nSum: 22\nNumbers: 5\nAverage: "+Convert.ToDouble("4.4", System.Globalization.CultureInfo.InvariantCulture).ToString()+"\n";
         StringAssert.Contains(comparison, sw.ToString().Replace("\r\n", "\n"), "Did you count the numbers?");
       }
     }
@@ -164,7 +164,7 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison = "Give numbers:\nThx! Bye!\nSum: 21\nNumbers: 4\nAverage: 5.25\nEven: 1\nOdd: 3\n";
+        string comparison = "Give numbers:\nThx! Bye!\nSum: 21\nNumbers: 4\nAverage: "+Convert.ToDouble("5.25", System.Globalization.CultureInfo.InvariantCulture).ToString()+"\nEven: 1\nOdd: 3\n";
         StringAssert.Contains(comparison, sw.ToString().Replace("\r\n", "\n"), "Did you count the numbers?");
       }
     }
