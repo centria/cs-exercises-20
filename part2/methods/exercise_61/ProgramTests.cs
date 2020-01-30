@@ -56,9 +56,8 @@ namespace ProgramTests
         // Redirect standard output to variable.
         Console.SetOut(sw);
 
-        Program.PrintStars(12);
         // Call student's code
-
+        Program.PrintStars(12);
 
         // Restore the original standard output.
         Console.SetOut(stdout);
@@ -114,7 +113,7 @@ namespace ProgramTests
       }
     }
 
-        [Test]
+    [Test]
     public void TestExerciseMethodCallChristmasTree()
     {
       using (StringWriter sw = new StringWriter())

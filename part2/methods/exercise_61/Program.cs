@@ -9,5 +9,24 @@ namespace exercise_61
 
     }
 
+    public static void PrintStars(int v)
+    {
+
+    }
+
+    public static void PrintSpaces(int v)
+    {
+
+    }
+
+    public static void PrintRightTriangle(int v)
+    {
+
+    }
+
+    public static void ChristmasTree(int v)
+    {
+
+    }
   }
 }
