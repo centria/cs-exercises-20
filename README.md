@@ -1017,7 +1017,7 @@ In these exercises we practice making and calling our own methods.
 
 #### Exercise_49
 
-* Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline.
+* Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline (use WriteLine and not just Write).
 
 ```cs
 public static void Main(string[] args)
