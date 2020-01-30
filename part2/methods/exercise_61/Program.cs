@@ -9,22 +9,22 @@ namespace exercise_61
 
     }
 
-    public static void PrintStars(int v)
+    public static void PrintStars(int number)
     {
 
     }
 
-    public static void PrintSpaces(int v)
+    public static void PrintSpaces(int number)
     {
 
     }
 
-    public static void PrintRightTriangle(int v)
+    public static void PrintRightTriangle(int size)
     {
 
     }
 
-    public static void ChristmasTree(int v)
+    public static void ChristmasTree(int height)
     {
 
     }
