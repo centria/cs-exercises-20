@@ -4,6 +4,12 @@ namespace exercise_60
 {
   class Program
   {
+        public static void Main(String[] args)
+    {
+
+    }
+
+
     public static void PrintStars(int number)
     {
       // you can print one star with the command
@@ -13,10 +19,19 @@ namespace exercise_60
       // Console.WriteLine("");
     }
 
-    public static void Main(String[] args)
+    public static void PrintSquare(int size)
     {
 
     }
 
+    public static void PrintRectangle(int width, int height)
+    {
+
+    }
+
+    public static void PrintTriangle(int size)
+    {
+
+    }
   }
 }
