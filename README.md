@@ -1454,3 +1454,36 @@ In total: 11
 ```
 
 Notice! Be sure to use the **Count property** of the list.
+
+The next exercises are meant for learning to use lists and indices. Even if you could complete the execises without a list, concentrate on training to use lists. The functionality in the exercises is to be implemented after reading the inputs.
+
+#### Exercise_66
+
+In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.
+
+Your task is to modify the method to print the last read value after it stops reading. Print the value that was read last from the list. Use the Count to help you. You do not have to take into consideration empty lists, you can assume that the user always gives at least one input.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+Mary
+```
+
+```console
+> Juno 
+> Elizabeth 
+> Mason 
+> Irene
+> Olivia
+> Liam
+> Ida
+> Christopher
+> Mark
+> Sylvester
+> Oscar
+>
+Oscar
+```
