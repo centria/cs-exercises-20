@@ -1423,3 +1423,34 @@ Modify the program so that instead of the first value, the program prints the su
 #### Exercise_64
 
 There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error ArgumentOutRangeException. The user should not have to give any inputs to the program (e.g. write something on the keyboard)
+
+#### Exercise_65
+
+In the exercise template is a program that reads input from the user. Modify its working so that when the program quits reading (with an empty line), the program prints the number of values on the list.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+In total: 4
+```
+
+```console
+> Juno 
+> Elizabeth 
+> Mason 
+> Irene
+> Olivia
+> Liam
+> Ida
+> Christopher
+> Mark
+> Sylvester
+> Oscar
+>
+In total: 11
+```
+
+Notice! Be sure to use the **Count property** of the list.
