@@ -1561,7 +1561,7 @@ Expand the program to ask for a start and end indices once it has finished askin
 > -1 
 From where?
 > 1
-To where?
+Where to?
 > 9 
 2 
 8
@@ -1575,7 +1575,7 @@ To where?
 > -1 
 From where?
 > 0 
-To where?
+Where to?
 > 20  
 2
 8

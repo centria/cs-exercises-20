@@ -17,7 +17,17 @@ namespace exercise_69
         }
         list.Add(input);
       }
-
+      Console.WriteLine("From where?");
+      int low = Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine("Where to?");
+      int high = Convert.ToInt32(Console.ReadLine());
+      foreach (int i in list)
+      {
+        if (low <= i && high >= i)
+        {
+          Console.WriteLine(i);
+        }
+      }
     }
   }
 }
