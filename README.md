@@ -1576,8 +1576,8 @@ To where?
 From where?
 > 0 
 To where?
-> 2 
-72 
-2 
+> 20  
+2
 8
+11 
 ```
