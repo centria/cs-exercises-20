@@ -1616,3 +1616,33 @@ for(int i = 0; i < list.Count; i++) {
 Console.WriteLine("The smallest number: " + smallest);
 ```
 
+#### Exercise_71
+
+The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.
+
+Expand the program that then asks the user for a number, and reports that number's index in the list. If the number is not found, the program should not print anything.
+
+```console
+> 72 
+> 2 
+> 8 
+> 8 
+> 11 
+> -1
+Search for? 
+> 2 
+2 is at index 1
+```
+
+```console
+> 72 
+> 2 
+> 8 
+> 8 
+> 11 
+> -1
+Search for? 
+> 8 
+8 is at index 2
+8 is at index 3
+```

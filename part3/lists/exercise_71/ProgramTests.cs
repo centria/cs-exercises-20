@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_69;
+using exercise_71;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
 
@@ -10,7 +10,7 @@ namespace ProgramTests
   public class TestProgram
   {
     [Test]
-    public void TestExercise69Once()
+    public void TestExercise71Once()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -25,8 +25,7 @@ namespace ProgramTests
                 "123",
                 "1",
                 "-1",
-                "2",
-                "15"
+                "12"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
@@ -36,12 +35,12 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("From where?\nWhere to?\n12\n", sw.ToString().Replace("\r\n", "\n"), "Remember to use print all the numbers from between!");
+        Assert.AreEqual("Search for?\n12 is at index 0\n", sw.ToString().Replace("\r\n", "\n"), "Did you really search the list?");
       }
     }
 
     [Test]
-    public void TestExercise69Twice()
+    public void TestExercise71Twice()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -56,13 +55,12 @@ namespace ProgramTests
                 "10",
                 "-2",
                 "3",
-                "34",
-                "-11",
+                "42",
+                "-111",
                 "11",
+                "3",
                 "12",
-                "-1",
-                "1",
-                "10"
+                "-1","3"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
@@ -72,12 +70,12 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        StringAssert.Contains("From where?\nWhere to?\n10\n3\n", sw.ToString().Replace("\r\n", "\n"), "Remember to print all the numbers from chosen area!");
+        StringAssert.Contains("Search for?\n3 is at index 4\n3 is at index 8\n", sw.ToString().Replace("\r\n", "\n"), "Multiple occurences mean multiple prints!");
       }
     }
 
     [Test]
-    public void TestExercise69Single()
+    public void TestExercise71Single()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -87,10 +85,12 @@ namespace ProgramTests
 
         var data = String.Join(Environment.NewLine, new[]
         {
+                "2",
+                "1",
+                "2",
+                "2",
                 "-1",
-                "0",
-                "0",
-                "\n"
+                "2"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
@@ -100,7 +100,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        StringAssert.Contains("From where?\nWhere to?\n", sw.ToString().Replace("\r\n", "\n"), "Empty list should not return any numbers!");
+        StringAssert.Contains("Search for?\n2 is at index 0\n2 is at index 2\n2 is at index 3\n", sw.ToString().Replace("\r\n", "\n"), "Remember to check the whole list!");
       }
     }
   }

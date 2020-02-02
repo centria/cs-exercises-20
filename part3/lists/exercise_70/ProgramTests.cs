@@ -34,7 +34,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("The greatest number: 345\n", sw.ToString().Replace("\r\n", "\n"), "Remember to use print all the numbers in the list!");
+        Assert.AreEqual("The greatest number: 345\n", sw.ToString().Replace("\r\n", "\n"), "Remember to find the greatest!!");
       }
     }
 
@@ -68,7 +68,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        StringAssert.Contains("The greatest number: 42\n", sw.ToString().Replace("\r\n", "\n"), "Remember to print all the numbers, except -1 !");
+        StringAssert.Contains("The greatest number: 42\n", sw.ToString().Replace("\r\n", "\n"), "Remember to check which is the greatest!");
       }
     }
 
@@ -94,7 +94,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        StringAssert.Contains("The greatest number: 2\n", sw.ToString().Replace("\r\n", "\n"), "Remember to use Count from the list!");
+        StringAssert.Contains("The greatest number: 2\n", sw.ToString().Replace("\r\n", "\n"), "Only one number, should be easy!");
       }
     }
   }
