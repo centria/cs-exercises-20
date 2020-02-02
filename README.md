@@ -1675,3 +1675,18 @@ Found at index: 3
 ```
 
 HINT: combine the programs you wrote for the exercises "Greatest number in the list" and "Index of the requested number". First find the smalleest number, and then find the index of that number.
+
+#### Exercise_73
+
+The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.
+
+Modify the program so that after reading the numbers it calculates and prints the sum of the numbers in the list.
+
+```console
+> 72
+> 2
+> 8
+> 11
+> -1
+Sum: 93
+```
