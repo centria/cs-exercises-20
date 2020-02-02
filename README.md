@@ -1562,7 +1562,7 @@ Expand the program to ask for a start and end indices once it has finished askin
 From where?
 > 1
 To where?
-> 2 
+> 9 
 2 
 8
 ```
