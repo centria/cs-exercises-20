@@ -2032,3 +2032,38 @@ if (!text.Contains("tin"))
 can was found 
 tin wasn't found
 ```
+
+#### Exercise_88
+
+Write a program, that reads user input until an empty line. For each non-empty line the program splits the string by spaces and prints the first part of the string.
+
+```console
+> one two three four 
+one 
+> this is a very important message 
+this
+>
+```
+
+#### Exercise_89
+
+Write a program, that reads user input until an empty line. For each non-empty line the program splits the string by spaces and prints the last part of the string.
+
+```console
+> one two three four 
+four 
+> this is a very important message 
+message
+>
+```
+
+Tip! You can find out the length of the array like this:
+
+```cs
+string[] parts = {"one", "two", "three"};
+Console.WriteLine("Number of parts: " + parts.Length);
+```
+
+```console
+Number of parts: 3
+```
