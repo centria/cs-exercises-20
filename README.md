@@ -1835,3 +1835,25 @@ Give two indices to swap:
 You can assume the array to contain the given indices.   
 
 Tip! You'll need an additional variable to store one of the values for little while.
+
+#### Exercise_79
+
+The exercise template has already an array containing numbers. Complete the program to ask the user for a number to search in the array. If the array contains the given number, the program tells the index containing the number. If the array doesn't contain the given number, the program will tell the number wasn't found.
+
+```console
+Search for? 
+> 3 
+3 is at index 4.
+```
+
+```console
+Search for? 
+> 7 
+7 is at index 7.
+```
+
+```console
+Search for? 
+> 22 
+22 was not found.
+```
