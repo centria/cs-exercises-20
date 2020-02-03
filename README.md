@@ -1925,3 +1925,18 @@ cakecakecake
 ```
 
 NOTICE! The program should ask for only one string. Don't use a loop here.
+
+#### Exercise_84
+
+Write a program that asks the user for a string. If the user writes the string "true", the program prints "You got it right!", otherwise it prints "Try again!".
+
+```console
+Give a string: true 
+You got it right!
+```
+
+
+```console
+Give a string: trueish 
+Try again!
+```
