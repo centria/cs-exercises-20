@@ -1940,3 +1940,40 @@ You got it right!
 Give a string: trueish 
 Try again!
 ```
+
+#### Exercise_85
+
+write a program that recognizes the following users:
+
+
+|username	|password|
+|--|--|
+|alex|	sunshine|
+|emma|	haskell|
+
+The program either shows a login message or informs of incorrect username or password.
+
+```console
+Enter username: 
+>alex 
+Enter password: 
+> sunshine 
+You have successfully logged in!
+```
+```console
+Enter username: 
+> emma 
+Enter password: 
+> haskell 
+You have successfully logged in!
+```
+
+```console
+Enter username: 
+> alex 
+Enter password: 
+> haskell 
+Incorrect username or password!
+```
+
+NOTICE! In read life login should not be implemented like this! This is just an exercise.
