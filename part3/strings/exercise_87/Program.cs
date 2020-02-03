@@ -7,13 +7,10 @@ namespace exercise_87
   {
     public static void Main(string[] args)
     {
-      while (true)
-      {
-
-        }
-      }
 
     }
+
   }
+
 }
 
