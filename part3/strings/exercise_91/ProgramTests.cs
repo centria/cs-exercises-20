@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using exercise_90;
+using exercise_91;
 using NUnit.Framework;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace ProgramTests
   public class TestProgram
   {
     [Test]
-    public void TestExercise90Example()
+    public void TestExercise91Example()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -34,13 +34,13 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison = "Age of the oldest: 10\n";
-        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the age!");
+        string comparison = "Name of the oldest: gabriel\n";
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the name!");
       }
     }
 
     [Test]
-    public void TestExercise90ExamplePlusOne()
+    public void TestExercise91ExamplePlusOne()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -63,13 +63,13 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison = "Age of the oldest: 11\n";
-        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the age!");
+        string comparison = "Name of the oldest: matt\n";
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the name!");
       }
     }
 
     [Test]
-    public void TestExercise90TwoOldest()
+    public void TestExercise91IndexTwoOldest()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -81,7 +81,7 @@ namespace ProgramTests
 
         var data = String.Join(Environment.NewLine, new[]
         {
-          "sebastian,2", "lucas,2", "lily,10", "hanna,5", "gabriel,10",
+          "sebastian,2", "lucas,2", "lily,12", "hanna,5", "gabriel,10",
           "\n"
           });
 
@@ -92,8 +92,8 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison = "Age of the oldest: 10\n";
-        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the age!");
+        string comparison = "Name of the oldest: lily\n";
+        Assert.AreEqual(comparison, sw.ToString().Replace("\r\n", "\n"), "Print only the name!");
       }
     }
 
