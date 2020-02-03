@@ -1977,3 +1977,22 @@ Incorrect username or password!
 ```
 
 NOTICE! In read life login should not be implemented like this! This is just an exercise.
+
+#### Exercise_86
+
+Write a program that reads strings from the user. If the input is empty, the program stops reading input and halts. For each non-empty input it splits the string input by whitespaces and prints each part of the string on a new line.
+
+```console
+> once upon a time 
+once 
+upon 
+a 
+time 
+> a little program 
+a 
+little 
+program 
+> halted 
+halted
+>
+```
