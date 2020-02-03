@@ -1873,3 +1873,20 @@ Console.WriteLine(sum);
 ```console
 15
 ```
+
+#### Exercise_81
+
+Complete the method **public static void PrintNeatly(int[] array)** in the template to make it print the numbers of the array it receives more neatly. There should be a whitespace and a comma between each number. don't put a comma after the last number.
+
+Print the numbers on one line using **Console.Write**.
+
+You can try out your printing with this example:
+
+```cs
+int[] array = {5, 1, 3, 4, 2};
+PrintNeatly(array);
+```
+
+```console
+5, 1, 3, 4, 2
+```
