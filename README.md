@@ -1857,3 +1857,19 @@ Search for?
 > 22 
 22 was not found.
 ```
+
+#### Exercise_80
+
+The template has a method **public static int SumOfNumbersInArray(int[] array)**. Complete the method so, that it computes and returns the sum of the numbers in the array it receives as parameter.
+
+You can try out the computation of the sum with this example:
+
+```cs
+int[] numbers = {5, 1, 3, 4, 2};
+int sum = SumOfNumbersInArray(numbers);
+Console.WriteLine(sum);
+```
+
+```console
+15
+```
