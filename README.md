@@ -1911,3 +1911,17 @@ PrintArrayInStars(array);
 ```
 
 The 0th element of the array is 5, so the first line has 5 stars. The next one has 1 etc.
+
+## Strings
+
+#### Exercise_83
+
+Write a program, that reads a string from the user and then prints it three times.
+
+```console
+Give a word: cake
+
+cakecakecake
+```
+
+NOTICE! The program should ask for only one string. Don't use a loop here.
