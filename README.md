@@ -2099,3 +2099,31 @@ After reading the program prints the name of the oldest person. You can assume, 
 >
 Name of the oldest: gabriel
 ```
+
+#### Exercise_92
+
+In this exercise you'll be asked for the length of the names. You can find out the length of a string with Length property:
+
+```cs
+string word = "equisterian";
+int length = word.Length;
+Console.WriteLine("The length of the word" + word + " is " + length);
+```
+
+```console
+The length of the word equisterian is 11
+```
+Write a program that reads names and birth years from the user until an empty line is entered. The name and birth year are separed by a comma.
+
+After that the program prints the longest name and the highest age. If multiple names are equally longest, you can print any of them. You can assume the user to enter at least one person, and the current year to be 2020.
+
+```console
+> sebastian,2017 
+> lucas,2017 
+> lily,2017 
+> hanna,2014 
+> gabriel,2009
+>
+Longest name: sebastian 
+Highest age: 11
+```
