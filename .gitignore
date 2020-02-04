@@ -3,7 +3,7 @@
 
 
 ## Ignore sandbox so you can fiddle what ever you want from now on.
-sandbox*
+sandbox/*
 
 
 ## Ignore Visual Studio temporary files, build results, and
