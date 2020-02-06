@@ -1,3 +1,7 @@
+## How to run exercises
+
+In the exercise folder, run the command **dotnet run** to run your program. To see if your program does what it's supposed to, run **dotnet test**. When all the tests pass, you have done the exercise as intended.
+
 ## How to return your exercises
 
 You return your exercises by pushing your answers to your personal repository.
@@ -13,7 +17,7 @@ The deadlines are every Sunday.
 | 5  | 23.02.2020 at 23:59| XX        |
 | 6  | 01.03.2020 at 23:59| XX        |
 
-The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.  
+The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.   
 
 Each section is counted separately, when calculating the total amount of exercises done. That is why they are calculated in the total of the table above.
 
