@@ -2210,3 +2210,5 @@ NOTICE! You have to give your dog **namespace exercise_95** for it to function!
 Create a class named **Room** (and file **Room.cs**). Add the variables **private string code** and **private int seats** to the class. Then create a constructor **public Room(string classCode, int numberOfSeats)** through which values are assigned to the instance variables.
 
 ![Room class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/roomclass.jpg)
+
+NOTICE! You have to give your room **namespace exercise_96** for it to function!
