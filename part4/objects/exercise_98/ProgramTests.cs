@@ -12,7 +12,7 @@ namespace ProgramTests
   {
 
     [Test]
-    public void TestFileWhistleExists()
+    public void TestFileProductExists()
     {
       Assert.IsTrue(File.Exists("../../../Product.cs"), "You haven't created the file yet");
     }
