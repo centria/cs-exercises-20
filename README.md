@@ -2136,6 +2136,10 @@ Highest age: 11
 
 ## Object Oriented Programming
 
+When creating own classes, make sure to include the correct **namespace** so you can reference it from your Program.cs file. We'll get to namespaces later. For now, whenever you create a new class, **use the folder name as the namespace**.
+
+You can test your own classes in the Main if you want to, but it is not necessary. It does, of course, help you understand your code, and the exercises might include some examples, how the classes should work.
+
 #### Exercise_93
 
 The exercise template comes with a ready-made class named Account. The Account object represents a bank account that has balance (i.e. one that has some amount of money in it). The accounts are used as follows:
@@ -2212,3 +2216,25 @@ Create a class named **Room** (and file **Room.cs**). Add the variables **privat
 ![Room class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/roomclass.jpg)
 
 NOTICE! You have to give your room **namespace exercise_96** for it to function!
+
+#### Exercise_97
+
+Create a class named **Whistle**. Add the variable **private string sound** to the class. After that, create the constructor **public Whistle(string whistleSound)**, which is used to create a new whistle that's given a sound. After that, create a method **public void Sound()** which prints out the sound (using Console.WriteLine).
+
+```cs
+Whistle duckWhistle = new Whistle("Kvaak");
+Whistle roosterWhistle = new Whistle("Peef");
+
+duckWhistle.Sound();
+roosterWhistle.Sound();
+duckWhistle.Sound();
+```
+
+```console
+Kvaak 
+Peef 
+Kvaak
+```
+
+
+
