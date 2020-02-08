@@ -2554,3 +2554,144 @@ Sum: 11
 Expand the program as follows:
 - When a number is added, **count** is increased by one
 - When a number is added, **sum** is increased by the number's value
+
+#### Exercise_106
+
+In this exercise series, a class called PaymentCard is created which aims to mimic a cafeteria's payment process.
+
+The template includes the **Program.cs** file. You have to create the **PaymentCard.cs** yourself.
+
+- Add a new class to the project called **PaymentCard** (by creating the file mentioned above).
+- Create the PaymentCard object's constructor, which is passed the opening balance of the card, and which then stores that balance in the object's internal variable. 
+- Write the ToString method, which will return the card's balance in the form **"The card has a balance of X euros"**.
+
+Here is the template for the PaymentCard:
+
+```cs
+namespace exercise_106
+{
+  public class PaymentCard
+  {
+    private double balance;
+
+    public PaymentCard(double openingBalance)
+    {
+      // write code here
+    }
+
+    public override string ToString()
+    {
+      // write code here
+    }
+  }
+}
+```
+The following main program tests the class:
+
+```cs
+public static void Main(string[] args)
+{
+  PaymentCard card = new PaymentCard(50);
+  Console.WriteLine(card);
+}
+```
+
+```console
+The card has a balance of 50 euros
+```
+
+#### Exercise_107
+
+Expand your answer from the exercise 106 by adding two methods:
+- Method **public void EatLunch()**
+- Method **public void DrinkCoffee()**
+
+The method **EatLunch** should decrease the card's balance by 10.60 euros. The method **DrinkCoffee** should decrease the card's balance by 2.0 euros.
+
+The following main program tests the class:
+
+```cs
+public static void Main(string[] args)
+{
+  PaymentCard card = new PaymentCard(50);
+  Console.WriteLine(card);
+
+  card.EatLunch();
+  Console.WriteLine(card);
+  
+  card.DrinkCoffee();
+  Console.WriteLine(card);
+}
+```
+
+```console
+The card has a balance of 50 euros
+The card has a balance of 39.4 euros
+The card has a balance of 37.4 euros
+```
+
+#### Exercise_108
+
+Expand your previous answers, so that when an item is bought the balance is checked. If there is not enough money to buy, the balance does not change.
+
+```cs
+public static void Main(string[] args)
+{
+  PaymentCard card = new PaymentCard(10);
+  Console.WriteLine(card);
+
+  card.EatLunch();
+  Console.WriteLine(card);
+  
+  card.DrinkCoffee();
+  Console.WriteLine(card);
+}
+```
+
+```console
+The card has a balance of 10 euros
+The card has a balance of 10 euros
+The card has a balance of 8 euros
+```
+
+Notice how EatLunch did not change the balance, as there was not enough money. DrinkCoffee still worked, as it should.
+
+#### Exercise_109
+
+Expand your previous answers, so that you can charge money on your card:
+
+```cs
+public void AddMoney(double amount) {
+    // write code here
+}
+```
+
+The purpose of the method is to increase the card's balance by the amount of money given as a parameter. However, the card's balance may not exceed 150 euros. As such, if the amount to be topped up exceeds this limit, the balance should, in any case, become exactly 150 euros.
+
+The following main program tests the class:
+
+```cs
+public static void Main(string[] args)
+{
+  PaymentCard card = new PaymentCard(100);
+  Console.WriteLine(card);
+
+  card.AddMoney(49.99);
+  Console.WriteLine(card);
+
+  card.AddMoney(10000.0);
+  Console.WriteLine(card);
+
+  card.AddMoney(-10);
+  Console.WriteLine(card);
+}
+```
+
+```console
+The card has a balance of 100 euros
+The card has a balance of 149.99 euros
+The card has a balance of 150 euros
+The card has a balance of 150 euros
+```
+
+Notice! You cannot add negative money!
