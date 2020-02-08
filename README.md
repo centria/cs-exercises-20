@@ -2695,3 +2695,7 @@ The card has a balance of 150 euros
 ```
 
 Notice! You cannot add negative money!
+
+## Objects in list
+
+#### Exercise_110
