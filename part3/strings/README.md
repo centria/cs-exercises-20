@@ -194,7 +194,7 @@ In this exercise you'll be asked for the length of the names. You can find out t
 ```cs
 string word = "equisterian";
 int length = word.Length;
-Console.WriteLine("The length of the word" + word + " is " + length);
+Console.WriteLine("The length of the word " + word + " is " + length);
 ```
 
 ```console
