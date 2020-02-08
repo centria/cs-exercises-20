@@ -2171,13 +2171,32 @@ The Account from the previous exercise class is also available in this exercise.
 
 Write a program that:
 
-Creates an account named "Heikki's account" with the balance 1000.0
-Creates an account named "Personal account" with the balance 0
-Withdraws 100.0 from Heikki's account
-Deposits 100.0 to its own personal account
-Prints account information (ToString) on both, first Heikki's, then Personal
+- Creates an account named "Heikki's account" with the balance 1000.0
+- Creates an account named "Personal account" with the balance 0
+- Withdraws 100.0 from Heikki's account
+- Deposits 100.0 to its own personal account
+- Prints account information (ToString) on both, first Heikki's, then Personal:
 
 ```console
 Heikki's account balance: 900
 Personal account balance: 100
 ```
+
+#### Exercise_95
+
+In this exercise, you'll practice creating a class.
+
+[**CHECK THIS MATERIAL FOR HELP**](https://centria.github.io/basic-coding/part4/1/#creating-a-new-class)
+
+Name the class **Dog** (and the file **Dog.cs**)
+
+You have now created a class called **Dog**. 
+Add the variables 
+- private string name,
+- private string breed and 
+- private int age   
+to the class. As a class diagram, the class looks like this:
+
+![Dog class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/dogclass.jpg)
+
+NOTICE! You have to give your dog **namespace exercise_95** for it to function!
