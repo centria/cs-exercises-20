@@ -2477,3 +2477,13 @@ My name is Bourne. Jason Bourne.
 ```
 
 Agent's ToString now returns an empty string. Fix it to introduce international agents in their proper form.
+
+#### Exercise_104
+
+Create a class **Multiplier** that has a:
+
+Constructor **public Multiplier(int number)**.
+Method **public int Multiply(int number)** which returns the value number passed to it multiplied by the number provided to the constructor.
+You also need to create an instance variable in this exercise.
+
+An example of the class in use:
