@@ -2163,6 +2163,10 @@ Write a program that
 - deposits 20.0 in it, 
 - and finally prints the balance. 
 
+```console
+120
+```
+
 NOTICE! Perform all the operations in this exact order.
 
 #### Exercise_94
@@ -2200,3 +2204,9 @@ to the class. As a class diagram, the class looks like this:
 ![Dog class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/dogclass.jpg)
 
 NOTICE! You have to give your dog **namespace exercise_95** for it to function!
+
+#### Exercise_96
+
+Create a class named **Room** (and file **Room.cs**). Add the variables **private string code** and **private int seats** to the class. Then create a constructor **public Room(string classCode, int numberOfSeats)** through which values are assigned to the instance variables.
+
+![Room class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/roomclass.jpg)
