@@ -2938,6 +2938,7 @@ However, the program is missing the functionality needed for reading the guest l
 
 Name of the file: guestlist.txt
 
+```console
 Enter names, an empty line quits. 
 > Chuck Norris 
 The name is not on the list. 
@@ -2949,22 +2950,23 @@ The name is on the list.
 The name is on the list.
 >
 Thank you!
+```
 
 NOTICE! The exercise template comes with two files, names.txt and other-names.txt, which have the following contents. Do not change the contents of the files!
 
 names.txt:
 
-ada 
-arto 
-leena 
-test
-heikki
-
+ada  
+arto  
+leena  
+test  
+heikki  
+   
 other-names.txt:
-
-leo 
-jarmo 
-alicia
-mike
-potato
-
+  
+leo   
+jarmo   
+alicia  
+mike  
+potato  
+  
