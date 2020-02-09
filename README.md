@@ -2709,11 +2709,43 @@ Having read all the names, print all the items by using the ToString method of t
 Example print:
 ```console
 Name: Hammer
-Name: MC
-Name: Master Blaster
+Name: Radio
+Name: Hot Potato
 Name: 
 
 Hammer (created at: 9.2.2020 13.48.16)
-MC (created at: 9.2.2020 13.48.18)
-Master Blaster (created at: 9.2.2020 13.48.21)
+Radio (created at: 9.2.2020 13.48.18)
+Hot Potato (created at: 9.2.2020 13.48.21)
 ```
+
+#### Exercise_111
+
+The program described here should be implemented in the class Main. Do not modify the class PersonalInformation.
+
+After the user has entered the last set of details (they enter an empty first name), exit the repeat statement. 
+
+Print one empty line here for reading clarity.
+
+Then print the collected personal information so that each entered object is printed in the following format: first and last names separated by a space (you don't print the identification number). An example of the working program is given below:
+
+```console
+First name: 
+> Jean 
+Last name: 
+> Bartik 
+Identification number: 
+> 271224 
+First name: 
+> Betty 
+Last name: 
+> Holberton 
+Identification number: 
+> 070317 
+First name:
+>
+
+Jean Bartik 
+Betty Holberton
+```
+
+You can (and should) ask the identification number as a string.
