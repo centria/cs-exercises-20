@@ -1,10 +1,18 @@
+## Where to begin
+
+Before you do this course, it is advised to do the course for command line and version control first: https://centria.github.io/console/. This gives you tools to learn how to create your own Git repository and how to use it.
+
+The course material for **this course** is at https://centria.github.io/basic-coding/. Do read the material before trying to do the exercises.
+
+To do the exercises, you need [Dotnet Core](https://dotnet.microsoft.com/download) and a decent editor, such as [Visual Studio Code](https://code.visualstudio.com/). You can use any editor, but the instructions are written with VSC in mind.
+
 ## How to run exercises
 
 In the exercise folder, run the command **dotnet run** to run your program. To see if your program does what it's supposed to, run **dotnet test**. When all the tests pass, you have done the exercise as intended.
 
 ## How to return your exercises
 
-You return your exercises by pushing your answers to your personal repository.
+You return your exercises by pushing your answers to your personal repository. The repository link is to be sent to the supervising teacher.
 
 The deadlines are every Sunday.
 
