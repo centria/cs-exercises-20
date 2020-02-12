@@ -106,7 +106,7 @@ Create a class **Product** that represents a store product. The product should h
 
 The class should have:
 
-- the constructor **public Product (string name, double price, int quantity)**
+- the constructor **public Product(string name, double price, int quantity)**
 - a method **public void PrintProduct()** that prints product information in the following format:
 
 ```console
