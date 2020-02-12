@@ -2532,7 +2532,7 @@ NOTICE! The value stored in the objects is changed during the first calls!
 The calculations are actually ( in order):  
 3 * 2 = 6  
 4 * 2 = 8  
-6 * 1 = 6
+6 * 1 = 6  
 8 * 1 = 8  
 8 * 3 = 24
 
