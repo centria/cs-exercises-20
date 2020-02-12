@@ -10,7 +10,7 @@ namespace ProgramTests
   public class TestProgram
   {
     [Test]
-    public void TestExercise114()
+    public void TestExercise115()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -39,13 +39,13 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("144\n121\n1\n", sw.ToString().Replace("\r\n", "\n"), "Remember to count the powers, but not the end!");
+        Assert.AreEqual("1728\n1331\n-1\n", sw.ToString().Replace("\r\n", "\n"), "Remember to count the powers, but not the end!");
       }
     }
 
 
     [Test]
-    public void TestExercise114JustTheEnd()
+    public void TestExercise115JustTheEnd()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -78,7 +78,7 @@ namespace ProgramTests
 
 
     [Test]
-    public void TestExercise114DifferentInputs()
+    public void TestExercise115DifferentInputs()
     {
       using (StringWriter sw = new StringWriter())
       {
@@ -108,7 +108,7 @@ namespace ProgramTests
         Console.SetOut(stdout);
 
         // Assert
-        Assert.AreEqual("121\n9\n12321\n169\n", sw.ToString().Replace("\r\n", "\n"), "End alone should print nothing!");
+        Assert.AreEqual("1331\n-27\n1367631\n2197\n", sw.ToString().Replace("\r\n", "\n"), "End alone should print nothing!");
       }
     }
 
