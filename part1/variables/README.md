@@ -42,13 +42,13 @@ You gave 42
 * Create a program, that asks the user for a double. After user input, the program will print the double. Example prints:
 
 ```console
-Give a number
+Give a number!
 > 11.11
 You gave 11.11
 ```
 
 ```console
-Give a number
+Give a number!
 > 41.999999
 You gave 41.999999
 ```
