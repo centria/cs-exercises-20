@@ -90,7 +90,7 @@ namespace ProgramTests
 
         // Restore the original standard output.
         Console.SetOut(stdout);
-        string comparison1 = "Name: Name: Name: Name: Name: \n";
+        string comparison1 = "Name: Name: Name: Name: Name:";
         StringAssert.Contains(comparison1, sw.ToString().Replace("\r\n", "\n"), "Are you asking the names with Console.Write as you should?");
 
         string comparison2 = "Mike (created at: ";
