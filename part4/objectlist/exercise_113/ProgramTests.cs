@@ -89,7 +89,7 @@ namespace ProgramTests
                 "60",
                 "1999",
                 "",
-                "name"
+                "title"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
@@ -124,7 +124,7 @@ namespace ProgramTests
                 "60",
                 "1999",
                 "",
-                "title"
+                "names"
                 });
 
         Console.SetIn(new System.IO.StringReader(data));
