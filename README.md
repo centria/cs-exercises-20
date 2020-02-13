@@ -2974,6 +2974,8 @@ Thank you!
 
 NOTICE! The exercise template comes with two files, names.txt and other-names.txt, which have the following contents. Do not change the contents of the files!
 
+NOTICE2! The exercise expects you to have a **string names** where you store the file!
+
 names.txt:
 
 ada  
