@@ -34,9 +34,9 @@ namespace ProgramTests
     }
 
     [Test]
-    public void TestTimerFileExists()
+    public void TestCubeFileExists()
     {
-      Assert.IsTrue(File.Exists("Cube.cs"), "The Timer.cs file is not yet created.");
+      Assert.IsTrue(File.Exists("Cube.cs"), "The Cube.cs file is not yet created.");
     }
 
 
@@ -54,7 +54,7 @@ namespace ProgramTests
       }
       Cube cube = new Cube(2);
 
-      Assert.AreEqual(cube.GetType(), typeof(Cube), "The program should return an integer!");
+      Assert.AreEqual(cube.GetType(), typeof(Cube), "The Cube should be a cube!");
     }
 
     [Test]

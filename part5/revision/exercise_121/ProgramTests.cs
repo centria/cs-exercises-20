@@ -36,7 +36,7 @@ namespace ProgramTests
     [Test]
     public void TestTimerFileExists()
     {
-      Assert.IsTrue(File.Exists("Fitbyte.cs"), "The Timer.cs file is not yet created.");
+      Assert.IsTrue(File.Exists("Fitbyte.cs"), "The Fitbyte.cs file is not yet created.");
     }
 
 
@@ -54,7 +54,7 @@ namespace ProgramTests
       }
       Fitbyte Fitbyte = new Fitbyte(20, 80);
 
-      Assert.AreEqual(Fitbyte.GetType(), typeof(Fitbyte), "The program should return an integer!");
+      Assert.AreEqual(Fitbyte.GetType(), typeof(Fitbyte), "The Fitbyte should be of Type Fitbyte!");
     }
 
 
