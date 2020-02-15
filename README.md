@@ -1434,7 +1434,7 @@ Modify the program so that instead of the first value, the program prints the su
 
 #### Exercise_64
 
-There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error ArgumentOutRangeException. The user should not have to give any inputs to the program (e.g. write something on the keyboard)
+There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error **ArgumentOutRangeException**. The user should not have to give any inputs to the program (e.g. write something on the keyboard)
 
 #### Exercise_65
 
@@ -3127,3 +3127,11 @@ And the following methods and properties:
 - **public void Decrease()** decreases the value by 1
 - **public void Increase(int increaseBy)** increases the value of the counter by the value of increaseBy. If the value of increaseBy is negative, the value of the counter does not change.
 - **public void Decrease(int decreaseBy)** decreases the value of the counter by the value of decreaseBy. If the value of decreaseBy is negative, the value of the counter does not change.
+
+## Objects and references
+
+#### Exercise_124
+
+Implement a program that causes the **NullReferenceException** error. The error should occur directly after starting the program -- don't wait to read input from the user, for instance.
+
+HINT! Change an object into null, and try to use it.
