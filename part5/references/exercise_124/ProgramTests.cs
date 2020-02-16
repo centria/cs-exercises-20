@@ -34,7 +34,7 @@ namespace ProgramTests
     }
 
     [Test]
-    public void TestExercise64Exception()
+    public void TestExerciseException()
     {
       using (StringWriter sw = new StringWriter())
       {
