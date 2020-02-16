@@ -3589,3 +3589,127 @@ After entering the items, each item is printed at most once. Two items should be
 If the user enters the same item multiple times, the print uses the item that was added first.
 
 Hint! It is probably smart to add each item to the list at most once -- compare the equality of the objects based on their identifiers.
+
+#### Exercise_132
+
+This exercise is worth 2.
+
+With the exercise base the class SimpleDate is supplied. The date is stored with the help of the object variables year, month, and day. There are some methods that need fulfilling:
+
+- **public void Advance()** advances the date by one day.  In this exercise we assume that each month has 30 day. Remember! In certain situations you need to change the values of month and year.
+- **public void Advance(int howManyDays)** advances the date by the amount of days. Use the method Advance() that you implemented to help you in this.
+- **public SimpleDate AfterNumberOfDays(int days)**  It creates a new SimpleDate object whose date is the specified number of days greater than the object that the method was called on. You may still assume that each month has 30 days. Notice that the old date object must remain unchanged!
+
+Since the last method must create a new object, the structure of the code should be somewhat similar to this:
+
+```cs
+SimpleDate newDate = new SimpleDate( ... );
+
+// Do something here
+
+return newDate;
+```
+
+The whole class template looks like this:
+
+```cs
+namespace exercise_132
+{
+  public class SimpleDate
+  {
+    private int day;
+    private int month;
+    private int year;
+
+    public SimpleDate(int day, int month, int year)
+    {
+      this.day = day;
+      this.month = month;
+      this.year = year;
+    }
+
+    public void Advance() {
+      // Do something here
+    }
+
+    public void Advance(int howManyDays) {
+      // Do something here
+    }
+
+    public SimpleDate AfterNumberOfDays(int days) {
+      SimpleDate newDate = new SimpleDate( ... );
+
+      // Do something here
+
+      return newDate;
+    }
+
+    
+    public override string ToString()
+    {
+      return this.day + "." + this.month + "." + this.year;
+    }
+
+    // used to check if this date object (`this`) is before
+    // the date object given as the parameter (`compared`)
+    public bool Before(SimpleDate compared)
+    {
+      // first compare years
+      if (this.year < compared.year)
+      {
+        return true;
+      }
+
+      // if the years are the same, compare months
+      if (this.year == compared.year && this.month < compared.month)
+      {
+        return true;
+      }
+
+      // the years and the months are the same, compare days
+      if (this.year == compared.year && this.month == compared.month &&
+          this.day < compared.day)
+      {
+        return true;
+      }
+
+      return false;
+    }
+  }
+}
+```
+
+Here's example use:
+```cs
+public static void Main(string[] args)
+{
+  SimpleDate date = new SimpleDate(13, 2, 2015);
+  Console.WriteLine("Friday of the examined week is " + date);
+
+  SimpleDate newDate = date.AfterNumberOfDays(7);
+  int week = 1;
+  while (week <= 7)
+  {
+    Console.WriteLine("Friday after " + week + " weeks is " + newDate);
+    newDate = newDate.AfterNumberOfDays(7);
+
+    week = week + 1;
+  }
+
+  Console.WriteLine("The date after 790 days from the examined Friday is ... try it out yourself!");
+  // Console.WriteLine("Try " + date.AfterNumberOfDays(790));
+
+}
+```
+
+```console
+Friday of the examined week is 13.2.2015
+Friday after 1 weeks is 20.2.2015
+Friday after 2 weeks is 27.2.2015
+Friday after 3 weeks is 4.3.2015
+Friday after 4 weeks is 11.3.2015
+Friday after 5 weeks is 18.3.2015
+Friday after 6 weeks is 25.3.2015
+Friday after 7 weeks is 2.4.2015
+The date after 790 days from the examined Friday is ... try it out yourself!
+```
