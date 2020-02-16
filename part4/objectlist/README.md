@@ -91,19 +91,19 @@ Example of how the program in Main should work:
 
 ```console
 
-Title: To Kill a Mockingbird 
+Name: To Kill a Mockingbird 
 Pages: 281 
 Publication year: 1960 
-Title: A Brief History of Time 
+Name: A Brief History of Time 
 Pages: 256 
 Publication year: 1988 
-Title: Beautiful Code 
+Name: Beautiful Code 
 Pages: 593 
 Publication year: 2007 
-Title: The Name of the Wind 
+Name: The Name of the Wind 
 Pages: 662 
 Publication year: 2007 
-Title:
+Name:
 
 What information will be printed? everything 
 To Kill a Mockingbird, 281 pages, 1960 
@@ -113,21 +113,21 @@ The Name of the Wind, 662 pages, 2007
 ```
 
 ```console
-Title: To Kill a Mockingbird 
+Name: To Kill a Mockingbird 
 Pages: 281 
 Publication year: 1960 
-Title: A Brief History of Time 
+Name: A Brief History of Time 
 Pages: 256 
 Publication year: 1988 
-Title: Beautiful Code 
+Name: Beautiful Code 
 Pages: 593 
 Publication year: 2007 
-Title: The Name of the Wind 
+Name: The Name of the Wind 
 Pages: 662 
 Publication year: 2007 
-Title:
+Name:
 
-What information will be printed? name 
+What information will be printed? title 
 To Kill a Mockingbird 
 A Brief History of Time 
 Beautiful Code 
