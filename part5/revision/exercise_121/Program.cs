@@ -6,13 +6,15 @@ namespace exercise_121
   {
     public static void Main(string[] args)
     {
-      Product tapeMeasure = new Product("Tape measure");
-      Product plaster = new Product("Plaster", "home improvement section");
-      Product tyre = new Product("Tyre", 5);
+      Fitbyte assistant = new Fitbyte(30, 60);
+      double percentage = 0.5;
 
-      Console.WriteLine(tapeMeasure);
-      Console.WriteLine(plaster);
-      Console.WriteLine(tyre);
+      while (percentage < 1.0)
+      {
+        double target = assistant.TargetHeartRate(percentage);
+        Console.WriteLine("Target " + (percentage * 100) + "% of maximum: " + target);
+        percentage = percentage + 0.1;
+      }
     }
   }
 }
