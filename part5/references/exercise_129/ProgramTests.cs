@@ -35,7 +35,7 @@ namespace ProgramTests
     }
 
     [Test]
-    public void TestApartmentExists()
+    public void TestSongExists()
     {
       Assert.IsTrue(File.Exists("Song.cs"), "Do not remove the Song.cs");
     }
