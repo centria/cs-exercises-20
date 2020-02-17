@@ -123,7 +123,7 @@ namespace ProgramTests
         Console.WriteLine("Your file is not there yet!");
       }
       Cube cube = new Cube(4);
-      Assert.AreEqual("The length of the edge is " + 4 + " and the volume " + 64, cube.ToString(), "100 advance should advance the time by one second.");
+      Assert.AreEqual("The length of the edge is " + 4 + " and the volume " + 64, cube.ToString(), "The ToString should contain both edgeLength and volume (in the form given in the exercise).");
     }
 
   }
