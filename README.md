@@ -23,7 +23,9 @@ The deadlines are every Sunday.
 | 3  | 09.02.2020 at 23:59| 31        |
 | 4  | 16.02.2020 at 23:59| 29        |
 | 5  | 01.03.2020 at 23:59| 22        |
-| 6  | 01.03.2020 at 23:59| XX        |
+| 6  | 08.03.2020 at 23:59| XX        |
+
+NOTICE! Ther has been extension to deadlines 5 and 6.
 
 The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.   
 
