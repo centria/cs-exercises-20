@@ -42,10 +42,10 @@ namespace exercise_133
       return false;
     }
 
-    public string toString()
+    public override string ToString()
     {
       string zero = "";
-      if (cents <= 10)
+      if (cents < 10)
       {
         zero = "0";
       }
