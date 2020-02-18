@@ -3497,7 +3497,7 @@ True
 
 #### Exercise_129
 
-In the exercise base there is a class called **Song** that can be used to create new objects that represent songs. Add to that class the equals method so that the similarity of songs can be examined.
+In the exercise base there is a class called **Song** that can be used to create new objects that represent songs. Add to that class the **Equals** method so that the similarity of songs can be examined.
 
 You can try your code with this:
 
@@ -3557,23 +3557,23 @@ For each item, its identifier and name should be read. If the identifier or name
 Example print:
 
 ```console
-Identifier? (empty will stop)
+Identifier? (empty will stop):
 > B07H8ND8HH 
-Name? (empty will stop)
+Name? (empty will stop):
 > He-Man figure
-Identifier? (empty will stop)
+Identifier? (empty will stop):
 > B07H8ND8HH 
-Name? (empty will stop)
+Name? (empty will stop):
 > He-Man 
-Identifier? (empty will stop)
+Identifier? (empty will stop):
 > B07NQFMZYG 
-Name? (empty will stop)
+Name? (empty will stop):
 > He-Man figure 
-Identifier? (empty will stop)
+Identifier? (empty will stop):
 > B07NQFMZYG 
-Name? (empty will stop) 
+Name? (empty will stop):
 > He-Man figure
-Identifier? (empty will stop)
+Identifier? (empty will stop):
 >
 
 ==Items== 
