@@ -108,6 +108,9 @@ namespace exercise_126
     }
   }
 }
+```
+
+You can use this Main class to test:
 
 ```cs
 static void Main(string[] args)
