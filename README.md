@@ -3241,6 +3241,24 @@ namespace exercise_126
   }
 }
 ```
+
+```cs
+static void Main(string[] args)
+{
+  PaymentCard petesCard = new PaymentCard(10);
+
+  Console.WriteLine("money " + petesCard.balance);
+  bool wasSuccessful = petesCard.takeMoney(8);
+  Console.WriteLine("successfully withdrew: " + wasSuccessful);
+  Console.WriteLine("money " + petesCard.balance);
+
+  wasSuccessful = petesCard.takeMoney(4);
+  Console.WriteLine("successfully withdrew: " + wasSuccessful);
+  Console.WriteLine("money " + petesCard.balance);
+
+}
+```
+
 Should print like this:
 
 ```console
