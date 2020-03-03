@@ -23,7 +23,7 @@ The deadlines are every Sunday.
 | 3  | 09.02.2020 at 23:59| 31        |
 | 4  | 16.02.2020 at 23:59| 29        |
 | 5  | 01.03.2020 at 23:59| 22        |
-| 6  | 08.03.2020 at 23:59| 07        |
+| 6  | 08.03.2020 at 23:59| XX        |
 
 NOTICE! Ther has been extension to deadlines 5 and 6.
 
