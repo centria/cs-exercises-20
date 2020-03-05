@@ -4055,7 +4055,7 @@ manager.AddJoke("What is blue and smells of red paint? - Blue paint.");
 Console.WriteLine("Drawing jokes:");
 for (int i = 0; i < 5; i++)
 {
-  Console.WriteLine(manager.DrawJokes());
+  Console.WriteLine(manager.DrawJoke());
 }
 
 Console.WriteLine("");
