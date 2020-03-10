@@ -4055,7 +4055,7 @@ manager.AddJoke("What is blue and smells of red paint? - Blue paint.");
 Console.WriteLine("Drawing jokes:");
 for (int i = 0; i < 5; i++)
 {
-  Console.WriteLine(manager.DrawJokes());
+  Console.WriteLine(manager.DrawJoke());
 }
 
 Console.WriteLine("");
@@ -4126,7 +4126,7 @@ Commands:
 
 #### Exercise_136
 
-Our template has the **Person** class and some use for it in Main. Create a **public static void HowManyNames(Person person)** for the Main Program, which prints the name and the amount of names as follows:
+Our template has the **Person** class and some use for it in Main. Create a **public static void HowManyNames(Person person)** for the **Main Program**, which prints the name and the amount of names as follows:
 
 ```cs
 public static void Main(string[] args)
@@ -4151,7 +4151,7 @@ NOTICE! The **Console.WriteLine** is called from inside the method this time!
 
 #### Exercise_137
 
-Our template has the **Person class** and some use for it in Main. Create a **public int HowManyNames()** in the **Person class**, which returns the amount of names a person has like follows:
+Our template has the **Person class** and some use for it in Main. Create a **public int HowManyNames()** in the **Person class**, which returns the amount of names a person has, like follows:
 
 ```cs
 public static void Main(string[] args)
