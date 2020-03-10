@@ -4080,7 +4080,7 @@ What is blue and smells of red paint? - Blue paint.
 
 ##### Section 2 - User Interface
 
-Create a class called **UserInterface** and move the UI functionality of the program theres. The class must have a constructor with one parameter: an instance of the JokeManager class. In addition, the class should have the method **public void Start()** that can be used to start the user interface.
+Create a class called **UserInterface** and move the UI functionality of the program there. The class must have a constructor with one parameter: an instance of the JokeManager class. In addition, the class should have the method **public void Start()** that can be used to start the user interface.
 
 The user interface should provide the user with the following commands:
 
