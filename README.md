@@ -4226,3 +4226,39 @@ and so on
 more precisely
 not found
 ```
+
+#### Exercise_!40
+
+Exercise template contains a class Program. Implement the following class methods in the class:
+
+* **public static void PrintKeys(Dictionary<string,string> dict)**, prints all the keys in the dictionary given as a parameter.
+* **public static void PrintKeysWhere(Dictionary<string,string> dict, string text)** prints the keys in the dictionary given as a parameter, which contain the string given as a parameter.
+* **public static void PrintValuesOfKeysWhere(Dictionary<string,string> dict, string text)**, prints the values in the given dictionary whichs keys contain the given string.
+
+Example of using the class methods:
+
+```cs
+Dictionary<string,string> dict = new Dictionary<string, string>();
+dict.Add("f.e", "for example");
+dict.Add("etc.", "and so on");
+dict.Add("i.e", "more precisely");
+
+PrintKeys(dict);
+Console.WriteLine("---");
+PrintKeysWhere(dict, "i");
+Console.WriteLine("---");
+PrintValuesOfKeysWhere(dict, ".e");
+```
+
+```console
+f.e 
+etc. 
+i.e 
+--- 
+i.e 
+--- 
+for example 
+more precisely
+```
+
+NOTICE! The order of the output can vary, as the dictionary does not guarantee the order of the objects in it.
