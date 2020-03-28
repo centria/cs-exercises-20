@@ -1095,7 +1095,7 @@ From here on out, when introducing methods, we might not explicitly mention they
 * Create the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   PrintUntilNumber(5);
 }
@@ -1110,7 +1110,7 @@ public static void Main(String[] args)
 ```
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   PrintUntilNumber(3);
 }
@@ -1127,7 +1127,7 @@ public static void Main(String[] args)
 * Create the following method in the exercise template: **public static void PrintFromNumberToOne(int number)**. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   PrintFromNumberToOne(5);
 }
@@ -1142,7 +1142,7 @@ public static void Main(String[] args)
 ```
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   PrintFromNumberToOne(2);
 }
@@ -1162,7 +1162,7 @@ public static void Main(String[] args)
 * Write a method **public static void DivisibleByThreeInRange(int beginning, int end)** that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest.
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   DivisibleByThreeInRange(3, 6);
 }
@@ -1174,7 +1174,7 @@ public static void Main(String[] args)
 ```
 
 ```cs
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   DivisibleByThreeInRange(2, 10);
 }
@@ -1206,7 +1206,7 @@ public static int Sum(int number1, int number2, int number3, int number4)
   // remember to include return (at the end)!
 }
 
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
     int answer = Sum(4, 3, 6, 1);
     Console.WriteLine("Sum: " + answer);
@@ -1231,7 +1231,7 @@ public static int Smallest(int number1, int number2)
   // there must be a return command at the end
 }
 
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   int answer =  Smallest(2, 7);
   Console.WriteLine("Smallest: " + answer);
@@ -1257,7 +1257,7 @@ public static int Greatest(int number1, int number2, int number3)
   // there must be a return command at the end
 }
 
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   int answer =  Greatest(2, 7, 3);
   Console.WriteLine("Greatest: " + answer);
@@ -1292,7 +1292,7 @@ public static void PrintStars(int number)
   // Console.WriteLine("");
 }
 
-public static void Main(String[] args) 
+public static void Main(string[] args) 
 {
   PrintStars(5);
   PrintStars(3);
@@ -4174,6 +4174,10 @@ public static void Main(string[] args)
 }
 ```
 
+# Part 7 
+
+There are no exercises for Part 7 this time.
+
 # Part 8
 
 #### Exercise_138
@@ -4189,3 +4193,36 @@ arthur's nickname is artie
 ```
 
 Use a foreach-loop to print over KeyValuePair for the printing.
+
+#### Exercise_139
+
+Fill in the class **Abbreviations** for managing common abbreviations. The class must have a constructor, which does not take any parameters. The class must also provide the following methods:
+
+* **public void AddAbbreviation(string abbreviation, string explanation)** adds a new abbreviation and its explanation. You can use the **.Add** method for the dictionary and assume we never add the same abbrevation twice.
+* **public bool HasAbbreviation(string abbreviation)** checks if an abbreviation has already been added; returns true if it has and false if it has not.
+* **public string FindExplanationFor(string abbreviation)** finds the explanation for an abbreviation; returns "not found" if the abbreviation has not been added yet.
+
+HINT! Use HasAbbreviation in your FindExplanationFor to avoid errors!
+
+Example:
+
+```cs
+Abbreviations abbreviations = new Abbreviations();
+abbreviations.AddAbbreviation("e.g", "for example");
+abbreviations.AddAbbreviation("etc.", "and so on");
+abbreviations.AddAbbreviation("i.e", "more precisely");
+
+string text = "e.g i.e etc. lol";
+
+foreach (string part in text.Split(" "))
+{
+  Console.WriteLine(abbreviations.FindExplanationFor(part));
+}
+```
+
+```console
+for example
+and so on
+more precisely
+not found
+```
