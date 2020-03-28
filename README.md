@@ -4299,7 +4299,7 @@ NOTICE! The order of the output can vary, as the dictionary does not guarantee t
 Create a class called **IOU** which has the following methods:
 
 * constructor **public IOU()** creates a new IOU
-* **public void ChangeDebt(string toWhom, int amount)** saves the amount owed and the person owed to to the IOU.
+* **public void ChangeDebt(string toWhom, int amount)** saves the amount owed and the person owed to to the IOU. You can use this to also lower the debt, but the total amount cannot be negative!
 * **public int HowMuchDoIOweTo(string toWhom)** returns the amount owed to the person whose name is given as a parameter. If the person cannot be found, it returns 0.
 
 The class can be used like this:
