@@ -97,5 +97,16 @@ namespace ExerciseTest
         Assert.AreEqual("ja niin edelleen", abbs.FindExplanationFor("jne"), "FindExplanation should find the explanation!");
       }
     }
+
+
+    [Test]
+    public void TestAbbreviationsClassDoNotFindUnexisting()
+    {
+      {
+        Abbreviations abbs = new Abbreviations();
+        // Assert
+        Assert.AreEqual("not found", abbs.FindExplanationFor("jne"), "FindExplanation should return 'not found' if the abbreviation does not exist!");
+      }
+    }
   }
 }
