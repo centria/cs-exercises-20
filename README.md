@@ -4173,3 +4173,19 @@ public static void Main(string[] args)
   Console.WriteLine(mike + " has " mike.HowManyNames() + " names.");
 }
 ```
+
+# Part 8
+
+#### Exercise_138
+
+In the Main-method create a new Dictionary\< string , string \> object. Store the names and nicknames of the following example in this dictionary so, that the name is the key and the nickname is the value.
+
+Then get the names from the dictionary, and print the following:
+
+```console
+matthew's nickname is matt
+michael's nickname is mix
+arthur's nickname is artie
+```
+
+Use a foreach-loop to print over KeyValuePair for the printing.
