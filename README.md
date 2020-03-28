@@ -4227,7 +4227,7 @@ more precisely
 not found
 ```
 
-#### Exercise_!40
+#### Exercise_140
 
 Exercise template contains a class Program. Implement the following class methods in the class:
 
@@ -4259,6 +4259,37 @@ i.e
 --- 
 for example 
 more precisely
+```
+
+NOTICE! The order of the output can vary, as the dictionary does not guarantee the order of the objects in it.
+
+#### Exercise_141
+
+The exercise template contains the already familiar classes Book and Program. In the class Program implement the following class methods:
+
+* **public static void PrintValues(Dictionary\< string, Book \> dictionary)**, which prints all the values in the dictionary given as a parameter using the **ToString** method of the Book objects.
+* **public static void PrintValueIfNameContains(Dictionary\< string, Book \> dictionary, string text)**, which prints only the Books in the given dictionary whose name contains the given string. You can find out the name of a Book with the property **name**.
+
+```cs
+Dictionary<string, Book> books = new Dictionary<string, Book>();
+Book senseAndSensibility = new Book("Sense and Sensibility", 1811, "...");
+Book prideAndPrejudice = new Book("Pride and Prejudice", 1813, "....");
+books.Add(senseAndSensibility.name, senseAndSensibility);
+books.Add(prideAndPrejudice.name, prideAndPrejudice);
+
+PrintValues(books);
+Console.WriteLine("-- -- -- --");
+PrintValueIfNameContains(books, "prejud");
+```
+
+```console
+Name: Sense and Sensibility (1811)
+Content: ...
+Name: Pride and Prejudice (1813)
+Content: ....
+-- -- -- --
+Name: Pride and Prejudice (1813)
+Content: ....
 ```
 
 NOTICE! The order of the output can vary, as the dictionary does not guarantee the order of the objects in it.
