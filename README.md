@@ -14,7 +14,7 @@ In the exercise folder, run the command **dotnet run** to run your program. To s
 
 You return your exercises by pushing your answers to your personal repository. The repository link is to be sent to the supervising teacher.
 
-The deadlines are every Sunday.
+The deadlines are on Sundays.
 
 |Part| Deadline           | Exercises and sections total|
 |:--:|:------------------:|:----------|
@@ -25,7 +25,15 @@ The deadlines are every Sunday.
 | 5  | 01.03.2020 at 23:59| 22        |
 | 6  | 08.03.2020 at 23:59| 09        |
 
-NOTICE! Ther has been extension to deadlines 5 and 6.
+|Part | Deadline           | Exercises and sections total|
+|:---:|:------------------:|:----------|
+| 7   | 05.04.2020 at 23:59| 00        |
+| 8   | 12.04.2020 at 23:59| XX        |
+| 9   | 19.04.2020 at 23:59| XX        |
+| 10  | 26.04.2020 at 23:59| XX        |
+| 11  | 03.05.2020 at 23:59| XX        |
+| 12  | 10.05.2020 at 23:59| XX        |
+
 
 The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.   
 
