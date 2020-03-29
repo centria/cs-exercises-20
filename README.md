@@ -4456,4 +4456,40 @@ Implement the class **VehicleRegistry**, which has the following methods:
 
 * **public void PrintOwners()** prints the owners of the cars in the registry. Each name should only be printed once, even if a particular person owns more than one car.
 
-HINT! Use a **Dictionary\<string, List\<LicensePlate\>\> owners** (or something similar) to store a list of license plates for each owner.
+Now the program should work something like this:
+
+```cs
+LicensePlate li1 = new LicensePlate("FI", "ABC-123");
+LicensePlate li2 = new LicensePlate("FI", "UXE-465");
+LicensePlate li3 = new LicensePlate("D", "B WQ-431");
+LicensePlate li4 = new LicensePlate("D", "B WQ-432");
+LicensePlate li5 = new LicensePlate("D", "B WQ-433");
+
+VehicleRegistry register = new VehicleRegistry();
+
+register.Add(li1, "Arto");
+register.Add(li2, "Arto");
+register.Add(li3, "Jürgen");
+register.Add(li4, "Jürgen");
+register.Add(li5, "Jürgen");
+
+Console.WriteLine("Plates:");
+register.PrintLicensePlates();
+
+Console.WriteLine("Owners:");
+register.PrintOwners();
+```
+
+```console
+Plates:
+FI ABC-123
+FI UXE-465
+D B WQ-431
+D B WQ-432
+D B WQ-433
+Owners:
+Arto
+Jürgen
+```
+
+HINT! In the printOwners method, you can create a list used for remembering the owners that were already printed. If an owner is not on the their name is printed and they are added to the list -- if an owner is on the list their name isn't printed.
