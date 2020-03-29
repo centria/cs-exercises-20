@@ -4351,6 +4351,8 @@ Console.WriteLine(mattsIOU.HowMuchDoIOweTo("Arthur"));
 
 #### Exercise_143
 
+This exercise is worth 2.
+
 The exercise template contains a class **SimpleDate**, which defines a date object based on a given day, month, and year. In this exercise you will expand the SimpleDate class with an equals method, which can tell if the dates are exactly the same.
 
 * Create a method **public override bool Equals(object compared)** for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.

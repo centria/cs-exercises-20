@@ -13,12 +13,6 @@ namespace Exercise
       this.year = year;
     }
 
-    public void Advance()
-    {
-      // Do something here
-
-    }
-
     public override string ToString()
     {
       return this.day + "." + this.month + "." + this.year;
