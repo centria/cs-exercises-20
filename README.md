@@ -4351,8 +4351,6 @@ Console.WriteLine(mattsIOU.HowMuchDoIOweTo("Arthur"));
 
 #### Exercise_143
 
-This exercise is worth 2.
-
 The exercise template contains a class **SimpleDate**, which defines a date object based on a given day, month, and year. In this exercise you will expand the SimpleDate class with an equals method, which can tell if the dates are exactly the same.
 
 * Create a method **public override bool Equals(object compared)** for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.
@@ -4439,3 +4437,23 @@ Owners:
 Arto
 Jürgen
 ```
+
+#### Exercise_145
+
+Expand on the previous exercise. 
+
+* Copy your answer for the LicensePlate-class to this exercise's template.
+
+Implement the class **VehicleRegistry**, which has the following methods:
+
+* **public bool Add(LicensePlate licensePlate, string owner)** assigns the owner it received as a parameter to car corresponding with the license plate received as a parameter. If the license plate didn't have an owner returns **true**. If the license already had an owner attached, the method returns **false and does nothing**.
+
+* **public string Get(LicensePlate licensePlate)** returns the owner of the car corresponding to the license plate received as a parameter. If the car isn't in the registry, returns an error message (of your choice).
+
+* **public bool Remove(LicensePlate licensePlate)** removes the license plate and attached data from the registry. Returns **true** if removed successfully and **false** if the license plate wasn't in the registry.
+
+* **public void PrintLicensePlates()** prints the license plates in the registry.
+
+* **public void PrintOwners()** prints the owners of the cars in the registry. Each name should only be printed once, even if a particular person owns more than one car.
+
+HINT! Use a **Dictionary\<string, List\<LicensePlate\>\> owners** (or something similar) to store a list of license plates for each owner.
