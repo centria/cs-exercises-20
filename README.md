@@ -4357,7 +4357,7 @@ The exercise template contains a class **SimpleDate**, which defines a date obje
 
 * Create a method **public override bool Equals(object compared)** for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.
 
-Create a method **public override int GetHashCode()** for the SimpleDate class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100.
+Create a method **public override int GetGetHashCode()** for the SimpleDate class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100.
 
 The Equals should work as follows:
 
@@ -4372,4 +4372,61 @@ Console.WriteLine(d.Equals(new SimpleDate(1, 2, 2000)));
 false
 false
 true
+```
+
+#### Exercise_144
+
+European license plates have to parts, a two letter country code and a nationally unique license number. The license number is made up of numbers and characters. License plates are represented by the following class:
+
+```cs
+public class LicensePlate
+{
+  private string liNumber;
+  private string country;
+
+  public LicensePlate(String country, String liNumber)
+  {
+    this.liNumber = liNumber;
+    this.country = country;
+  }
+
+
+  public override string ToString()
+  {
+    return country + " " + liNumber;
+  }
+}
+```
+
+We want to be able to save the license plates in e.g Lists and to use them as keys in a Dictionary. Which, as explained above, means that the **Equals** and **GetHashCode** methods need to be overwritten, or they won't work as intended. Implement the methods Equals and GetHashCode for the LicensePlate class.
+
+Example program:
+
+```cs
+LicensePlate li1 = new LicensePlate("FI", "ABC-123");
+LicensePlate li2 = new LicensePlate("FI", "UXE-465");
+LicensePlate li3 = new LicensePlate("D", "B WQ-431");
+
+List<LicensePlate> finnishPlates = new List<LicensePlate>();
+finnishPlates.Add(li1);
+finnishPlates.Add(li2);
+
+LicensePlate newLi = new LicensePlate("FI", "ABC-123");
+if (!finnishPlates.Contains(newLi))
+{
+  finnishPlates.Add(newLi);
+}
+Console.WriteLine("Finnish: ");
+foreach (LicensePlate plate in finnishPlates)
+{
+  Console.WriteLine(plate);
+}
+
+Dictionary<LicensePlate, string> owners = new Dictionary<LicensePlate, string>();
+owners.Add(li1, "Arto");
+owners.Add(li3, "Jürgen");
+
+Console.WriteLine("Owners:");
+Console.WriteLine(owners[new LicensePlate("FI", "ABC-123")]);
+Console.WriteLine(owners[new LicensePlate("D", "B WQ-431")]);
 ```
