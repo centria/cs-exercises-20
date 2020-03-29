@@ -4430,3 +4430,12 @@ Console.WriteLine("Owners:");
 Console.WriteLine(owners[new LicensePlate("FI", "ABC-123")]);
 Console.WriteLine(owners[new LicensePlate("D", "B WQ-431")]);
 ```
+
+```console
+Finnish: 
+FI ABC-123
+FI UXE-465
+Owners:
+Arto
+Jürgen
+```
