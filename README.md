@@ -10,11 +10,15 @@ To do the exercises, you need [Dotnet Core](https://dotnet.microsoft.com/downloa
 
 In the exercise folder, run the command **dotnet run** to run your program. To see if your program does what it's supposed to, run **dotnet test**. When all the tests pass, you have done the exercise as intended.
 
+In parts 7 and up, the commands need to be run in the project folders, or with parameters. You can read more about this from the material Part 7.
+
 ## How to return your exercises
 
 You return your exercises by pushing your answers to your personal repository. The repository link is to be sent to the supervising teacher.
 
 The deadlines are on Sundays.
+
+### Basics in Programming
 
 |Part| Deadline           | Exercises and sections total|
 |:--:|:------------------:|:----------|
@@ -25,10 +29,12 @@ The deadlines are on Sundays.
 | 5  | 01.03.2020 at 23:59| 22        |
 | 6  | 08.03.2020 at 23:59| 09        |
 
+### Object Oriented Programming
+
 |Part | Deadline           | Exercises and sections total|
 |:---:|:------------------:|:----------|
 | 7   | 05.04.2020 at 23:59| 00        |
-| 8   | 12.04.2020 at 23:59| XX        |
+| 8   | 12.04.2020 at 23:59| 10        |
 | 9   | 19.04.2020 at 23:59| XX        |
 | 10  | 26.04.2020 at 23:59| XX        |
 | 11  | 03.05.2020 at 23:59| XX        |
@@ -4540,3 +4546,74 @@ valehdella
 ```
 
 #### Exercise_147
+
+Your task is creating a class called **StorageFacility** that can be used to keep track of storage units and their contents. The class is to implement the following methods:
+
+* **public void Add(string unit, string item)** adds the parameter item to the storage unit that is also given as a parameter.
+
+* **public List\<string\> Contents(string storageUnit)** returns a list that contains all the items in the storage unit indicated by the parameter. If there is no such storage unit or it contains no items, the method should return an empty list.
+
+* **public void Remove(string storageUnit, string item)**  removes the given item from the given storage unit. 
+
+NOTICE! Only removes one item -- if there are several items with the same name, the rest still remain. If the storage unit would be empty after the removal, the method also removes the unit.
+
+* **public List\<string\> StorageUnits()**  returns the names of the storage units as a list. 
+
+NOTICE! Only the units that contain items are listed.
+
+Here's an example:
+
+```cs
+StorageFacility facility = new StorageFacility();
+facility.Add("a14", "ice skates");
+facility.Add("a14", "ice hockey stick");
+facility.Add("a14", "ice skates");
+
+facility.Add("f156", "rollerblades");
+facility.Add("f156", "rollerblades");
+
+facility.Add("g63", "six");
+facility.Add("g63", "pi");
+
+foreach (string unit in facility.StorageUnits())
+{
+  Console.WriteLine(unit);
+}
+
+foreach (string item in facility.Contents("a14"))
+{
+  Console.WriteLine(item);
+}
+
+foreach (string item in facility.Contents("f156"))
+{
+  Console.WriteLine(item);
+}
+facility.Remove("f156", "rollerblades");
+
+foreach (string item in facility.Contents("f156"))
+{
+  Console.WriteLine(item);
+}
+
+facility.Remove("f156", "rollerblades");
+
+foreach (string unit in facility.StorageUnits())
+{
+  Console.WriteLine(unit);
+}
+```
+
+```console
+a14
+f156
+g63
+ice skates
+ice hockey stick
+ice skates
+rollerblades
+rollerblades
+rollerblades
+a14
+g63
+```
