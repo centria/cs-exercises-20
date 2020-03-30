@@ -4493,3 +4493,50 @@ Jürgen
 ```
 
 HINT! In the printOwners method, you can create a list used for remembering the owners that were already printed. If an owner is not on the their name is printed and they are added to the list -- if an owner is on the list their name isn't printed.
+
+#### Exercise_146
+
+Your assignment is to create the class **DictionaryOfManyTranslations**. In it can be stored one or more translations for each word. The class is to implement the following methods:
+
+* **public void Add(string word, string translation)** adds the translation for the word and preserves the old translations.
+* **public List<string> Translate(string word)** returns a list of the translations added for the word. If the word has no translations, the method should return an empty list.
+* **public void Remove(string word)** removes the word and all its translations from the dictionary.
+It's probably best to add the translations to an object variable that is of the type **Dictionary\<string, List\<String\> \>**
+
+An example:
+
+```cs
+DictionaryOfManyTranslations dictionary = new DictionaryOfManyTranslations();
+dictionary.Add("lie", "maata");
+dictionary.Add("lie", "valehdella");
+
+dictionary.Add("bow", "jousi");
+dictionary.Add("bow", "kumartaa");
+
+foreach (string translation in dictionary.Translate("bow"))
+{
+  Console.WriteLine(translation);
+}
+Console.WriteLine();
+
+foreach (string translation in dictionary.Translate("lie"))
+{
+  Console.WriteLine(translation);
+}
+
+dictionary.Remove("bow");
+foreach (string translation in dictionary.Translate("bow"))
+{
+  Console.WriteLine(translation);
+}
+```
+
+```console
+jousi
+kumartaa
+
+maata
+valehdella
+```
+
+#### Exercise_147
