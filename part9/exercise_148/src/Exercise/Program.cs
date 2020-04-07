@@ -13,6 +13,12 @@ namespace Exercise
       a.APrint();
       b.BPrint();
       c.CPrint();
+
+      Console.WriteLine();
+
+      c.APrint();
+      c.BPrint();
+      c.CPrint();
     }
   }
 }
