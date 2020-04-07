@@ -4617,3 +4617,40 @@ rollerblades
 a14
 g63
 ```
+
+# Part 9
+
+#### Exercise_148
+
+Create the following three classes:
+
+* Class A. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void A()**, which prints a string "A".
+* Class B. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void B()**, which prints a string "B".
+* Class C. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void C()**, which prints a string "C".
+* After you have created the classes, **modify them** so that class B inherits class A, and class C inherits class B. In other words, class A will be a base class for class B, and class B will be a base class for class C.
+
+```cs
+A a = new A();
+B b = new B();
+C c = new C();
+
+a.APrint();
+b.BPrint();
+c.CPrint();
+
+Console.WriteLine();
+
+c.APrint();
+c.BPrint();
+c.CPrint();
+```
+
+```console
+A
+B
+C
+
+A
+B
+C
+```
