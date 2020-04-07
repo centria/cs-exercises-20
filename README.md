@@ -4890,3 +4890,53 @@ MisplacingBox mbox = new MisplacingBox();
 Console.WriteLine(mbox.IsInBox(new Item("Saludo")));
 Console.WriteLine(mbox.IsInBox(new Item("Pirkka")));
 ```
+
+#### Exercise_152
+
+In the exercise template you'll find **Interface ITacoBox** ready for your use. It has the following methods:
+
+the method **int TacosRemaining()** return the number of tacos remaining in the box.
+the method **void Eat()** reduces the number of tacos remaining by one. The number of tacos remaining can't become negative.
+
+* Implement the class **TripleTacoBox**, that implements the TacoBox interface. TripleTacobox has a constructor with no parameters. TripleTacobox has an object variable tacos which is initialized at 3 when the constructor is called.
+
+* Implement the class **CustomTacoBox**, that implements the TacoBox interface. CustomTacoBox has a constructor with one parameter defining the initial number of tacos in the **CustomTacoBox(int tacos)**.
+
+```cs
+TripleTacoBox trip = new TripleTacoBox();
+Console.WriteLine(trip.TacosRemaining());
+trip.Eat();
+Console.WriteLine(trip.TacosRemaining());
+trip.Eat();
+Console.WriteLine(trip.TacosRemaining());
+trip.Eat();
+Console.WriteLine(trip.TacosRemaining());
+// Try to eat one too much
+trip.Eat();
+Console.WriteLine(trip.TacosRemaining());
+
+Console.WriteLine();
+
+CustomTacoBox custom = new CustomTacoBox(2);
+Console.WriteLine(custom.TacosRemaining());
+custom.Eat();
+Console.WriteLine(custom.TacosRemaining());
+custom.Eat();
+Console.WriteLine(custom.TacosRemaining());
+// Try to eat one too much
+custom.Eat();
+Console.WriteLine(custom.TacosRemaining());
+```
+
+```console
+3
+2
+1
+0
+0
+
+2
+1
+0
+0
+```
