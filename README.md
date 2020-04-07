@@ -4733,7 +4733,7 @@ The class **Warehouse** handles the functions related to the amount of a product
 * **public ProductWarehouse(string productName, int capacity)** - Creates an empty product warehouse. The name of the product and the capacity of the warehouse are provided as parameters.
 * **public override string ToString()** - Returns the state of the object represented as a string like in the example.
 
-*Remind yourself of how a constructor can use the constructor of the base class!*
+*Remind yourself of how a constructor can use the constructor of the base class so you understand the existing code!*
 
 Example usage:
 
@@ -4853,4 +4853,40 @@ Current: 190 Min: 90 Max: 190
 Milk: balance: 190, space left 810
 Current: 190 Min: 90 Max: 190
 Milk: balance: 190, space left 810
+```
+
+#### Exercise_151
+
+In the exercise template you'll find the classes **Item** and **Box**. Box is an abstract class, where adding multiple items is implemented by repeatedly calling the **Add-method**. The Add-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the Box-class and to implement different kinds of boxes based on the Box class.
+
+* Implement the **Equals** and **GetHashCode** methods for the Item-class. They are needed, so that you can use the contains-methods of different lists and collections. *Implement the methods in such a way that value of the weight instance variable of the Item-class isn't considered.*
+
+* Implement the class **BoxWithMaxWeight**, that inherits the Box class. BoxWithMaxWeight has a constructor public **BoxWithMaxWeight(int capacity)**, that defines the max weight allowed for that box. You can add an item to a BoxWithMaxWeight when and only when, adding the item won't cause the boxes max weight capacity to be exceeded.
+
+* Next implement the class **OneItemBox**, that inherits the Box class. OneItemBox has constructor the **public OneItemBox()**, and it has the capacity of exactly one item. If there is already an item in the box, it must not be switched. The weight of the item added to the box is irrelevant.
+
+* Next implement the class **MisplacingBox**, that inherits the Box-class. MisplacingBox has a constructor **public MisplacingBox()**. You can add any items to misplacing box, but items can never be found when looked for. In other words adding to the box must always succeed, but calling the method IsInbox must always return false.
+
+Here's some code for testing them all:
+
+```cs
+BoxWithMaxWeight coffeeBox = new BoxWithMaxWeight(10);
+coffeeBox.Add(new Item("Saludo", 5));
+coffeeBox.Add(new Item("Pirkka", 5));
+coffeeBox.Add(new Item("Kopi Luwak", 5));
+
+Console.WriteLine(coffeeBox.IsInBox(new Item("Saludo")));
+Console.WriteLine(coffeeBox.IsInBox(new Item("Pirkka")));
+Console.WriteLine(coffeeBox.IsInBox(new Item("Kopi Luwak")));
+
+OneItemBox box = new OneItemBox();
+box.Add(new Item("Saludo", 5));
+box.Add(new Item("Pirkka", 5));
+
+Console.WriteLine(box.IsInBox(new Item("Saludo")));
+Console.WriteLine(box.IsInBox(new Item("Pirkka")));
+
+MisplacingBox mbox = new MisplacingBox();
+Console.WriteLine(mbox.IsInBox(new Item("Saludo")));
+Console.WriteLine(mbox.IsInBox(new Item("Pirkka")));
 ```
