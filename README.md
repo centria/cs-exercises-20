@@ -4654,3 +4654,55 @@ A
 B
 C
 ```
+
+#### Exercise_149
+
+Create a class **Person**. The class must work as follows:
+
+```cs
+Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");
+Person esko = new Person("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki");
+Console.WriteLine(ada);
+Console.WriteLine(esko);
+```
+
+```console
+Ada Lovelace, 24 Maddox St. London W1S 2QN
+Esko Ukkonen, Mannerheimintie 15 00100 Helsinki
+```
+
+Create a class **Student**, which inherits the class Person.
+
+At creation, student has 0 study credits. Every time a student studies, amount of study credits goes up. Class must act as follows:
+
+```cs
+Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+Console.WriteLine(ollie);
+ollie.Study();
+Console.WriteLine(ollie);
+```
+
+```console
+Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 0
+Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 1
+```
+
+Create a class **Teacher**, which inherits the class Person.
+
+The class must act as follows:
+
+```cs
+Teacher ada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+Teacher esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
+Console.WriteLine(ada);
+Console.WriteLine(esko);
+```
+
+```console
+Ada Lovelace, 24 Maddox St. London W1S 2QN salary 1200 per month
+Esko Ukkonen, Mannerheimintie 15 00100 Helsinki salary 5400 per month
+```
+
+NOTICE! You have to override the ToString.
+
+HINT! For Student and Teacher, use **base.ToString()** as a starting point.
