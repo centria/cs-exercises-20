@@ -4940,3 +4940,120 @@ Console.WriteLine(custom.TacosRemaining());
 0
 0
 ```
+
+#### Exercise_153
+
+Moving houses requires packing all your belongings into boxes. Let's imitate that with a program. The program will have boxes, and items to pack into those boxes. All items must implement the following Interface:
+
+```cs
+public interface IPackable {
+    int Weight();
+}
+```
+
+* Create classes **Book** and **Furniture**. Book has a constructor in which is given the author (string), name of the book (string) and the publication year (int). The weight of all books is 1 kg. Furniture has a constructor in which is given the type of furniture (string), color (string) and weight (int). Both of these should implement the interface **IPackable**. They also need a ToString each.
+
+The classes should work as following:
+
+```cs
+Book book1 = new Book("Fedor Dostojevski", "Crime and Punishment", 1866);
+Book book2 = new Book("Robert Martin", "Clean Code", 2008);
+Book book3 = new Book("Kent Beck", "Test Driven Development", 2000);
+
+Furniture sofa = new Furniture("Sofa", "Red", 20);
+Furniture bed = new Furniture("Twin bed", "White", 15);
+Furniture table = new Furniture("Dining room table", "Oak", 30);
+
+List<IPackable> packages = new List<IPackable>();
+packages.Add(book1);
+packages.Add(book2);
+packages.Add(book3);
+packages.Add(sofa);
+packages.Add(bed);
+packages.Add(table);
+
+packages.ForEach(Console.WriteLine);
+```
+
+```console
+Fedor Dostojevski: Crime and Punishment (1866)
+Robert Martin: Clean Code (2008)
+Kent Beck: Test Driven Development (2000)
+Red Sofa - weight 20 kg
+White Twin bed - weight 15 kg
+Oak Dining room table - weight 30 kg
+```
+
+Notice that the weight for books is not printed.
+
+* Create a class called **Box**.  Items implementing the **IPackable** interface can be packed into a box. The Box constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box. **Box should also implement IPackable**, so you could have boxes inside boxes!
+
+Below is an example of using a box:
+
+```cs
+Book book1 = new Book("Fedor Dostojevski", "Crime and Punishment", 1866);
+Book book2 = new Book("Robert Martin", "Clean Code", 2008);
+Book book3 = new Book("Kent Beck", "Test Driven Development", 2000);
+
+Furniture sofa = new Furniture("Sofa", "Red", 20);
+Furniture bed = new Furniture("Twin bed", "White", 15);
+Furniture table = new Furniture("Dining room table", "Oak", 30);
+
+Box box = new Box(40);
+box.Add(book1);
+box.Add(book2);
+box.Add(book3);
+box.Add(sofa);
+box.Add(bed);
+box.Add(table);
+
+Console.WriteLine(box);
+```
+
+```console
+5 items, total weight 38 kg
+```
+
+NOTICE! The table did not fit in the box, as the maximum capacity of the box is 40.
+
+Let's try some boxes inside boxes, as well:
+
+```cs
+Book book1 = new Book("Fedor Dostojevski", "Crime and Punishment", 1866);
+Book book2 = new Book("Robert Martin", "Clean Code", 2008);
+Book book3 = new Book("Kent Beck", "Test Driven Development", 2000);
+
+Furniture sofa = new Furniture("Sofa", "Red", 20);
+Furniture bed = new Furniture("Twin bed", "White", 15);
+Furniture table = new Furniture("Dining room table", "Oak", 30);
+
+Box bookBox = new Box(5);
+bookBox.Add(book1);
+bookBox.Add(book2);
+bookBox.Add(book3);
+
+Console.WriteLine(bookBox);
+Console.WriteLine();
+
+Box movingVan = new Box(800);
+movingVan.Add(bookBox);
+movingVan.Add(sofa);
+movingVan.Add(bed);
+movingVan.Add(table);
+
+Console.WriteLine(movingVan);
+Console.WriteLine();
+
+Box shippingContainer = new Box(3000);
+shippingContainer.Add(movingVan);
+
+Console.WriteLine(shippingContainer);
+```
+
+```console
+3 items, total weight 3 kg
+
+4 items, total weight 68 kg
+
+1 items, total weight 68 kg
+```
