@@ -34,11 +34,13 @@ The deadlines are on Sundays.
 |Part | Deadline           | Exercises and sections total|
 |:---:|:------------------:|:----------|
 | 7   | 05.04.2020 at 23:59| 00        |
-| 8   | 12.04.2020 at 23:59| 10        |
+| 8   | 14.04.2020 at 23:59| 10        |
 | 9   | 19.04.2020 at 23:59| 08        |
 | 10  | 26.04.2020 at 23:59| XX        |
 | 11  | 03.05.2020 at 23:59| XX        |
 | 12  | 10.05.2020 at 23:59| XX        |
+
+NOTICE! Part 8 deadline extended 2 days because of Easter!
 
 
 The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.   
