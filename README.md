@@ -4893,6 +4893,16 @@ Console.WriteLine(mbox.IsInBox(new Item("Saludo")));
 Console.WriteLine(mbox.IsInBox(new Item("Pirkka")));
 ```
 
+```console
+True
+True
+False
+True
+False
+False
+False
+```
+
 #### Exercise_152
 
 In the exercise template you'll find **Interface ITacoBox** ready for your use. It has the following methods:
