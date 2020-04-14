@@ -55,7 +55,7 @@ namespace ExerciseTest
         Cat garfield = new Cat("Garfield");
         garfield.Purr();
         Console.SetOut(stdout);
-        string example = "Cat Meows\nCat eats\nGarfield Meows\n";
+        string example = "Cat purrs\nCat eats\nGarfield purrs\n";
         Assert.AreEqual(example, sw.ToString().Replace("\r\n", "\n"), "The examples should work as such!");
       }
     }
@@ -74,7 +74,7 @@ namespace ExerciseTest
         Cat c = (Cat)noisyCat;
         c.Purr();
         Console.SetOut(stdout);
-        string example = "Dog barks\nGarfield Meows\nGarfield Meows\n";
+        string example = "Dog barks\nGarfield purrs\nGarfield purrs\n";
         Assert.AreEqual(example, sw.ToString().Replace("\r\n", "\n"), "The examples should work as such!");
       }
     }
