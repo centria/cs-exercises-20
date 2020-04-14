@@ -161,7 +161,7 @@ namespace ExerciseTest
         Box smallbox = new Box(0);
         smallbox.Add(book1);
         Assert.AreEqual(0, smallbox.Weight(), "Nothing should fit in a box with 0 capacity");
-        Assert.AreEqual("0 items, total weight 0 kg\n", smallbox.ToString().Replace("\r\n", "\n"), "Empty box should have 0 items and 0 weight!");
+        Assert.AreEqual("0 items, total weight 0 kg", smallbox.ToString().Replace("\r\n", "\n"), "Empty box should have 0 items and 0 weight!");
         Assert.AreNotEqual(1, smallbox.Weight(), "Nothing should fit in a box with 0 capacity!");
       }
     }
