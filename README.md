@@ -4390,7 +4390,7 @@ public class LicensePlate
   private string liNumber;
   private string country;
 
-  public LicensePlate(String country, String liNumber)
+  public LicensePlate(string country, string liNumber)
   {
     this.liNumber = liNumber;
     this.country = country;
@@ -4509,7 +4509,7 @@ Your assignment is to crEate the class **DictionaryOfManyTranslations**. In it c
 * **public void Add(string word, string translation)** adds the translation for the word and preserves the old translations.
 * **public List<string> Translate(string word)** returns a list of the translations added for the word. If the word has no translations, the method should return an empty list.
 * **public void Remove(string word)** removes the word and all its translations from the dictionary.
-It's probably best to add the translations to an object variable that is of the type **Dictionary\<string, List\<String\> \>**
+It's probably best to add the translations to an object variable that is of the type **Dictionary\<string, List\<string\> \>**
 
 An example:
 
@@ -5238,3 +5238,17 @@ Matti 150000
 Merja 500
 Pertti 80
 ```
+
+#### Exercise_157
+
+The exercise template includes the class **Student**, which has a name. Implement the **IComprable**-interface in the Student-class in a way, that the CompareTo-method sorts the students in alphabetical order based on their names.
+
+HINT: The name of the Student is a string, which implements Comparable itself. You may use it's CompareTo-method for your advantage when implementing the method for the Student-class. Note that string.CompareTo is case sensitive, but at this exercise, we don't have to worry about it.
+
+```cs
+Student first = new Student("jamo");
+Student second = new Student("jamo1");
+
+// Should print -1
+Console.WriteLine(first.CompareTo(second));
+``` 
