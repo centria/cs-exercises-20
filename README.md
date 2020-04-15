@@ -2170,7 +2170,7 @@ Highest age: 11
 
 ## Object Oriented Programming
 
-When crEating own classes, make sure to include the correct **namespace** so you can reference it from your Program.cs file. We'll get to namespaces later. For now, whenever you crEate a new class, **use the folder name as the namespace**.
+When creating own classes, make sure to include the correct **namespace** so you can reference it from your Program.cs file. We'll get to namespaces later. For now, whenever you crEate a new class, **use the folder name as the namespace**.
 
 You can test your own classes in the Main if you want to, but it is not necessary. It does, of course, help you understand your code, and the exercises might include some examples, how the classes should work.
 
@@ -2228,7 +2228,7 @@ Personal account balance: 100
 
 In this exercise, you'll practice crEating a class.
 
-[**CHECK THIS MATERIAL FOR HELP**](https://centria.github.io/basic-coding/part4/1/#crEating-a-new-class)
+[**CHECK THIS MATERIAL FOR HELP**](https://centria.github.io/basic-coding/part4/1/#creating-a-new-class)
 
 Name the class **Dog** (and the file **Dog.cs**)
 
@@ -2605,7 +2605,7 @@ In this exercise series, a class called PaymentCard is crEated which aims to mim
 
 The template includes the **Program.cs** file. You have to crEate the **PaymentCard.cs** yourself.
 
-- Add a new class to the project called **PaymentCard** (by crEating the file mentioned above).
+- Add a new class to the project called **PaymentCard** (by creating the file mentioned above).
 - CrEate the PaymentCard object's constructor, which is passed the opening balance of the card, and which then stores that balance in the object's internal variable. 
 - Write the ToString method, which will return the card's balance in the form **"The card has a balance of X euros"**.
 
@@ -4549,7 +4549,7 @@ valehdella
 
 #### Exercise_147
 
-Your task is crEating a class called **StorageFacility** that can be used to keep track of storage units and their contents. The class is to implement the following methods:
+Your task is creating a class called **StorageFacility** that can be used to keep track of storage units and their contents. The class is to implement the following methods:
 
 * **public void Add(string unit, string item)** adds the parameter item to the storage unit that is also given as a parameter.
 
@@ -4859,7 +4859,7 @@ Milk: balance: 190, space left 810
 
 #### Exercise_151
 
-In the exercise template you'll find the classes **Item** and **Box**. Box is an abstract class, where adding multiple items is implemented by repEatedly calling the **Add-method**. The Add-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the Box-class and to implement different kinds of boxes based on the Box class.
+In the exercise template you'll find the classes **Item** and **Box**. Box is an abstract class, where adding multiple items is implemented by repeatedly calling the **Add-method**. The Add-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the Box-class and to implement different kinds of boxes based on the Box class.
 
 * Implement the **Equals** and **GetHashCode** methods for the Item-class. They are needed, so that you can use the contains-methods of different lists and collections. *Implement the methods in such a way that value of the weight instance variable of the Item-class isn't considered.*
 
@@ -5213,4 +5213,28 @@ c.Purr();
 Dog barks 
 Garfield purrs 
 Garfield purrs
+```
+
+# Part 10
+
+#### Exercise_156
+
+You are provided with the class **Human**. A human has a name and wage information. Implement the interface **IComparable** in a way, that the **CompareTo**-method sorts the humans according to wage from biggest to smallest salary. The Program.cs already contains the following code for trying out your method.
+
+```cs
+List<Human> humans = new List<Human>();
+humans.Add(new Human("Merja", 500));
+humans.Add(new Human("Pertti", 80));
+humans.Add(new Human("Matti", 150000));
+
+// Sorts the list when your ComparedTo works
+// Sort uses CompareTo internally
+humans.Sort();
+humans.ForEach(Console.WriteLine);
+```
+
+```console
+Matti 150000
+Merja 500
+Pertti 80
 ```
