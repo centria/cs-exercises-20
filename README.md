@@ -36,11 +36,11 @@ The deadlines are on Sundays.
 | 7   | 05.04.2020 at 23:59| 00        |
 | 8   | 14.04.2020 at 23:59| 10        |
 | 9   | 19.04.2020 at 23:59| 08        |
-| 10  | 26.04.2020 at 23:59| XX        |
+| 10  | 26.04.2020 at 23:59| 10        |
 | 11  | 03.05.2020 at 23:59| XX        |
 | 12  | 10.05.2020 at 23:59| XX        |
 
-NOTICE! Part 8 deadline extended 2 days because of Easter!
+NOTICE! Part 8 deadline was extended 2 days because of Easter!
 
 
 The exercises might be in multiple sections **in the instructions**, to make it easier to comprehend. In the end, you should still have **only one program per exercise** to return in such case.   
@@ -5217,6 +5217,8 @@ Garfield purrs
 
 # Part 10
 
+NOTICE! All the exercises in part 10 are worth 2.
+
 #### Exercise_156
 
 You are provided with the class **Human**. A human has a name and wage information. Implement the interface **IComparable** in a way, that the **CompareTo**-method sorts the humans according to wage from biggest to smallest salary. The Program.cs already contains the following code for trying out your method.
@@ -5384,4 +5386,139 @@ True
 False
 True
 False
+```
+
+#### Exercise_160
+
+The exercise template has a class that represents a playing card. Each card has a value and a suit. Card's value is represented as a number *2, 3, ..., 14* and its suit as *Club, Diamond, Heart or Spade*. Ace's value is 14. The value is represented with an integer, and the suit as an enum. Cards also have a method **ToString**, which can be used to print the value and the suit in a readable form.
+
+New cards can be created like this:
+
+```cs
+Card first = new Card(2, Suit.Diamond);
+Card second = new Card(14, Suit.Spade);
+Card third = new Card(12, Suit.Heart);
+
+Console.WriteLine(first);
+Console.WriteLine(second);
+Console.WriteLine(third);
+```
+
+```console
+Diamond 2
+Spade A
+Heart Q
+```
+
+NOTICE! in the ToString, make sure you have special returns for values 11 to 14 (J, Q, K and A).
+
+* Change the Card class to implement the **IComparable**. Implement the **CompareTo** method so that using it sorts the cards ascending by their value. If the cards being compared have the same value, they are sorted by *club first, diamond next, heart third, and spade last*.
+
+So, for this sorting, the least valuable card is two of clubs, and highest the ace of spades.
+
+```cs
+Card first = new Card(2, Suit.Club);
+Card second = new Card(14, Suit.Spade);
+Card third = new Card(12, Suit.Heart);
+Card fourth = new Card(14, Suit.Heart);
+Card fifth = new Card(12, Suit.Diamond);
+
+List<Card> list = new List<Card> { first, second, third, fourth, fifth };
+list.Sort();
+list.ForEach(Console.WriteLine);
+```
+
+```console
+Club 2
+Diamond Q
+Heart Q
+Heart A
+Spade A
+```
+
+* Create a class **Hand** to represent the cards in player's hand. Add the following methods to the class:
+
+* **public void Add(Card card)** adds a card to the hand. If the card is already in the hand, someone is cheating, and the card should not be added. **Use a List to store the cards.**
+* **public void Print()** prints the cards in hand as shown in the example below
+
+```cs
+Hand hand = new Hand();
+
+hand.Add(new Card(2, Suit.Diamond));
+hand.Add(new Card(14, Suit.Spade));
+hand.Add(new Card(12, Suit.Heart));
+hand.Add(new Card(2, Suit.Spade));
+
+hand.Print();
+```
+
+```console
+Diamond 2
+Spade A
+Heart Q
+Spade 2
+```
+
+* Add a method **public void Sort()** to Hand class, which sorts the cards in the hand. After sorting, the cards are printed out in order:
+
+```cs
+Hand hand = new Hand();
+
+hand.Add(new Card(2, Suit.Diamond));
+hand.Add(new Card(14, Suit.Spade));
+hand.Add(new Card(12, Suit.Heart));
+hand.Add(new Card(2, Suit.Spade));
+
+hand.Sort();
+hand.Print();
+```
+
+```console
+Diamond 2
+Spade 2
+Heart Q
+Spade A
+```
+
+In a card game, hands are ranked based on the sum of values of its cards. Modify the Hand class to be comparable based on this criteria, i.e. change the class so that interface **IComparable\<Hand\>** applies to it.
+
+Here's an example of a program that compares the hands:
+
+```cs
+Hand hand1 = new Hand();
+
+hand1.Add(new Card(2, Suit.Diamond));
+hand1.Add(new Card(14, Suit.Spade));
+hand1.Add(new Card(12, Suit.Heart));
+hand1.Add(new Card(2, Suit.Spade));
+
+Hand hand2 = new Hand();
+
+hand2.Add(new Card(11, Suit.Diamond));
+hand2.Add(new Card(11, Suit.Spade));
+hand2.Add(new Card(11, Suit.Heart));
+
+int comparison = hand1.CompareTo(hand2);
+
+if (comparison < 0)
+{
+  Console.WriteLine("better hand is");
+  hand2.Print();
+}
+else if (comparison > 0)
+{
+  Console.WriteLine("better hand is");
+  hand1.Print();
+}
+else
+{
+  Console.WriteLine("hands are equal");
+}
+```
+
+```console
+better hand is
+Diamond J
+Spade J
+Heart J
 ```
