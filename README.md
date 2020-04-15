@@ -5349,3 +5349,39 @@ The Ringing Lullaby Book (recommended for 0 year-olds or older)
 Litmanen 10 (recommended for 10 year-olds or older) 
 The Snowy Forest Calls (recommended for 12 year-olds or older)
 ```
+
+#### Exercise_159
+
+In the template is a class **Checker**, which has three methods. Your task is to fill in the methods as follows:
+
+* Use regular expressions in **DayOfWeek(string str)**, which returns true if the parameter string is an abbreviation of a day of the week (mon, tue, wed, thu, fri, sat, sun)
+
+* Use regular expressions in **AllVowels(string str)**, which returns true if all the letters in given string are wovels.
+
+NOTICE! For simplicity's sake, in this exercises the letters that are considered vowels are: a, e, i, o, and u. You don't have to take into account capital letters, but you can if you want to.
+
+* Use regular expressions in **TimeOfDay(string str)**  to check whether the parameter string expresses a time of day in the form hh:mm:ss (hours, minutes, and seconds each always take up two spaces).
+
+NOTICE! The last one is tricky, and you might want to search the internet for answers.
+
+```cs
+Checker check = new Checker();
+
+Console.WriteLine(check.DayOfWeek("tue"));
+  Console.WriteLine(check.DayOfWeek("tues"));
+
+Console.WriteLine(check.AllVowels("aeiouaaeeioiouoiaoueaiaeiou"));
+Console.WriteLine(check.AllVowels("aeiouaaeeioiouoKiaoueaiaeiou"));
+
+Console.WriteLine(check.TimeOfDay("23:23:59"));
+Console.WriteLine(check.TimeOfDay("00:00:60"));
+```
+
+```console
+True
+False
+True
+False
+True
+False
+```
