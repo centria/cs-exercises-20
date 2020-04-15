@@ -5252,3 +5252,100 @@ Student second = new Student("jamo1");
 // Should print -1
 Console.WriteLine(first.CompareTo(second));
 ``` 
+
+#### Exercise_158
+
+Write a program that reads user input for books and their age recommendations.
+
+The program asks for new books until the user gives an empty string (only presses enter). After this, the program will print the amount and names of the books.
+
+* Implement the reading and printing the books first in the **TextInterface**, the ordering of them doesn't matter yet.
+
+```console
+Input the name of the book, empty stops: 
+> The Ringing Lullaby Book 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Exiting Transpotation Vehicles 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Snowy Forest Calls 
+Input the age recommendation:
+> 12
+Input the name of the book, empty stops: 
+> Litmanen 10 
+Input the age recommendation:
+> 10
+Input the name of the book, empty stops:
+
+4 books in total.
+
+Books: 
+The Ringing Lullaby Book (recommended for 0 year-olds or older) 
+The Exiting Transpotation Vehicles (recommended for 0 year-olds or older) 
+The Snowy Forest Calls (recommended for 12 year-olds or older) 
+Litmanen 10 (recommended for 10 year-olds or older)
+```
+
+* Expand your program so, that the books are sorted based on their age recommendations when they are printed. If two (or more) books share the same age recommendations the order between them does not matter. (i.e. create ComparedTo in Book class)
+
+
+```console
+Input the name of the book, empty stops: 
+> The Ringing Lullaby Book 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Exiting Transpotation Vehicles 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Snowy Forest Calls 
+Input the age recommendation:
+> 12
+Input the name of the book, empty stops: 
+> Litmanen 10 
+Input the age recommendation:
+> 10
+Input the name of the book, empty stops:
+
+4 books in total.
+
+Books: 
+The Ringing Lullaby Book (recommended for 0 year-olds or older) 
+The Exiting Transpotation Vehicles (recommended for 0 year-olds or older) 
+Litmanen 10 (recommended for 10 year-olds or older) 
+The Snowy Forest Calls (recommended for 12 year-olds or older)
+```
+
+* Expand your program, so that it sorts the books with the same age recommendation based on their name alphabetically. HINT! Use an if for the age recommendations!
+
+```console
+Input the name of the book, empty stops: 
+> The Ringing Lullaby Book 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Exiting Transpotation Vehicles 
+Input the age recommendation:
+> 0
+Input the name of the book, empty stops:
+> The Snowy Forest Calls 
+Input the age recommendation:
+> 12
+Input the name of the book, empty stops: 
+> Litmanen 10 
+Input the age recommendation:
+> 10
+Input the name of the book, empty stops:
+
+4 books in total.
+
+Books: 
+The Exiting Transpotation Vehicles (recommended for 0 year-olds or older) 
+The Ringing Lullaby Book (recommended for 0 year-olds or older) 
+Litmanen 10 (recommended for 10 year-olds or older) 
+The Snowy Forest Calls (recommended for 12 year-olds or older)
+```
