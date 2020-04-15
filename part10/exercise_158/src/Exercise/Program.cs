@@ -9,7 +9,7 @@ namespace Exercise
   {
     public static void Main(string[] args)
     {
-      // DO NOT TOUCH THIS CODE!S
+      // DO NOT TOUCH THIS CODE!
       TextInterface ui = new TextInterface();
       ui.Start();
     }

@@ -4,8 +4,7 @@ namespace Exercise
   using System.Collections.Generic;
   public class TextInterface
   {
-
-    // Create the userinterface
+    // Create the userinterface here
     private List<Book> books;
     public TextInterface()
     {
