@@ -2438,7 +2438,7 @@ Prints:
 
 ### Exercise_101
 
-CrEate a class called **Dalmatian**. The dalmatian has instance variables **string name** and **int spots**. Both are set in the **public Dalmatian(string name, int spots)** constructor. Also, give the variables ability for get and set:
+Create a class called **Dalmatian**. The dalmatian has instance variables **string name** and **int spots**. Both are set in the **public Dalmatian(string name, int spots)** constructor. Also, give the variables ability for get and set:
 **Make the variables public rather than private, and add { get; set; } on the declaring lines!**
 
 ```cs
@@ -4055,7 +4055,7 @@ The application is in practice a storage for jokes. You can add jokes, get a ran
 
 ##### Section 1 - Joke manager
 
-CrEate a class called **JokeManager** and move the functionality to manage jokes in it. The class must have a parameter-free constructor, and the following methods:
+Create a class called **JokeManager** and move the functionality to manage jokes in it. The class must have a parameter-free constructor, and the following methods:
 
 * **public void AddJoke(string joke)** - adds a joke to the manager.
 * **public string DrawJoke()** - chooses one joke at random and returns it. It there are no jokes stored in the joke manager, the method should return the string "Jokes are in short supply.".
@@ -4096,7 +4096,7 @@ What is blue and smells of red paint? - Blue paint.
 
 ##### Section 2 - User Interface
 
-CrEate a class called **UserInterface** and move the UI functionality of the program there. The class must have a constructor with one parameter: an instance of the JokeManager class. In addition, the class should have the method **public void Start()** that can be used to start the user interface.
+Create a class called **UserInterface** and move the UI functionality of the program there. The class must have a constructor with one parameter: an instance of the JokeManager class. In addition, the class should have the method **public void Start()** that can be used to start the user interface.
 
 The user interface should provide the user with the following commands:
 
@@ -4304,7 +4304,7 @@ NOTICE! The order of the output can vary, as the dictionary does not guarantee t
 
 #### Exercise_142
 
-CrEate a class called **IOU** which has the following methods:
+Create a class called **IOU** which has the following methods:
 
 * constructor **public IOU()** crEates a new IOU
 * **public void ChangeDebt(string toWhom, int amount)** saves the amount owed and the person owed to to the IOU. You can use this to also lower the debt, but the total amount cannot be negative!
@@ -4998,7 +4998,7 @@ Oak Dining room table - weight 30 kg
 
 Notice that the weight for books is not printed.
 
-* CrEate a class called **Box**.  Items implementing the **IPackable** interface can be packed into a box. The Box constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box. **Box should also implement IPackable**, so you could have boxes inside boxes!
+* Create a class called **Box**.  Items implementing the **IPackable** interface can be packed into a box. The Box constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box. **Box should also implement IPackable**, so you could have boxes inside boxes!
 
 Below is an example of using a box:
 
