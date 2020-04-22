@@ -5660,3 +5660,9 @@ Lottery numbers:
 ```
 
 NOTICE! The same number can only appear once in a lottery row. Remember to also **Sort()** your list at the end of RandomizeNumbers.
+
+#### Exercise_163
+
+Let's practise a little parameter validation with the **ArgumentException** exception. There is a class called Person in the exercise:
+
+* The constructor of the class **Person** should ensure that the name given as the parameter is not null, empty, or over 40 characters in length. The age should between 0 and 120. If some of these conditions are not met, the constructor should throw an **ArgumentException**.
