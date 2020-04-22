@@ -37,7 +37,7 @@ The deadlines are on Sundays.
 | 8   | 14.04.2020 at 23:59| 10        |
 | 9   | 19.04.2020 at 23:59| 08        |
 | 10  | 26.04.2020 at 23:59| 10        |
-| 11  | 03.05.2020 at 23:59| XX        |
+| 11  | 03.05.2020 at 23:59| 09        |
 | 12  | 10.05.2020 at 23:59| XX        |
 
 NOTICE! Part 8 deadline was extended 2 days because of Easter!
