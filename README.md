@@ -5666,3 +5666,52 @@ NOTICE! The same number can only appear once in a lottery row. Remember to also 
 Let's practise a little parameter validation with the **ArgumentException** exception. There is a class called Person in the exercise:
 
 * The constructor of the class **Person** should ensure that the name given as the parameter is not null, empty, or over 40 characters in length. The age should between 0 and 120. If some of these conditions are not met, the constructor should throw an **ArgumentException**.
+
+#### Exercise_164
+
+We have the following interface at our disposal:
+
+```cs
+namespace Exercise
+{
+  public interface Sensor
+  {
+    bool IsOn();    // returns true if the sensor is on
+    void SetOn();      // sets the sensor on
+    void SetOff();     // sets the sensor off
+    int Read();        // returns the value of the sensor if it's on
+                       // if the sensor is not on throw a IllegalStateException
+  }
+}
+```
+
+* Create a class called StandardSensor that implements the interface Sensor.
+
+A standard sensor is always on. Calling the methods SetOn and SetOff has no effect. The StandardSensor must have a constructor that takes one integer parameter. The method call Read returns the number that was given to the constructor.
+
+An example:
+
+```cs
+StandardSensor ten = new StandardSensor(10);
+StandardSensor minusFive = new StandardSensor(-5);
+
+Console.WriteLine(ten.Read());
+Console.WriteLine(minusFive.Read());
+
+Console.WriteLine(ten.IsOn());
+ten.SetOff();
+Console.WriteLine(ten.IsOn());
+```
+
+Sample output
+
+```console
+10
+-5
+true
+true
+```
+
+* Create a class **TemperatureSensor** that implements the Sensor interface.
+
+At first a temperature sensor is off. When the method Read is called and the sensor is on, the sensor randomly chooses an integer in the range -30...30 and returns it. If the sensor is off, the method Read throws an **InvalidOperationException**.
