@@ -5522,3 +5522,61 @@ Diamond J
 Spade J
 Heart J
 ```
+
+# Part 11
+
+#### Exercise_161
+
+The exercise template contains a class **Die**, which has the following body:
+
+```cs
+namespace Exercise
+{
+  using System;
+  public class Die
+  {
+    private Random random;
+    private int numberOfFaces;
+
+    public Die(int numberOfFaces)
+    {
+      this.random = new Random();
+      // Initialize the value of numberOfFaces here
+    }
+    public int ThrowDie()
+    {
+      // generate a random number which may be any number
+      // between one and the number of faces, and then return it
+      return 0;
+    }
+  }
+}
+```
+
+Modify the class, such that the constructor **Die(int numberOfFaces)** creates a new die-object with the given number of faces (i.e. the number of "sides" with a number). Also, modify the method **ThrowDie** so it returns the result of a random throw of the die, which should be a value withing the range 1 ... number of faces.
+
+The following is a Main program for testing the die:
+
+```cs
+Die die = new Die(6);
+
+for (int i = 0; i < 10; i++)
+{
+  Console.WriteLine(die.ThrowDie());
+}
+```
+
+The output could be as follows:
+
+```console
+5
+3
+2
+6
+4
+2
+4
+1
+2
+5
+```
