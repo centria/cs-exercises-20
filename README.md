@@ -82,14 +82,14 @@ namespace exercise_01
 The line **// Add your code here:** is a comment. The composer does not compose it, so you do not have to worry about it. You can remove it, if you want.
 
 #### Exercise_01:
-* CrEate a program that writes the text **Hello World!** into the console. The program contains the basic structure pictured above.
+* create a program that writes the text **Hello World!** into the console. The program contains the basic structure pictured above.
 
 #### Exercise_02:
 * Let's write some more. Bonnie Tyler once sang about feelings, that also apply to coding:  
 **Once upon a time**  
 **I was falling in love**  
 **Now I'm only falling apart**  
-CrEate a program using 3 Console.WriteLines, that prints these lyrics.
+create a program using 3 Console.WriteLines, that prints these lyrics.
 
 #### Exercise_03:
 * Let's refine our program. Print the same message:  
@@ -146,7 +146,7 @@ Modify the code, so that it prints **Hello Ada LoveLace!**
 Do not modify the variable content!
 
 #### Exercise_06
-* CrEate a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line. Example output with **Hello** as input (input marked with **>** for clarification):
+* create a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line. Example output with **Hello** as input (input marked with **>** for clarification):
 
 ```console
 Give input!
@@ -155,7 +155,7 @@ Hello
 ```
 
 #### Exercise_07
-* CrEate a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line 3 times. Example output with **Hello** as input:
+* create a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line 3 times. Example output with **Hello** as input:
 
 ```console
 Give input!
@@ -166,7 +166,7 @@ Hello
 ```
 
 #### Exercise_08
-* CrEate a program, that asks user for their name and greets them. Example output with **Ada** as input:
+* create a program, that asks user for their name and greets them. Example output with **Ada** as input:
 
 ```console
 What is your name?
@@ -176,7 +176,7 @@ Hello Ada!
 Notice the exclamation mark.
 
 #### Exercise_09
-* CrEate a program, that simulates a small conversation. The program will tell three lines, and expects two user inputs. Example output:
+* create a program, that simulates a small conversation. The program will tell three lines, and expects two user inputs. Example output:
 
 ```console
 Hello, how are you?
@@ -187,7 +187,7 @@ Thank you for sharing!
 ```
 
 #### Exercise_10
-* CrEate a program, that asks the user for a name and a profession. Then make the program to write a little story with this information. Here is an example story with inputs **Ada** and **Data Scientist**.
+* create a program, that asks the user for a name and a profession. Then make the program to write a little story with this information. Here is an example story with inputs **Ada** and **Data Scientist**.
 
 NOTICE! Every **Ada** and **Data Scientist** in the story are the inputs by the user. Remember to save the **Console.ReadLines** into variables and use them as parts of the story!
 
@@ -230,7 +230,7 @@ It sure is!
 ```
 
 #### Exercise_12
-* CrEate a program, that asks the user for an integer. After user input, the program will print the integer. Example prints:
+* create a program, that asks the user for an integer. After user input, the program will print the integer. Example prints:
 
 ```console
 Give a number!
@@ -245,7 +245,7 @@ You gave 42
 ```
 
 #### Exercise_13
-* CrEate a program, that asks the user for a double. After user input, the program will print the double. Example prints:
+* create a program, that asks the user for a double. After user input, the program will print the double. Example prints:
 
 ```console
 Give a number!
@@ -260,7 +260,7 @@ You gave 41.999999
 ```
 
 #### Exercise_14
-* CrEate a program, that asks the user for a boolean. After user input, the program will print the boolean. Example prints:
+* create a program, that asks the user for a boolean. After user input, the program will print the boolean. Example prints:
 
 ```console
 Give me the truth!
@@ -275,7 +275,7 @@ False
 ```
 
 #### Exercise_15
-* Let's combine everything you know so far. CrEate program that asks the user for a string, an integer, a double and a boolean, and prints them like follows:
+* Let's combine everything you know so far. create program that asks the user for a string, an integer, a double and a boolean, and prints them like follows:
 
 ```console
 Give a string:
@@ -296,7 +296,7 @@ Your boolean: True
 
 #### Exercise_16
 
-CrEate a program, which asks user for amount of days, and prints the total amount of seconds for that amount of days, gives the answer and quits.
+create a program, which asks user for amount of days, and prints the total amount of seconds for that amount of days, gives the answer and quits.
 
 Example print:
 ```console
@@ -312,7 +312,7 @@ How many days?
 
 #### Exercise_17
 
-* CrEate a program, which asks the user for two integers, and calculates their sum.  
+* create a program, which asks the user for two integers, and calculates their sum.  
 
 Remember, that the input is a string, so you have to convert it to integer!
 
@@ -350,7 +350,7 @@ The sum is 4
 
 #### Exercise_19
 
-* CrEate a program, which asks the user for two integers and counts their sum. This time, also print the equation to the user, too.
+* create a program, which asks the user for two integers and counts their sum. This time, also print the equation to the user, too.
 
 ```console
 Give the first number!
@@ -370,7 +370,7 @@ Give the second number!
 
 #### Exercise_20
 
-* CrEate a program, which asks the user for two integers and multiplies them with each other.
+* create a program, which asks the user for two integers and multiplies them with each other.
 
 ```console
 Give the first number!
@@ -390,7 +390,7 @@ Give the second number!
 
 #### Exercise_21
 
-* CrEate a program, which asks the user for two **integers** and calculates their **average** as a **double**.
+* create a program, which asks the user for two **integers** and calculates their **average** as a **double**.
 
 ```console
 Give the first number!
@@ -402,7 +402,7 @@ The average is 2.5
 
 #### Exercise_22
 
-* CrEate a program, which asks the user for three **integers** and calculates their **average** as a **double**.
+* create a program, which asks the user for three **integers** and calculates their **average** as a **double**.
 
 ```console
 Give the first number!
@@ -433,7 +433,7 @@ Give the second number!
 
 #### Exercise_24
 
-* CrEate a program, which asks the user for an integer.
+* create a program, which asks the user for an integer.
 
 If the given integer is larger than 120, output "Speeding!".
 
@@ -450,7 +450,7 @@ Speeding!
 
 #### Exercise_25
 
-* CrEate a program which asks for an integer. If the integer is 1984, output "Orwell".
+* create a program which asks for an integer. If the integer is 1984, output "Orwell".
 
 ```console
 Give a number:
@@ -465,7 +465,7 @@ Orwell
 
 #### Exercise_26
 
-* CrEate a program which asks for an integer. If the integer is less than 1900, output "You're old".
+* create a program which asks for an integer. If the integer is less than 1900, output "You're old".
 
 ```console
 Give your age:
@@ -480,7 +480,7 @@ You're old
 
 #### Exercise_27
 
-* CrEate a program which tells if the given number is positive (grEater than zero), or not.
+* create a program which tells if the given number is positive (grEater than zero), or not.
 
 ```console
 Give a number:
@@ -496,7 +496,7 @@ It is not positive
 
 ### Exercise_28
 
-* CrEate a program which tell if the given person is legally adult (in Finland, over 18), or not.
+* create a program which tell if the given person is legally adult (in Finland, over 18), or not.
 
 ```console
 How old are you?
@@ -512,7 +512,7 @@ You're an adult!
 
 ### Exercise_29
 
-* CrEate a program which asks for two integers. The program should tell which of them is grEater. If they are equal, that should be noted, too.
+* create a program which asks for two integers. The program should tell which of them is grEater. If they are equal, that should be noted, too.
 
 ```console
 Give the first number!
@@ -553,7 +553,7 @@ Here is the grading for this course:
 | 90 - 100 | 5 |
 | > 100 | Outstanding! |
 
-* CrEate a program, which asks the user for their percent, and gives them their score. For example:
+* create a program, which asks the user for their percent, and gives them their score. For example:
 
 ```console
 Give your percent [0 - 100]:
@@ -587,7 +587,7 @@ Outstanding!
 
 #### Exercise_31
 
-* CrEate a program which asks for an integer and tells the user if it is even or not.
+* create a program which asks for an integer and tells the user if it is even or not.
 
 ```console
 Give a number:
@@ -605,7 +605,7 @@ Hint: You might want to use the **%** operator to get the remainder after a divi
 
 #### Exercise_32
 
-* CrEate a program which asks for a string. If the string is "Mellon", print "Welcome, friend", otherwise print "They've got a cave troll!"
+* create a program which asks for a string. If the string is "Mellon", print "Welcome, friend", otherwise print "They've got a cave troll!"
 
 ```console
 Speak, friend, and enter!
@@ -621,7 +621,7 @@ Welcome, friend
 
 #### Exercise_33
 
-* CrEate a program which asks for two string. If the strings are equal, print "Echo", otherwise print "Nope".
+* create a program which asks for two string. If the strings are equal, print "Echo", otherwise print "Nope".
 
 ```console
 Give the first string:
@@ -643,7 +643,7 @@ Nope!
 
 #### Exercise_34
 
-* CrEate a program which asks the user if they want to continue. If the user answers "no", then quit the program. Otherwise, ask again.
+* create a program which asks the user if they want to continue. If the user answers "no", then quit the program. Otherwise, ask again.
 
 Hint: Use a while-loop!
 
@@ -658,7 +658,7 @@ Do you want to continue?
 
 #### Exercise_35
 
-* CrEate a program, which asks the user for integers, until the user give the number "42".
+* create a program, which asks the user for integers, until the user give the number "42".
 
 ```console
 Give a number:
@@ -673,7 +673,7 @@ Give a number:
 
 #### Exercise_36
 
-* CrEate a program, which asks the user for integers. If the number is zero, exit the program. If the number is negative, give the user message "That is negative". If the number is positive, output the number, raised to its second power (the number multiplied with itself).
+* create a program, which asks the user for integers. If the number is zero, exit the program. If the number is negative, give the user message "That is negative". If the number is positive, output the number, raised to its second power (the number multiplied with itself).
 
 ```console
 Give a number:
@@ -691,7 +691,7 @@ Give a number:
 
 #### Exercise_37
 
-* CrEate a program which asks the user for integers. If the integer is 0, quit. In the end, output "Total amount of numbers:" and the amount. Do not count the 0 into the amount.
+* create a program which asks the user for integers. If the integer is 0, quit. In the end, output "Total amount of numbers:" and the amount. Do not count the 0 into the amount.
 
 ```console
 Give a number:
@@ -707,7 +707,7 @@ Total amount of numbers: 3
 
 #### Exercise_38
 
-* CrEate a program which asks the user for integers. If the integer is 0, quit. In the end, output the total amount of **negative numbers** with "Total amount of negative numbers:" and the amount. Do not count the 0 into the amount.
+* create a program which asks the user for integers. If the integer is 0, quit. In the end, output the total amount of **negative numbers** with "Total amount of negative numbers:" and the amount. Do not count the 0 into the amount.
 
 ```console
 Give a number:
@@ -723,7 +723,7 @@ Total amount of negative numbers: 1
 
 #### Exercise_39
 
-* CrEate a program which asks the user for integers. If the integer is 0, quit. In the end, output the total **sum** of the numbers with "Total sum of numbers:" and the sum. Do not count the 0 into the sum, even though it does not change the result.
+* create a program which asks the user for integers. If the integer is 0, quit. In the end, output the total **sum** of the numbers with "Total sum of numbers:" and the sum. Do not count the 0 into the sum, even though it does not change the result.
 
 ```console
 Give a number:
@@ -739,7 +739,7 @@ Total sum of numbers: 25
 
 #### Exercise_40
 
-* CrEate a program which asks the user for integers. Exit with 0. In the end, output both the amount and the sum. Do not count 0 to either.
+* create a program which asks the user for integers. Exit with 0. In the end, output both the amount and the sum. Do not count 0 to either.
 
 ```console
 Give a number:
@@ -1047,7 +1047,7 @@ In these exercises we practice making and calling our own methods.
 
 #### Exercise_49
 
-* CrEate a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline (use WriteLine and not just Write).
+* create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline (use WriteLine and not just Write).
 
 ```cs
 public static void Main(string[] args)
@@ -1100,7 +1100,7 @@ From here on out, when introducing methods, we might not explicitly mention they
 
 #### Exercise_51
 
-* CrEate the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
+* create the following method in the exercise template: **public static void PrintUntilNumber(int number)**. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below.
 
 ```cs
 public static void Main(string[] args) 
@@ -1132,7 +1132,7 @@ public static void Main(string[] args)
 
 #### Exercise_52
 
-* CrEate the following method in the exercise template: **public static void PrintFromNumberToOne(int number)**. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
+* create the following method in the exercise template: **public static void PrintFromNumberToOne(int number)**. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
 
 ```cs
 public static void Main(string[] args) 
@@ -1205,7 +1205,7 @@ public static void Main(string[] args)
 #### Exercise_57
 
 * Expand the method **Sum**  in the exercise template so that it calculates and returns the sum of the numbers that are given as the parameters.
-CrEate the method using the following structure:
+create the method using the following structure:
 
 ```cs
 public static int Sum(int number1, int number2, int number3, int number4) 
@@ -1338,7 +1338,7 @@ The output of the program:
 
 ##### Section 4
 
-* CrEate a method called PrintTriangle(int size) that prints a triangle by using the PrintStars method. So the call PrintTriangle(4) should print the following:
+* create a method called PrintTriangle(int size) that prints a triangle by using the PrintStars method. So the call PrintTriangle(4) should print the following:
 
 ```console
 *
@@ -1357,7 +1357,7 @@ You will also have to either copy the **PrintStars** method from your previous a
 
 ##### Section 2
 
-* CrEate a method called **PrintRightTriangle(int size)** that uses PrintSpaces and PrintStars to print the correct triangle. So the method call **PrintRightTriangle(4)** should print the following:
+* create a method called **PrintRightTriangle(int size)** that uses PrintSpaces and PrintStars to print the correct triangle. So the method call **PrintRightTriangle(4)** should print the following:
 
 ```console
    *
@@ -1747,7 +1747,7 @@ Logan was not found!
 
 #### Exercise_75
 
-CrEate the method **public static void PrintNumbersInRange(List\<int\> numbers, int lowerLimit, int upperLimit)** in the exercise template. The method prints the numbers in the given list whose values are in the range [lowerLimit, upperLimit]. A few examples of using the method are supplied below.
+create the method **public static void PrintNumbersInRange(List\<int\> numbers, int lowerLimit, int upperLimit)** in the exercise template. The method prints the numbers in the given list whose values are in the range [lowerLimit, upperLimit]. A few examples of using the method are supplied below.
 
 ```cs
 List<int> numbers = new List<int>();
@@ -1780,7 +1780,7 @@ The numbers in the range [3, 10]
 #### Exercise_76
 
 
-CrEate the method **public static int Sum(List\<int\> numbers)** in the exercise template. The method is to **return** the sum of the numbers in the parameter list.
+create the method **public static int Sum(List\<int\> numbers)** in the exercise template. The method is to **return** the sum of the numbers in the parameter list.
 
 ```cs
 List<int> numbers = new List<int>();
@@ -1802,7 +1802,7 @@ Console.WriteLine(Sum(numbers));
 
 ### Exercise_77
 
-CrEate the method **public static void RemoveLast(List\<string\> strings)** in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing.
+create the method **public static void RemoveLast(List\<string\> strings)** in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing.
 
 ```cs
 List<string> strings = new List<string>();
@@ -2245,7 +2245,7 @@ NOTICE! You have to give your dog **namespace exercise_95** for it to function!
 
 #### Exercise_96
 
-CrEate a class named **Room** (and file **Room.cs**). Add the variables **private string code** and **private int sEats** to the class. Then create a constructor **public Room(string classCode, int numberOfSEats)** through which values are assigned to the instance variables.
+create a class named **Room** (and file **Room.cs**). Add the variables **private string code** and **private int sEats** to the class. Then create a constructor **public Room(string classCode, int numberOfSEats)** through which values are assigned to the instance variables.
 
 ![Room class diagram](https://github.com/centria/coding-exercises/raw/master/assets/images/roomclass.jpg)
 
@@ -2253,7 +2253,7 @@ NOTICE! You have to give your room **namespace exercise_96** for it to function!
 
 #### Exercise_97
 
-CrEate a class named **Whistle**. Add the variable **private string sound** to the class. After that, create the constructor **public Whistle(string whistleSound)**, which is used to create a new whistle that's given a sound. After that, create a method **public void Sound()** which prints out the sound (using Console.WriteLine).
+create a class named **Whistle**. Add the variable **private string sound** to the class. After that, create the constructor **public Whistle(string whistleSound)**, which is used to create a new whistle that's given a sound. After that, create a method **public void Sound()** which prints out the sound (using Console.WriteLine).
 
 ```cs
 Whistle duckWhistle = new Whistle("Kvaak");
@@ -2272,7 +2272,7 @@ Kvaak
 
 #### Exercise_98
 
-CrEate a class **Product** that represents a store product. The product should have a **price (double)**, a **quantity (int)** and a **name (string)**.
+create a class **Product** that represents a store product. The product should have a **price (double)**, a **quantity (int)** and a **name (string)**.
 
 The class should have:
 
@@ -2375,7 +2375,7 @@ value: 0
 
 ##### Section 3: Resetting the counter value
 
-CrEate the method **public void Reset()** for the counter that resets the value of the counter to 0. For example:
+create the method **public void Reset()** for the counter that resets the value of the counter to 0. For example:
 
 ```cs
 public static void Main(string[] args)
@@ -2396,7 +2396,7 @@ value: 0
 
 #### Exercise_100
 
-CrEate the class **Debt** that has double-typed instance variables of **balance** and **interestRate**. The balance and the interest rate are passed to the constructor as parameters **public Debt(double initialBalance, double initialInterestRate)**.
+create the class **Debt** that has double-typed instance variables of **balance** and **interestRate**. The balance and the interest rate are passed to the constructor as parameters **public Debt(double initialBalance, double initialInterestRate)**.
 
 In addition, create the methods **public void PrintBalance()** and **public void WaitOneYear()** for the class. The method PrintBalance prints the current balance, and the WaitOneYear method grows the debt amount.
 
@@ -2452,7 +2452,7 @@ Spot is a very good dog. He has 306 darker spots in his fur
 
 #### Exercise_102
 
-CrEate the class **Gauge**. The gauge has the instance **public int value**, a **constructor without parameters** (sets the initial value of the meter variable to 0), and also the following three methods:
+create the class **Gauge**. The gauge has the instance **public int value**, a **constructor without parameters** (sets the initial value of the meter variable to 0), and also the following three methods:
 
 - Method **public void Increase()** grows the value instance variable's value by one. It does not grow the value beyond five.
 - Method **public void Decrease()** decreases the value instance variable's value by one. It does not decrease the value to negative values.
@@ -2514,7 +2514,7 @@ Agent's ToString now returns an empty string. Fix it to introduce international 
 
 #### Exercise_104
 
-CrEate a class **Multiplier** that has a:
+create a class **Multiplier** that has a:
 
 Constructor **public Multiplier(int number)**.
 Method **public int Multiply(int number)** which returns the value number passed to it multiplied by the number provided to the constructor.
@@ -2606,7 +2606,7 @@ In this exercise series, a class called PaymentCard is created which aims to mim
 The template includes the **Program.cs** file. You have to create the **PaymentCard.cs** yourself.
 
 - Add a new class to the project called **PaymentCard** (by creating the file mentioned above).
-- CrEate the PaymentCard object's constructor, which is passed the opening balance of the card, and which then stores that balance in the object's internal variable. 
+- create the PaymentCard object's constructor, which is passed the opening balance of the card, and which then stores that balance in the object's internal variable. 
 - Write the ToString method, which will return the card's balance in the form **"The card has a balance of X euros"**.
 
 Here is the template for the PaymentCard:
@@ -3029,7 +3029,7 @@ You can test out the timer's functionality in the main program whenever you like
 ```cs
 static void Main(string[] args)
 {
-  // CrEate new timer
+  // create new timer
   Timer timer = new Timer();
   // Loop until you cancel the loop.
   // You can cancel with the CTRL + C
@@ -3056,7 +3056,7 @@ static void Main(string[] args)
 
 #### Exercise_120
 
-CrEate a **Cube** class that represents a cube (i.e., a standard hexahedron). CrEate a **public Cube (int edgeLength)** constructor for the class, that takes the length of the cube's edge as its parameter.
+create a **Cube** class that represents a cube (i.e., a standard hexahedron). create a **public Cube (int edgeLength)** constructor for the class, that takes the length of the cube's edge as its parameter.
 
 Make a **public int Volume()** method for the cube, which calculates and returns the cube's volume. The volume of the cube is calculated with the formula **edgeLength * edgeLength * edgeLength**. Moreover, make a **public override string ToString()** method for the cube, which returns a string representation of it. The string representation should take the form **"The length of the edge is l and the volume v"**, where l is the length and v the volume - both the length and volume must be represented as integers.
 
@@ -3066,7 +3066,7 @@ Make a **public int Volume()** method for the cube, which calculates and returns
 
 For example, if a person has a maximum heart rate of 200, a resting heart rate of 50, and a target heart rate of 75% of the maximum heart rate, the target heart rate should be about ((200-50) * (0.75) + 50), i.e., 162.5 bEats per minute.
 
-CrEate an "exercise assistant" class called **Fitbyte**. Its constructor takes both an age and a resting heart rate as its parameters. The exercise assistant should provide a method **TargetHeartRate**, which is passed a number of type double as a parameter that represents a percentual portion of the maximum heart rate. The proportion is given as a number between zero and one. The class should have:
+create an "exercise assistant" class called **Fitbyte**. Its constructor takes both an age and a resting heart rate as its parameters. The exercise assistant should provide a method **TargetHeartRate**, which is passed a number of type double as a parameter that represents a percentual portion of the maximum heart rate. The proportion is given as a number between zero and one. The class should have:
 
 - A constructor **public Fitbyte(int age, int restingHeartRate)**
 - A method **public double TargetHeartRate(double percentageOfMaximum)** that calculates and returns the target heart rate.
@@ -3176,10 +3176,10 @@ Here's a Main class to test all of the sections:
 ```cs
 public static void Main(string[] args)
 {
-  // CrEate new Station
+  // create new Station
   HealthStation childrensHospital = new HealthStation();
 
-  // CrEate two new persons
+  // create two new persons
   Person ethan = new Person("Ethan", 1, 110, 7);
   Person peter = new Person("Peter", 33, 176, 85);
 
@@ -3851,7 +3851,7 @@ public Money Plus(Money addition)
 ```
 NOTICE! If the cents would go over 100, the euros should increase as well!
 
-- CrEate the method **public bool LessThan(Money compared)** that returns true if the money object whose method is called has a grEater worth than the money object that is received as the method parameter.
+- create the method **public bool LessThan(Money compared)** that returns true if the money object whose method is called has a grEater worth than the money object that is received as the method parameter.
 
 - Write the method **public Money Minus(Money decreaser)** that returns a new money object worth the difference of the object whose method was called and the object received as the parameter. If the difference would be negative, the worth of the created money object is set to 0.
 
@@ -3914,7 +3914,7 @@ The exercise base contains the **GradeRegister** from the material. In this exer
 
 ##### Section 1 - Average grade
 
-CrEate the method **public double AverageOfGrades()** for the class **GradeRegister**. It should return the average of the grades, rounded to 2 decimals. If the register contains no grades, the method should return **-1**. Use the **grades** list to calculate the average. Example:
+create the method **public double AverageOfGrades()** for the class **GradeRegister**. It should return the average of the grades, rounded to 2 decimals. If the register contains no grades, the method should return **-1**. Use the **grades** list to calculate the average. Example:
 
 ```cs
 GradeRegister register = new GradeRegister();
@@ -4142,7 +4142,7 @@ Commands:
 
 #### Exercise_136
 
-Our template has the **Person** class and some use for it in Main. CrEate a **public static void HowManyNames(Person person)** for the **Main Program**, which prints the name and the amount of names as follows:
+Our template has the **Person** class and some use for it in Main. create a **public static void HowManyNames(Person person)** for the **Main Program**, which prints the name and the amount of names as follows:
 
 ```cs
 public static void Main(string[] args)
@@ -4167,7 +4167,7 @@ NOTICE! The **Console.WriteLine** is called from inside the method this time!
 
 #### Exercise_137
 
-Our template has the **Person class** and some use for it in Main. CrEate a **public int HowManyNames()** in the **Person class**, which returns the amount of names a person has, like follows:
+Our template has the **Person class** and some use for it in Main. create a **public int HowManyNames()** in the **Person class**, which returns the amount of names a person has, like follows:
 
 ```cs
 public static void Main(string[] args)
@@ -4361,9 +4361,9 @@ Console.WriteLine(mattsIOU.HowMuchDoIOweTo("Arthur"));
 
 The exercise template contains a class **SimpleDate**, which defines a date object based on a given day, month, and year. In this exercise you will expand the SimpleDate class with an equals method, which can tell if the dates are exactly the same.
 
-* CrEate a method **public override bool Equals(object compared)** for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.
+* create a method **public override bool Equals(object compared)** for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.
 
-CrEate a method **public override int GetGetHashCode()** for the SimpleDate class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100.
+create a method **public override int GetGetHashCode()** for the SimpleDate class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100.
 
 The Equals should work as follows:
 
@@ -4624,7 +4624,7 @@ g63
 
 #### Exercise_148
 
-CrEate the following three classes:
+create the following three classes:
 
 * Class A. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void A()**, which prints a string "A".
 * Class B. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void B()**, which prints a string "B".
@@ -4659,7 +4659,7 @@ C
 
 #### Exercise_149
 
-CrEate a class **Person**. The class must work as follows:
+create a class **Person**. The class must work as follows:
 
 ```cs
 Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");
@@ -4673,7 +4673,7 @@ Ada Lovelace, 24 Maddox St. London W1S 2QN
 Esko Ukkonen, Mannerheimintie 15 00100 Helsinki
 ```
 
-CrEate a class **Student**, which inherits the class Person.
+create a class **Student**, which inherits the class Person.
 
 At crEation, student has 0 study credits. Every time a student studies, amount of study credits goes up. Class must act as follows:
 
@@ -4689,7 +4689,7 @@ Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 0
 Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 1
 ```
 
-CrEate a class **Teacher**, which inherits the class Person.
+create a class **Teacher**, which inherits the class Person.
 
 The class must act as follows:
 
@@ -4963,7 +4963,7 @@ public interface IPackable {
 }
 ```
 
-* CrEate classes **Book** and **Furniture**. Book has a constructor in which is given the author (string), name of the book (string) and the publication year (int). The weight of all books is 1 kg. Furniture has a constructor in which is given the type of furniture (string), color (string) and weight (int). Both of these should implement the interface **IPackable**. They also need a ToString each.
+* create classes **Book** and **Furniture**. Book has a constructor in which is given the author (string), name of the book (string) and the publication year (int). The weight of all books is 1 kg. Furniture has a constructor in which is given the type of furniture (string), color (string) and weight (int). Both of these should implement the interface **IPackable**. They also need a ToString each.
 
 The classes should work as following:
 

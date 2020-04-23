@@ -2,7 +2,7 @@
 
 #### Exercise_148
 
-CrEate the following three classes:
+create the following three classes:
 
 * Class A. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void A()**, which prints a string "A".
 * Class B. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void B()**, which prints a string "B".
@@ -37,7 +37,7 @@ C
 
 #### Exercise_149
 
-CrEate a class **Person**. The class must work as follows:
+create a class **Person**. The class must work as follows:
 
 ```cs
 Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");
@@ -51,7 +51,7 @@ Ada Lovelace, 24 Maddox St. London W1S 2QN
 Esko Ukkonen, Mannerheimintie 15 00100 Helsinki
 ```
 
-CrEate a class **Student**, which inherits the class Person.
+create a class **Student**, which inherits the class Person.
 
 At crEation, student has 0 study credits. Every time a student studies, amount of study credits goes up. Class must act as follows:
 
@@ -67,7 +67,7 @@ Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 0
 Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 1
 ```
 
-CrEate a class **Teacher**, which inherits the class Person.
+create a class **Teacher**, which inherits the class Person.
 
 The class must act as follows:
 
@@ -341,7 +341,7 @@ public interface IPackable {
 }
 ```
 
-* CrEate classes **Book** and **Furniture**. Book has a constructor in which is given the author (string), name of the book (string) and the publication year (int). The weight of all books is 1 kg. Furniture has a constructor in which is given the type of furniture (string), color (string) and weight (int). Both of these should implement the interface **IPackable**. They also need a ToString each.
+* create classes **Book** and **Furniture**. Book has a constructor in which is given the author (string), name of the book (string) and the publication year (int). The weight of all books is 1 kg. Furniture has a constructor in which is given the type of furniture (string), color (string) and weight (int). Both of these should implement the interface **IPackable**. They also need a ToString each.
 
 The classes should work as following:
 
