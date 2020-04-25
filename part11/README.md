@@ -273,7 +273,7 @@ alla oleva:below
 olut:beer
 ```
 
-Read the dictionary file line by line with the method **NextLine**. You can split a line using the string method **Split** like so:
+You can split a line using the string method **Split** like so:
 
 ```cs
 string[] parts = line.split(":");   // split the line based on the ':' character
