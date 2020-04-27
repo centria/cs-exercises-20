@@ -33,8 +33,14 @@ namespace ExerciseTest
       {
         actual += die.ThrowDie();
       }
-      StringAssert.DoesNotContain("7", actual, "The example should work as such, and should not contain a 7!");
-      StringAssert.DoesNotContain("0", actual, "The example should work as such, and should not contain a 0!");
+      StringAssert.Contains("1", actual, "The example should work as such, and should probably contain a 1!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.Contains("2", actual, "The example should work as such, and should probably contain a 2!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.Contains("3", actual, "The example should work as such, and should probably contain a 3!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.Contains("4", actual, "The example should work as such, and should probably contain a 4!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.Contains("5", actual, "The example should work as such, and should probably contain a 5!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.Contains("6", actual, "The example should work as such, and should probably contain a 6!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.DoesNotContain("7", actual, "The example should work as such, and should not contain a 7!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
+      StringAssert.DoesNotContain("0", actual, "The example should work as such, and should not contain a 0!\n There's 1 in 10000 chance you got unlucky, you can also run the test again.");
     }
 
     [Test]

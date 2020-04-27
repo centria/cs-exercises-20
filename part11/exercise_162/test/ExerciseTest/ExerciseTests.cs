@@ -48,7 +48,8 @@ namespace ExerciseTest
       LotteryRow row = new LotteryRow();
       List<int> lotteryNumbers = row.Numbers();
 
-      Assert.AreNotEqual(0, lotteryNumbers.Count, "The list should not contain 7 numbers and ContainsNumber should return True for them!");
+      Assert.AreNotEqual(0, lotteryNumbers.Count, "The list should contain 7 numbers and ContainsNumber should return True for them!");
+      Assert.AreEqual(7, lotteryNumbers.Count, "The list should contain 7 numbers and ContainsNumber should return True for them!");
       Assert.AreEqual(true, row.ContainsNumber(lotteryNumbers[0]), "ContainsNumber should find the numbers from the list!");
       Assert.AreEqual(true, row.ContainsNumber(lotteryNumbers[1]), "ContainsNumber should find the numbers from the list!");
       Assert.AreEqual(true, row.ContainsNumber(lotteryNumbers[2]), "ContainsNumber should find the numbers from the list!");
