@@ -133,7 +133,7 @@ namespace ExerciseTest
     [Test]
     public void SavingToFileShouldWork()
     {
-      string fileName = "savefile.txt";
+      string fileName = "hiddenfile.txt";
       if (File.Exists(fileName))
       {
         File.Delete(fileName);
