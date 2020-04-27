@@ -133,21 +133,24 @@ namespace ExerciseTest
     [Test]
     public void SavingToFileShouldWork()
     {
-      using (StreamWriter filer = new StreamWriter("savefile.txt"))
+      string fileName = "savefile.txt";
+      if (File.Exists(fileName))
       {
-        SaveableDictionary dictionary = new SaveableDictionary("savefile.txt");
-        dictionary.Load();
-        // Translate all the words in the file both ways
-        dictionary.Add("apina", "monkey");
-        dictionary.Add("banaani", "banana");
-        dictionary.Add("apina", "apfe");
-        dictionary.Add("ohjelmointi", "programming");
-        dictionary.Save();
-        string code = File.ReadAllText("savefile.txt");
-        string content = "apina:monkey\nbanaani:banana\nohjelmointi:programming\n";
-        File.Delete("savefile.txt");
-        Assert.AreEqual(content, code.Replace("\r\n", "\n"), "Saving translations to a file should work!");
+        File.Delete(fileName);
       }
+      File.CreateText(fileName);
+      SaveableDictionary dictionary = new SaveableDictionary(fileName);
+      dictionary.Load();
+      // Translate all the words in the file both ways
+      dictionary.Add("apina", "monkey");
+      dictionary.Add("banaani", "banana");
+      dictionary.Add("apina", "apfe");
+      dictionary.Add("ohjelmointi", "programming");
+      dictionary.Save();
+      string code = File.ReadAllText(fileName);
+      string content = "apina:monkey\nbanaani:banana\nohjelmointi:programming\n";
+      File.Delete(fileName);
+      Assert.AreEqual(content, code.Replace("\r\n", "\n"), "Saving translations to a file should work!");
     }
 
   }
