@@ -5899,3 +5899,9 @@ In the exercise, you have a program with a ready Main, but the **NamespaceExampl
 * Create two namespaces, one nested in another. You can find the namespaces by looking at the **fully qualified names** of the method calls in Main.
 
 NOTICE! The code does not work at all without namespaces. When the **dotnet test** passes, you know it is correct.
+
+#### Exercise_167
+
+In this exercise, our very simple program is missing its **using directives**. Add them to make the code work. You will need 4 different usings.
+
+HINT! If you don't know where everything is located, look from for example [**the Microsoft API Browser**](https://docs.microsoft.com/en-us/dotnet/api/system?view=dotnet-plat-ext-3.1) for help. *You might have to find something we have not used yet...*
