@@ -31,7 +31,7 @@ namespace ExerciseTest
       string code = File.ReadAllText("src/Exercise/Program.cs");
       int count = Regex.Matches(code, @"using \(StreamWriter writer = new StreamWriter").Count;
 
-      Assert.GreaterOrEqual(count, 1, "You should be using 'using (StreamWriter writer...' in your code!");
+      Assert.GreaterOrEqual(count, 1, "You should be using statement 'using (StreamWriter writer...' in your code!");
     }
 
     [Test]
@@ -40,7 +40,7 @@ namespace ExerciseTest
       string code = File.ReadAllText("src/Exercise/Program.cs");
       int count = Regex.Matches(code, @"Close").Count;
 
-      Assert.AreEqual(count, 0, "You should not be using Close in your code!");
+      Assert.AreEqual(count, 0, "You should not be using Close in your code with using statement!");
     }
 
   }
