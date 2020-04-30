@@ -5889,3 +5889,13 @@ poista
 So in the beginning the dictionary is loaded from a file, and in the end it is saved back to the file, so that changes made to the dictionary are kept for the next time the dictionary is used.
 
 NOTICE! The exercise also contains a file "testwords.txt" for tests. DO NOT TOUCH THAT FILE!
+
+# Part 12
+
+#### Exercise_166
+
+In the exercise, you have a program with a ready Main, but the **NamespaceExample.cs** is missing namespaces.
+
+* Create two namespaces, one nested in another. You can find the namespaces by looking at the **fully qualified names** of the method calls in Main.
+
+NOTICE! The code does not work at all without namespaces. When the **dotnet test** passes, you know it is correct.
