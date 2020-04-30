@@ -1,6 +1,6 @@
 namespace Exercise
 {
-  // Add "using Master ..."
+  // Add "using Master  = ..."
 
   public class Program
   {

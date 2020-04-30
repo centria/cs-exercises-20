@@ -2,7 +2,7 @@ namespace MasterProject
 {
   
   using System;
-  // Define an alias for the nested namespace.
+  // Define an alias for the nested namespace. using Builders = ...
   
   public class MasterClass
   {
