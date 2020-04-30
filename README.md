@@ -5909,3 +5909,9 @@ HINT! If you don't know where everything is located, look from for example [**th
 #### Exercise_168
 
 In this exercise, we are missing an alias from both **MasterProject.cs** and from **Program.cs**. Create them to make the code work. You can find the alias name by looking at the **fully qualified names** and **method calls**.
+
+#### Exercise_169
+
+In this exercise, we are missing **using statements** from our tests. Add them to make the tests pass.
+
+NOTICE! The only code you have to touch, is in the **ExerciseTests.cs** file! There are some tests you should not touch, and they are marked as such!
