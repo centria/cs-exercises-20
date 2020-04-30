@@ -35,16 +35,26 @@
       this.button2.Text = "Click me instead!";
       this.button2.AutoSize = true;
       this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-      this.button2.Location = new System.Drawing.Point(this.button1.Width+5, 0);
-      this.button2.Click += new System.EventHandler(ShowMessage); 
+      this.button2.Location = new System.Drawing.Point(this.button1.Width + 5, 0);
+      this.button2.Click += new System.EventHandler(ShowMessage);
       Controls.Add(this.button2);
 
 
     }
     private void ShowMessage(object sender, System.EventArgs e)
     {
-      this.textBox1.Text = "Button Clicked!";
+      string buttonName = (sender as System.Windows.Forms.Button).Text;
+      if (buttonName == "Click me!")
+      {
+        this.textBox1.Text = "Button Clicked!";
+      }
+      else
+      {
+        this.textBox1.Text = "Other Button Clicked!";
+      }
+
     }
+
   }
 }
 
