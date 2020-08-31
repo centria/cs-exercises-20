@@ -6,6 +6,7 @@ The course material for **this course** is at https://centria.github.io/basic-co
 
 To do the exercises, you need [Dotnet Core](https://dotnet.microsoft.com/download) and a decent editor, such as [Visual Studio Code](https://code.visualstudio.com/). You can use any editor, but the instructions are written with VSC in mind.
 
+
 ## How to run exercises
 
 In the exercise folder, run the command **dotnet run** to run your program. To see if your program does what it's supposed to, run **dotnet test**. When all the tests pass, you have done the exercise as intended.
@@ -14,11 +15,15 @@ In parts 7 and up, the commands need to be run in the project folders, or with p
 
 ## How to return your exercises
 
+*Fork* this repository to your own GitHub account.
+
 You return your exercises by pushing your answers to your personal repository. The repository link is to be sent to the supervising teacher.
 
-The deadlines are on Sundays.
+The deadlines are on XXXX.
 
 ### Basics in Programming
+
+OLD DEADLINES:
 
 |Part| Deadline           | Exercises and sections total|
 |:--:|:------------------:|:----------|
